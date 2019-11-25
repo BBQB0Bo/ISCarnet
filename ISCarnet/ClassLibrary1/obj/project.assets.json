@@ -4867,27 +4867,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Claudiu\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\bianc\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
       "projectName": "DataBaseLibrary",
-      "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
-      "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
+      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+      "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\ClassLibrary1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
