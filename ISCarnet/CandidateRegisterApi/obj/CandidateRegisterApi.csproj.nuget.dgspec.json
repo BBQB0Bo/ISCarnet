@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj": {}
+    "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj": {
+    "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
+        "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
         "projectName": "CandidateRegisterApi",
-        "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
-        "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\CandidateRegisterApi\\obj\\",
+        "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
+        "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -30,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-                "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+              "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+                "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
               }
             }
           }
@@ -47,13 +49,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.0.1, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -86,21 +88,23 @@
         }
       }
     },
-    "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+    "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
         "projectName": "DataBaseLibrary",
-        "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
-        "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\Proiect\\ISCarnet\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+        "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"

@@ -4,24 +4,16 @@ namespace DataBaseLibrary
 {
     public sealed class CandidateContext : DbContext
     {
-        public CandidateContext()
+        public CandidateContext(DbContextOptions<CandidateContext> options) : base(options)
         {
             Database.EnsureCreated();
         }
+
         public DbSet<Candidate> Candidates { get; set; }
         public DbSet<Account> Accounts { get; set; }
 
         public DbSet<Exam> Exams { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-                optionsBuilder.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnet;Trusted_Connection=True");
-
-
-            }
-        }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

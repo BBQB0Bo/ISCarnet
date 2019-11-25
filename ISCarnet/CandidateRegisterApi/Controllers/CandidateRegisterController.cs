@@ -13,11 +13,11 @@ namespace CandidateRegisterController.Controllers
     public class CandidateRegisterController : ControllerBase
     {
 
-        private readonly CandidateContext _context;
+        private readonly ICandidateService service;
 
-        public CandidateRegisterController(CandidateContext context)
+        public CandidateRegisterController(ICandidateService service)
         {
-            _context = context;
+            this.service = service;
         }
 
 
@@ -26,17 +26,17 @@ namespace CandidateRegisterController.Controllers
         [HttpPost]
         public async Task<ActionResult<Candidate>> PostCandidateRegister(string firstname, string lastname, DateTime birthdate, string cnp, string accountPassword, string confirmPassword)
         {
-            if (!accountPassword.Equals(confirmPassword) || _context.Candidates.FirstOrDefault(c => c.CNP == cnp) == null)
-            {
-                return BadRequest();
-            }
+            //if (!accountPassword.Equals(confirmPassword) || service.Candidates.FirstOrDefault(c => c.CNP == cnp) == null)
+            //{
+            //    return BadRequest();
+            //}
 
-            Candidate c = Candidate.Create(firstname, lastname, birthdate, cnp, accountPassword);
-            _context.Candidates.Add(c);
-            _context.Accounts.Add(c.UserAccount);
-            await _context.SaveChangesAsync();
+            // Candidate c = Candidate.Create(firstname, lastname, birthdate, cnp, accountPassword);
+            service.RegisterCandidate(firstname, lastname, birthdate, cnp, accountPassword);
 
-            return CreatedAtAction(nameof(c), new { cnp = c.CNP }, c);
+            return Ok();
+
+            //return CreatedAtAction(nameof(c), new { cnp = c.CNP }, c);
         }
 
 
@@ -44,21 +44,21 @@ namespace CandidateRegisterController.Controllers
         [HttpPut("{cnp}")]
         public async Task<IActionResult> PutExam(string cnp, Candidate candidate)
         {
-            if (_context.Candidates.FirstOrDefault(c => c.CNP == cnp) == null)
-            {
-                return NotFound();
-            }
+            //if (service.Candidates.FirstOrDefault(c => c.CNP == cnp) == null)
+            //{
+            //    return NotFound();
+            //}
 
-            _context.Entry(candidate).State = EntityState.Modified;
+            //service.Entry(candidate).State = EntityState.Modified;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                throw;
-            }
+            //try
+            //{
+            //    await service.SaveChangesAsync();
+            //}
+            //catch (DbUpdateConcurrencyException)
+            //{
+            //    throw;
+            //}
 
             return NoContent();
         }
@@ -70,23 +70,24 @@ namespace CandidateRegisterController.Controllers
         public async Task<ActionResult<Candidate>> DeleteCandidateRegister(string cnp)
         {
 
-            Candidate candidate = _context.Candidates.FirstOrDefault(c => c.CNP == cnp);
-            if (candidate == null)
-            {
-                return NotFound();
-            }
+            //Candidate candidate = service.Candidates.FirstOrDefault(c => c.CNP == cnp);
+            //if (candidate == null)
+            //{
+            //    return NotFound();
+            //}
 
-            _context.Candidates.Remove(candidate);
-            await _context.SaveChangesAsync();
+            //service.Candidates.Remove(candidate);
+            //await service.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(candidate), new { cnp = candidate.CNP }, candidate);
+            return NoContent();
+            //return CreatedAtAction(nameof(candidate), new { cnp = candidate.CNP }, candidate);
         }
 
         // GET: api/Accounts
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Account>>> GetCandidateRegiter()
         {
-            return await _context.Accounts.ToListAsync();
+            return null;
         }
 
     }

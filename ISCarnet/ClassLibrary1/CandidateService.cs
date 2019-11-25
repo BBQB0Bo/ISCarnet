@@ -3,9 +3,16 @@ using System.Linq;
 
 namespace DataBaseLibrary
 {
-    public class CandidateService
+    public class CandidateService : ICandidateService
     {
-        private CandidateContext context = new CandidateContext();
+        private readonly CandidateContext context;
+
+        public CandidateService(CandidateContext context)
+        {
+            this.context = context;
+        }
+
+        // private CandidateContext context;
 
         public void RegisterCandidate(string firstname, string lastname, DateTime birthdate, string cnp,
             string accountpassword)
