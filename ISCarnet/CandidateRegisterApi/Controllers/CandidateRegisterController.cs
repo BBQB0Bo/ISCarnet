@@ -26,28 +26,27 @@ namespace CandidateRegisterController.Controllers
         [HttpPost]
         public async Task<ActionResult<Candidate>> PostCandidateRegister(string firstname, string lastname, DateTime birthdate, string cnp, string accountPassword, string confirmPassword)
         {
-            //if (!accountPassword.Equals(confirmPassword) || service.Candidates.FirstOrDefault(c => c.CNP == cnp) == null)
-            //{
-            //    return BadRequest();
-            //}
+            if (!accountPassword.Equals(confirmPassword) || service.FindCandidateByCNP(cnp) == null)
+            {
+                return BadRequest();
+            }
 
-            // Candidate c = Candidate.Create(firstname, lastname, birthdate, cnp, accountPassword);
-            service.RegisterCandidate(firstname, lastname, birthdate, cnp, accountPassword);
+          Guid idReturn =  service.RegisterCandidate(firstname, lastname, birthdate, cnp, accountPassword);
 
-            return Ok();
+           // return Ok();
 
-            //return CreatedAtAction(nameof(c), new { cnp = c.CNP }, c);
+            return CreatedAtAction(nameof(idReturn), idReturn);
         }
 
 
         // PUT: api/CandidateRegister/id
-        [HttpPut("{cnp}")]
-        public async Task<IActionResult> PutExam(string cnp, Candidate candidate)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutExam(Guid id, Candidate candidate)
         {
-            //if (service.Candidates.FirstOrDefault(c => c.CNP == cnp) == null)
-            //{
-            //    return NotFound();
-            //}
+            if (service.FindCandidateById(id) == null)
+            {
+                return NotFound();
+            }
 
             //service.Entry(candidate).State = EntityState.Modified;
 
@@ -66,28 +65,21 @@ namespace CandidateRegisterController.Controllers
 
 
         // DELETE: api/Register/cnp
-        [HttpDelete("{cnp}")]
-        public async Task<ActionResult<Candidate>> DeleteCandidateRegister(string cnp)
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Candidate>> DeleteCandidateRegister(Guid id)
         {
 
-            //Candidate candidate = service.Candidates.FirstOrDefault(c => c.CNP == cnp);
-            //if (candidate == null)
-            //{
-            //    return NotFound();
-            //}
-
-            //service.Candidates.Remove(candidate);
-            //await service.SaveChangesAsync();
-
+            if (service.DeleteCandidateAndAccount(id) == false)
+                return NotFound();
+            
             return NoContent();
-            //return CreatedAtAction(nameof(candidate), new { cnp = candidate.CNP }, candidate);
         }
 
         // GET: api/Accounts
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Account>>> GetCandidateRegiter()
         {
-            return null;
+            return await service.GetAccounts();
         }
 
     }
