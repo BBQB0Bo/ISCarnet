@@ -8237,23 +8237,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bianc\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Bobire\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\PastExamsAPI\\PastExamsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\PastExamsAPI\\PastExamsAPI.csproj",
       "projectName": "PastExamsAPI",
-      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\PastExamsAPI\\PastExamsAPI.csproj",
-      "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\PastExamsAPI\\obj\\",
+      "projectPath": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\PastExamsAPI\\PastExamsAPI.csproj",
+      "packagesPath": "C:\\Users\\Bobire\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\PastExamsAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bobire\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8266,8 +8262,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-              "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+            "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+              "projectPath": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
             }
           }
         }

@@ -4867,23 +4867,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bianc\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Bobire\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
       "projectName": "DataBaseLibrary",
-      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
-      "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
+      "projectPath": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+      "packagesPath": "C:\\Users\\Bobire\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\ClassLibrary1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bobire\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

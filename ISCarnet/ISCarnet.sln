@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PastExamsAPI", "PastExamsAP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CandidateRegisterApi", "CandidateRegisterApi\CandidateRegisterApi.csproj", "{C9D8B4C7-B54B-4743-BC0C-E305FDA2087E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IS_CARNET", "IS_CARNET\IS_CARNET.csproj", "{EB46D40B-73E2-4258-8BC3-EC87024AAD93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C9D8B4C7-B54B-4743-BC0C-E305FDA2087E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9D8B4C7-B54B-4743-BC0C-E305FDA2087E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9D8B4C7-B54B-4743-BC0C-E305FDA2087E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB46D40B-73E2-4258-8BC3-EC87024AAD93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB46D40B-73E2-4258-8BC3-EC87024AAD93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB46D40B-73E2-4258-8BC3-EC87024AAD93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB46D40B-73E2-4258-8BC3-EC87024AAD93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

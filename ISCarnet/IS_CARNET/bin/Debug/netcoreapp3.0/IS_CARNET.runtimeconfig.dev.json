@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Bobire\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Bobire\\.nuget\\packages"
+    ]
+  }
+}
