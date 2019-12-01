@@ -2,8 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using DataBaseLibrary;
 using System.Collections.Generic;
-using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using System;
 
 namespace CandidateRegisterController.Controllers
@@ -31,33 +29,26 @@ namespace CandidateRegisterController.Controllers
                 return BadRequest();
             }
 
-          Guid idReturn =  service.RegisterCandidate(firstname, lastname, birthdate, cnp, accountPassword);
+          Guid idReturn = service.RegisterCandidate(firstname, lastname, birthdate, cnp, accountPassword);
 
            // return Ok();
 
-            return CreatedAtAction(nameof(idReturn), idReturn);
+           return CreatedAtAction(nameof(idReturn), idReturn);
         }
 
 
         // PUT: api/CandidateRegister/id
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutExam(Guid id, Candidate candidate)
+        public async Task<IActionResult> PutCandidate(Guid id, Candidate candidate)
         {
             if (service.FindCandidateById(id) == null)
             {
                 return NotFound();
             }
 
-            //service.Entry(candidate).State = EntityState.Modified;
-
-            //try
-            //{
-            //    await service.SaveChangesAsync();
-            //}
-            //catch (DbUpdateConcurrencyException)
-            //{
-            //    throw;
-            //}
+            if (service.UpdateCandidate(candidate) == false)
+                return NotFound();
+           
 
             return NoContent();
         }
@@ -79,8 +70,10 @@ namespace CandidateRegisterController.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Account>>> GetCandidateRegiter()
         {
-            return await service.GetAccounts();
+            var accounts =  service.GetAccounts();
+            return CreatedAtAction(nameof(accounts), accounts);
         }
+
 
     }
 }

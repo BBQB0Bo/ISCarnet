@@ -8,13 +8,15 @@ namespace DataBaseLibrary
     {
         Guid RegisterCandidate(string firstname, string lastname, DateTime birthdate, string cnp,string accountpassword);
 
-        Candidate FindCandidateByCNP(string cnp);
+        public Candidate FindCandidateByCNP(string cnp);
 
         public Candidate FindCandidateById(Guid id);
 
         public bool DeleteCandidateAndAccount(Guid id);
 
-        public Task<List<Account>> GetAccounts();
+        public List<Account> GetAccounts();
+
+        public bool UpdateCandidate(Candidate candidate);
 
         void AddExam(DateTime examdate, int score, Candidate candidate);
     }

@@ -13,25 +13,26 @@ namespace PastExamsAPI.Controllers
     [ApiController]
     public class ExamsController : ControllerBase
     {
-        private readonly CandidateContext _context;
+        private readonly IExamService service;
 
-        public ExamsController(CandidateContext context)
+        public ExamsController(IExamService service)
         {
-            _context = context;
+            this.service = service;
         }
+
 
         // GET: api/Exams
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Exam>>> GetExams()
         {
-            return await _context.Exams.ToListAsync();
+            return service.GetExams();
         }
 
         // GET: api/Exams/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Exam>> GetExam(Guid id)
         {
-            var exam = await _context.Exams.FindAsync(id);
+            var exam = service.FindExamById(id);
 
             if (exam == null)
             {
@@ -52,23 +53,8 @@ namespace PastExamsAPI.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(exam).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ExamExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            if (service.ExamUpdate(exam) == false)
+                return NotFound();
 
             return NoContent();
         }
@@ -79,31 +65,22 @@ namespace PastExamsAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Exam>> PostExam(Exam exam)
         {
-            _context.Exams.Add(exam);
-            await _context.SaveChangesAsync();
+            if (service.AddExam(exam) == false)
+                return BadRequest();
 
-            return CreatedAtAction("GetExam", new { id = exam.ExamId }, exam);
+            return CreatedAtAction("PostExam", new { id = exam.ExamId }, exam);
         }
 
         // DELETE: api/Exams/5
         [HttpDelete("{id}")]
         public async Task<ActionResult<Exam>> DeleteExam(Guid id)
         {
-            var exam = await _context.Exams.FindAsync(id);
-            if (exam == null)
-            {
+            if (service.DeleteExam(id) == false)
                 return NotFound();
-            }
 
-            _context.Exams.Remove(exam);
-            await _context.SaveChangesAsync();
-
-            return exam;
+            return NoContent();
         }
 
-        private bool ExamExists(Guid id)
-        {
-            return _context.Exams.Any(e => e.ExamId == id);
-        }
+
     }
 }

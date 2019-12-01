@@ -52,16 +52,38 @@ namespace DataBaseLibrary
             return true;
         }
 
-        public async Task<List<Account>> GetAccounts()
+        public List<Account> GetAccounts()
            {
-            List<Account> accounts = await context.Accounts.ToListAsync();
+            List<Account> accounts =  context.Accounts.ToList();
 
             if (accounts == null)
             {
                 return null;
              }
 
-            return accounts;
+            return  accounts;
+        }
+
+        public bool UpdateCandidate(Candidate candidate)
+        {
+            context.Entry(candidate).State = EntityState.Modified;
+
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (FindCandidateById(candidate.CandidateId ) == null)
+                {
+                    return false;
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return true;
         }
 
         public void AddExam(DateTime examdate, int score, Candidate candidate)
