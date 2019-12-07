@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj": {}
+    "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj": {
+    "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
+        "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
         "projectName": "IS_CARNET",
-        "projectPath": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
-        "packagesPath": "C:\\Users\\Bobire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bobire\\Desktop\\New folder (5)\\ISCarnet\\IS_CARNET\\obj\\",
+        "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
+        "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\IS_CARNET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bobire\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

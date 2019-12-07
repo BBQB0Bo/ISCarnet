@@ -1,83 +1,76 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using DataBaseLibrary;
+using MediatR;
+using PastExamsAPI.DTOs;
+
 
 namespace PastExamsAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/pastExam")]
     [ApiController]
     public class ExamsController : ControllerBase
     {
-        private readonly IExamService service;
+        private readonly IMediator mediator;
 
-        public ExamsController(IExamService service)
+        public ExamsController(IMediator mediator)
         {
-            this.service = service;
+            this.mediator = mediator;
         }
 
 
         // GET: api/Exams
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Exam>>> GetExams()
+        public async Task<ActionResult<Exam>> GetExam()
         {
-            return service.GetExams();
+            var exams = await mediator.Send(new GetExams());
+            if (exams == null)
+            {
+                return NotFound();
+            }
+            return Ok(exams);
         }
 
         // GET: api/Exams/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Exam>> GetExam(Guid id)
         {
-            var exam = service.FindExamById(id);
-
-            if (exam == null)
+            var exams = await mediator.Send(new GetExam(id));
+            if (exams == null)
             {
                 return NotFound();
             }
-
-            return exam;
+            return Ok(exams);
         }
 
         // PUT: api/Exams/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutExam(Guid id, Exam exam)
+        [HttpPut()]
+        public async Task<ActionResult<Exam>> PutExam([FromBody]UpdateExam request)
         {
-            if (id != exam.ExamId)
-            {
-                return BadRequest();
-            }
+            var exam = await mediator.Send(request);
 
-            if (service.ExamUpdate(exam) == false)
-                return NotFound();
-
-            return NoContent();
+            return exam;
         }
 
         // POST: api/Exams
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<Exam>> PostExam(Exam exam)
+        public async Task<ActionResult<Exam>> PostExam([FromBody]CreateExam request)
         {
-            if (service.AddExam(exam) == false)
-                return BadRequest();
+            var exam = await mediator.Send(request);
 
-            return CreatedAtAction("PostExam", new { id = exam.ExamId }, exam);
+            return exam;
         }
 
-        // DELETE: api/Exams/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<Exam>> DeleteExam(Guid id)
+        // DELETE:
+        [HttpDelete()]
+        public async Task<IActionResult> DeleteExam([FromBody]DeleteExam request)
         {
-            if (service.DeleteExam(id) == false)
-                return NotFound();
-
+            await mediator.Send(request);
             return NoContent();
         }
 

@@ -31,7 +31,7 @@ namespace CandidateRegisterApi
             services.AddDbContext<CandidateContext>(options =>
                 options.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnet;Trusted_Connection=True"));
             services.AddScoped<ICandidateService, CandidateService>();
-            services.AddScoped<IExamService, ExamService>();
+           // services.AddScoped<IExamService, ExamService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

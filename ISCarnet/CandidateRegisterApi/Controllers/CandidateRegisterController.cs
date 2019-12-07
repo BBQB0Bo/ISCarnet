@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+﻿/*using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DataBaseLibrary;
 using System.Collections.Generic;
@@ -77,3 +77,4 @@ namespace CandidateRegisterController.Controllers
 
     }
 }
+*/

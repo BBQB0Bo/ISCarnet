@@ -30,9 +30,23 @@ namespace DataBaseLibrary
             return candidate;
         }
 
+        public void Update(string firstName, string lastName, DateTime birthDate, string cnp)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            BirthDate = birthDate;
+            CNP = cnp;
+
+        }
+
         public void AttachExam(Exam e)
         {
+            PastExams = new List<Exam>();
             PastExams.Add(e);
+        }
+        public void RemoveExam(Exam e)
+        {
+            PastExams.Remove(e);
         }
 
     }
