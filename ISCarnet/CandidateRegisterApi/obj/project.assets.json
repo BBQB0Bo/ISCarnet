@@ -2824,7 +2824,6 @@
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
           "MediatR": "7.0.0",
-          "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.EntityFrameworkCore": "3.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.1"
         },
@@ -8812,11 +8811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
+      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
       "projectName": "CandidateRegisterApi",
-      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
+      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
       "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\obj\\",
+      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8832,8 +8831,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-              "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+            "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+              "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
             }
           }
         }

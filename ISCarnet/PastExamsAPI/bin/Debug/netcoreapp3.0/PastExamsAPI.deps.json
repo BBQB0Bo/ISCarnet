@@ -1656,7 +1656,6 @@
       "DataBaseLibrary/1.0.0": {
         "dependencies": {
           "MediatR": "7.0.0",
-          "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.EntityFrameworkCore": "3.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.0.1"
         },

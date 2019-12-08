@@ -1,13 +1,9 @@
-﻿using DataBaseLibrary;
-using MediatR;
+﻿using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace PastExamsAPI.DTOs
+namespace DataBaseLibrary.DTOs.PastExam
 {
-    public class UpdateExam : IRequest <Exam>
+    public class UpdateExam : IRequest <ExamDTO>
     {
         public Guid ExamId { get; set; }
         public DateTime ExamDate { get;  set; }

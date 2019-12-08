@@ -1,6 +1,6 @@
 ﻿using DataBaseLibrary;
 using MediatR;
-using PastExamsAPI.DTOs;
+using DataBaseLibrary.DTOs.PastExam;
 using System;
 using System.Linq;
 using System.Threading;
@@ -18,7 +18,7 @@ namespace PastExamsAPI.ExamHandlers
         }
         public async Task<Unit> Handle(DeleteExam request, CancellationToken cancellationToken)
         {
-            var exam = context.Exams.SingleOrDefault(p => p.ExamId == request.ExamId);
+            var exam = context.Exams.SingleOrDefault(p => p.ExamDate == request.ExamDate && p.Candidate == request.Candidate);
             if (exam == null)
             {
                 throw new Exception("Record doesn't exists");

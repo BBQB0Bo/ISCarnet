@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataBaseLibrary.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -6,7 +7,7 @@ namespace DataBaseLibrary
 {
     public interface ICandidateService
     {
-        Guid RegisterCandidate(string firstname, string lastname, DateTime birthdate, string cnp,string accountpassword);
+        Guid RegisterCandidate(RegisterCandidateDTO dto);
 
         public Candidate FindCandidateByCNP(string cnp);
 

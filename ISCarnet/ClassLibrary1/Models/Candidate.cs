@@ -15,7 +15,7 @@ namespace DataBaseLibrary
 
         public List<Exam> PastExams { get; private set; }
         public static Candidate Create(string firstname, string lastname, DateTime birthdate, string cnp,
-            string accountpassword)
+            string accountpassword, int usernamenumber)
         {
             Candidate candidate = new Candidate
             {
@@ -26,22 +26,12 @@ namespace DataBaseLibrary
                 CNP = cnp,
                 PastExams = new List<Exam>()
             };
-            candidate.UserAccount = Account.Create(candidate, accountpassword);
+            candidate.UserAccount = Account.Create(candidate, accountpassword, usernamenumber);
             return candidate;
-        }
-
-        public void Update(string firstName, string lastName, DateTime birthDate, string cnp)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            BirthDate = birthDate;
-            CNP = cnp;
-
         }
 
         public void AttachExam(Exam e)
         {
-            PastExams = new List<Exam>();
             PastExams.Add(e);
         }
         public void RemoveExam(Exam e)

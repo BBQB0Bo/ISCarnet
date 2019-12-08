@@ -75,3 +75,11 @@ X:\IS_CARNET\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.Views.pdb
 X:\IS_CARNET\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.csproj.CopyComplete
 X:\IS_CARNET\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.dll
 X:\IS_CARNET\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.pdb
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.csprojAssemblyReference.cache
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\staticwebassets\IS_CARNET.StaticWebAssets.Manifest.cache
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\staticwebassets\IS_CARNET.StaticWebAssets.xml
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.RazorComponent.input.cache
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.pdb

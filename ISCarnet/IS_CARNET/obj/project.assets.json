@@ -5303,11 +5303,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
+      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
       "projectName": "IS_CARNET",
-      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
+      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
       "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.NET\\ISCarnet\\ISCarnet\\IS_CARNET\\obj\\",
+      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",

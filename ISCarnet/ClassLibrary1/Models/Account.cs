@@ -10,7 +10,7 @@ namespace DataBaseLibrary
         public Guid CandidateForeignKey { get; private set; }
         public Candidate AccountOwner { get; private set; }
         private Account() { }
-        public static Account Create(Candidate candidate, string password)
+        public static Account Create(Candidate candidate, string password, int usernamenumber)
         {
             Account account = new Account
             {
@@ -22,5 +22,10 @@ namespace DataBaseLibrary
             };
             return account;
         }
+        public void SetUserName(String name) {
+            if (name != null)
+                UserName = name;
+        }
+
     }
 }

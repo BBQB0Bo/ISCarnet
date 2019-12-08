@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DataBaseLibrary;
 using MediatR;
-using PastExamsAPI.DTOs;
-
+using DataBaseLibrary.DTOs.PastExam;
+using System.Collections.Generic;
 
 namespace PastExamsAPI.Controllers
 {
@@ -24,7 +24,7 @@ namespace PastExamsAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<Exam>> GetExam()
         {
-            var exams = await mediator.Send(new GetExams());
+            var exams = await mediator.Send(new GetAllExams());
             if (exams == null)
             {
                 return NotFound();
@@ -33,10 +33,10 @@ namespace PastExamsAPI.Controllers
         }
 
         // GET: api/Exams/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Exam>> GetExam(Guid id)
+        [HttpGet("{userName}")]
+        public async Task<ActionResult<List<ExamDTO>>> GetExam(String userName)
         {
-            var exams = await mediator.Send(new GetExam(id));
+            var exams = await mediator.Send(new GetExamsCandidate(userName));
             if (exams == null)
             {
                 return NotFound();
@@ -48,7 +48,7 @@ namespace PastExamsAPI.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPut()]
-        public async Task<ActionResult<Exam>> PutExam([FromBody]UpdateExam request)
+        public async Task<ActionResult<ExamDTO>> PutExam([FromBody]UpdateExam request)
         {
             var exam = await mediator.Send(request);
 
@@ -59,7 +59,7 @@ namespace PastExamsAPI.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<Exam>> PostExam([FromBody]CreateExam request)
+        public async Task<ActionResult<ExamDTO>> PostExam([FromBody]CreateExam request)
         {
             var exam = await mediator.Send(request);
 

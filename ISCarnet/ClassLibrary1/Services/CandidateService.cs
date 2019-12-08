@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DataBaseLibrary.DTOs;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +18,10 @@ namespace DataBaseLibrary
 
         // private CandidateContext context;
 
-        public Guid RegisterCandidate(string firstname, string lastname, DateTime birthdate, string cnp,
-            string accountpassword)
+        public Guid RegisterCandidate(RegisterCandidateDTO dto)
         {
-            Candidate c = Candidate.Create(firstname, lastname, birthdate, cnp, accountpassword);
+            int accountnumber = context.Candidates.Where(c => c.LastName + c.FirstName[0] == dto.LastName + dto.FirstName[0]).Count();
+            Candidate c = Candidate.Create(dto.FirstName, dto.LastName, dto.BirthDate, dto.CNP, dto.Password, accountnumber);
             context.Candidates.Add(c);
             context.Accounts.Add(c.UserAccount);
             context.SaveChanges();
