@@ -13,3 +13,4 @@ C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ClassLibrary1\obj\De
 C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.AssemblyInfo.cs
 C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.dll
 C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.csprojAssemblyReference.cache

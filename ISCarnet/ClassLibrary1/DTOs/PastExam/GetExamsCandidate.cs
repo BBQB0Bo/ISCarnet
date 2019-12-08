@@ -8,11 +8,10 @@ namespace DataBaseLibrary.DTOs.PastExam
     //toate examenele unui candidat
     public class GetExamsCandidate : IRequest <List<ExamDTO>>
     {
-        private string userName;
 
         public GetExamsCandidate(string userName)
         {
-            this.userName = userName;
+            this.userNameCandidate = userName;
         }
 
         public String userNameCandidate { get; set; }

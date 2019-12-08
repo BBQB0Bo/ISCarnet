@@ -1,0 +1,57 @@
+﻿@page "/fetchdata"
+
+@using IS_CARNET.Data
+
+
+<h1>Past Exams</h1>
+
+
+@if (State.CurrentUser != null)
+{
+    <p>@State.CurrentUser</p>
+    @if (exams != null)
+    {
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Score</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var exam in exams)
+            {
+                <tr>
+                    <td>@exam.Date.ToShortDateString()</td>
+                    <td>@exam.Score</td>
+                    <td>@exam.Result</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+        }
+        else { <p>Nu aveti examene inregistrate.</p>}
+    }
+    else
+    {
+    <p>Va rugam sa va logati pentru a accesa istoricul examenelor</p>
+}
+
+@code {
+    private Exams[] exams;
+    HttpClient Http = new HttpClient();
+    private string apiUrl = "https://localhost:44316/api/pastExam/" + State.CurrentUser;
+    protected override async Task OnInitializedAsync()
+    {
+        exams = await Http.GetJsonAsync<Exams[]>(apiUrl);
+    }
+    public class Exams
+    {
+        public DateTime Date{ get; set; }
+
+        public int Score { get; set; }
+
+        public String Result { get; set; }
+    }
+}

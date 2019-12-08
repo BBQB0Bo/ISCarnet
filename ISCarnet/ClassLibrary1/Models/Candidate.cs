@@ -32,7 +32,8 @@ namespace DataBaseLibrary
 
         public void AttachExam(Exam e)
         {
-            PastExams.Add(e);
+            PastExams = new List<Exam>();
+            this.PastExams.Add(e);
         }
         public void RemoveExam(Exam e)
         {
