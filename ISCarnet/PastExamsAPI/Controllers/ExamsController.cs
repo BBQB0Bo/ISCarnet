@@ -22,7 +22,7 @@ namespace PastExamsAPI.Controllers
 
         // GET: api/Exams
         [HttpGet]
-        public async Task<ActionResult<Exam>> GetExam()
+        public async Task<ActionResult<List<Exam>>> GetExam()
         {
             var exams = await mediator.Send(new GetAllExams());
             if (exams == null)

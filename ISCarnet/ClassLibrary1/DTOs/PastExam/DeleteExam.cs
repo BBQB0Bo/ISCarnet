@@ -7,6 +7,6 @@ namespace DataBaseLibrary.DTOs.PastExam
 
     {
         public DateTime ExamDate { get; set; }
-        public Candidate Candidate { get; set; }
+        public String CNP { get; set; }
     }
 }

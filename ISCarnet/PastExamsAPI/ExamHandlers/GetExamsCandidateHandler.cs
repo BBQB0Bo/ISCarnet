@@ -13,15 +13,15 @@ namespace PastExamsAPI.ExamHandlers
     public class GetExamsCandidateHandler : IRequestHandler<GetExamsCandidate, List<ExamDTO>>
     {
 
-        private readonly CandidateContext context;
-
-        public GetExamsCandidateHandler(CandidateContext context)
+        private readonly IExamService service;
+        public GetExamsCandidateHandler(IExamService service)
         {
-            this.context = context;
+            this.service = service;
         }
-        public async Task<List<ExamDTO>> Handle(GetExamsCandidate request, CancellationToken cancellationToken)
+        public async Task<List<ExamDTO>> Handle(GetExamsCandidate request,CancellationToken cancellationToken)
         {
-            var exams = await context.Exams.Where(p => p.Candidate.UserAccount.UserName == request.userNameCandidate).ToListAsync();
+            //returneaza toate examenele asociate unui username
+            var exams = await service.GetExamsByUsername (request, cancellationToken);
 
             List<ExamDTO> examReturn = new List<ExamDTO>();
             foreach (Exam e in exams)

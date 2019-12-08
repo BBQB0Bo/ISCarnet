@@ -16,17 +16,26 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exam"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Exam"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exam"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Exam"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Exam"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Exam"
+                  }
                 }
               }
             }
@@ -359,8 +368,9 @@
             "type": "integer",
             "format": "int32"
           },
-          "candidate": {
-            "$ref": "#/components/schemas/Candidate"
+          "cnp": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -372,8 +382,9 @@
             "type": "string",
             "format": "date-time"
           },
-          "candidate": {
-            "$ref": "#/components/schemas/Candidate"
+          "cnp": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

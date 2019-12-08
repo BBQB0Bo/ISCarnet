@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -65,14 +68,6 @@
             {
               "name": "Microsoft.AspNetCore.App.Ref",
               "version": "[3.0.1, 3.0.1]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.0.0, 3.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -80,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,7 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DataBaseLibrary.DTOs.PastExam;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace DataBaseLibrary
 {
@@ -14,63 +17,58 @@ namespace DataBaseLibrary
             this.context = context;
         }
 
-        // private CandidateContext context;
-
-        public List<Exam> GetExams()
+        public async Task<List<Exam>> GetExams()
         {
-          return context.Exams.ToList();
+          return await context.Exams.ToListAsync();
         }
 
-        public Exam FindExamById(Guid id)
+        public async Task<List<Exam>> GetExamsByUsername(GetExamsCandidate request,CancellationToken cancellationToken)
         {
-            return context.Exams.FirstOrDefault(c => c.ExamId == id);
+            return await context.Exams.Where(p => p.Candidate.UserAccount.UserName == request.userNameCandidate).ToListAsync();     
         }
 
-        public bool AddExam(Exam exam)
+        public async Task<Exam> AddExam(DateTime examDate, int scoreExam, String cnp,CancellationToken cancellationToken)
         {
-            if (FindExamById(exam.ExamId) != null)
-                return false;
-                
+              var candidate = context.Candidates.SingleOrDefault(p => p.CNP == cnp);
+              if (candidate == null)
+              {
+                  throw new Exception("Candidate doesn't exists");
+              }
 
-            context.Exams.Add(exam);
-            context.SaveChanges();
-            return true;
+              var examen = Exam.Create(examDate, scoreExam, candidate);
+            context.Exams.Add(examen);
+
+           await context.SaveChangesAsync(cancellationToken);
+
+            return examen;
         }
 
-        public bool DeleteExam(Guid id)
+        public async Task<bool> DeleteExam(DeleteExam request,CancellationToken cancellationToken )
         {
-            Exam exam = this.FindExamById(id);
+           var exam = context.Exams.SingleOrDefault(p => p.ExamDate == request.ExamDate && p.Candidate.CNP == request.CNP);
             if (exam == null)
             {
-                return false;
+                
+                throw new Exception("Record doesn't exists");
             }
-
             context.Exams.Remove(exam);
-            context.SaveChanges();
+            await context.SaveChangesAsync(cancellationToken);
             return true;
+
         }
 
-        public bool ExamUpdate(Exam exam)
+        public async Task<Exam> ExamUpdate(UpdateExam request, CancellationToken cancellationToken )
         {
 
-            context.Entry(exam).State = EntityState.Modified;
+            var exam = context.Exams.SingleOrDefault(p => p.ExamId == request.ExamId);
+            if (exam == null)
+            {
+                throw new Exception("Record doesn't exists");
+            }
+            exam.Update(request.ExamDate, request.Score, request.Candidate);
+            await context.SaveChangesAsync(cancellationToken);
+            return exam;
 
-            try
-            {
-                 context.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (FindExamById(exam.ExamId) == null)
-                {
-                    return false;
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return true;
         }
 
 

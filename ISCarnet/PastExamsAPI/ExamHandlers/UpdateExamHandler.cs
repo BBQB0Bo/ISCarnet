@@ -1,6 +1,7 @@
 ﻿using DataBaseLibrary;
 using DataBaseLibrary.DTOs.PastExam;
 using MediatR;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
 using System.Threading;
@@ -11,22 +12,15 @@ namespace PastExamsAPI.ExamHandlers
     public class UpdateExamHandler : IRequestHandler<UpdateExam, ExamDTO>
 
     {
-        private readonly CandidateContext context;
-
-        public UpdateExamHandler(CandidateContext context)
+        private readonly IExamService service;
+        public UpdateExamHandler(IExamService service)
         {
-            this.context = context;
+            this.service = service;
         }
 
-        public async Task<ExamDTO> Handle(UpdateExam request, CancellationToken cancellationToken)
+        public async Task<ExamDTO> Handle(UpdateExam request,CancellationToken cancellationToken)
         {
-            var exam = context.Exams.SingleOrDefault(p => p.ExamId == request.ExamId);
-            if (exam == null)
-            {
-                throw new Exception("Record doesn't exists");
-            }
-            exam.Update(request.ExamDate, request.Score, request.Candidate);
-            await context.SaveChangesAsync(cancellationToken);
+           Exam exam = await service.ExamUpdate(request, cancellationToken);
 
             ExamDTO examReturn = new ExamDTO(exam);
             return examReturn;

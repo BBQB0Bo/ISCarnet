@@ -10,19 +10,18 @@ namespace PastExamsAPI.ExamHandlers
 {
     public class GetAllExamsHandler : IRequestHandler<GetAllExams, List<Exam>>
     {
-      
-            private readonly CandidateContext context;
 
-            public GetAllExamsHandler(CandidateContext context)
-            {
-                this.context = context;
-            }
+        private readonly IExamService service;
+        public GetAllExamsHandler(IExamService service)
+        {
+            this.service = service;
+        }
 
         public async Task<List<Exam>> Handle(GetAllExams request, CancellationToken cancellationToken)
         {
-            var exams = await context.Exams.ToListAsync();
-
-            return exams;
+            return await service.GetExams();
+            
+          
         }
     }
 }

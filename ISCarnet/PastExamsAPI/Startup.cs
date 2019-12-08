@@ -7,9 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using MediatR;
-
-
-
+using PastExamsAPI.ExamHandlers;
 
 namespace PastExamsAPI
 {
@@ -28,11 +26,16 @@ namespace PastExamsAPI
         {
             //services.AddTransient<CandidateContext, CandidateContext>();
             services.AddDbContext<CandidateContext>(options =>
-            {
-                options.UseSqlServer(@"Data Source=.\SQLEXPRESS;Initial Catalog=MyPersons;Trusted_Connection=True;");
-            });
+       options.UseSqlServer(@"Server=DESKTOP-GLMVMO1\SQLEXPRESS;Database=ISCarnet;Trusted_Connection=True"));
 
             services.AddControllers();
+            services.AddMediatR(typeof(Startup).Assembly);
+
+            services.AddScoped<ICandidateService, CandidateService>();
+            services.AddScoped<IExamService, ExamService>();
+
+
+
             services.AddCors(options =>
             {
                 options.AddPolicy(MyAllowSpecificOrigins,
@@ -43,11 +46,19 @@ namespace PastExamsAPI
                            .AllowAnyOrigin();
                 });
             });
-            services.AddControllers();
+
+
+
+
+         
+         
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
+
             services.AddMediatR(typeof(Startup).Assembly);
         }
 
