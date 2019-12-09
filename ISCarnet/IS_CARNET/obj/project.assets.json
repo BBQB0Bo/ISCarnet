@@ -8832,11 +8832,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
+      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
       "projectName": "IS_CARNET",
-      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
+      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
       "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\IS_CARNET\\obj\\",
+      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8855,8 +8855,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-              "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+            "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+              "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
             }
           }
         }

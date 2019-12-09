@@ -61,16 +61,27 @@ namespace PastExamsAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<ExamDTO>> PostExam([FromBody]CreateExam request)
         {
-            var exam = await mediator.Send(request);
+                   
+                var exam = await mediator.Send(request);
+            if (exam == null)
+                return NotFound("Candidate not found.");
 
-            return exam;
+                return exam;
+                      
         }
 
         // DELETE:
         [HttpDelete()]
         public async Task<IActionResult> DeleteExam([FromBody]DeleteExam request)
         {
-            await mediator.Send(request);
+            try
+            {
+                await mediator.Send(request);
+            }
+            catch (Exception e)
+            {
+              return NotFound("Examen to delete not found"); 
+            }
             return NoContent();
         }
 

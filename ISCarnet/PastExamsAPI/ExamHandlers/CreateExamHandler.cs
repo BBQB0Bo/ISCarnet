@@ -3,6 +3,7 @@ using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 using DataBaseLibrary.DTOs.PastExam;
+using System;
 
 namespace PastExamsAPI.ExamHandlers
 {
@@ -15,9 +16,13 @@ namespace PastExamsAPI.ExamHandlers
         }
         public async Task<ExamDTO> Handle(CreateExam request, CancellationToken cancellationToken)
         {
-            Exam ex =await service.AddExam(request.ExamDate, request.Score, request.CNP, cancellationToken);
-            ExamDTO examReturn = new ExamDTO(ex);
-            return examReturn;
+                Exam ex = await service.AddExam(request.ExamDate, request.Score, request.CNP, cancellationToken);
+                 if (ex == null)
+                return null;
+
+                ExamDTO examReturn = new ExamDTO(ex);
+                return examReturn;
+
         }
     }
 }

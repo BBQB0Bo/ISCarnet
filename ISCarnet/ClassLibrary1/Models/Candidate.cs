@@ -32,6 +32,9 @@ namespace DataBaseLibrary
 
         public void AttachExam(Exam e)
         {
+            // delete later : whern admin api is made
+            PastExams = new List<Exam>();
+
             PastExams.Add(e);
         }
         public void RemoveExam(Exam e)

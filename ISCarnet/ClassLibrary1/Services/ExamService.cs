@@ -32,7 +32,7 @@ namespace DataBaseLibrary
             var candidate = context.Candidates.SingleOrDefault(p => p.CNP == cnp);
             if (candidate == null)
             {
-                throw new Exception("Candidate doesn't exists");
+                return null;
             }
 
             var examen = Exam.Create(examDate, scoreExam, candidate);

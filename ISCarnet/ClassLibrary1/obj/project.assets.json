@@ -5117,11 +5117,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
       "projectName": "DataBaseLibrary",
-      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
       "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
+      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

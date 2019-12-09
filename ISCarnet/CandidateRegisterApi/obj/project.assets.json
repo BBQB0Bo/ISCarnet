@@ -8275,11 +8275,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
+      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
       "projectName": "CandidateRegisterApi",
-      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
+      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\CandidateRegisterApi.csproj",
       "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\obj\\",
+      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\CandidateRegisterApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8298,8 +8298,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-              "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\.Net V1\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+            "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+              "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
             }
           }
         }

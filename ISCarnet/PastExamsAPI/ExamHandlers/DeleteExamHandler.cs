@@ -3,6 +3,7 @@ using MediatR;
 using DataBaseLibrary.DTOs.PastExam;
 using System.Threading;
 using System.Threading.Tasks;
+using System;
 
 namespace PastExamsAPI.ExamHandlers
 {
@@ -15,9 +16,16 @@ namespace PastExamsAPI.ExamHandlers
         }
         public async Task<Unit> Handle(DeleteExam request, CancellationToken cancellationToken)
         {
-          await service.DeleteExam(request, cancellationToken);
-            return Unit.Value;
+            try {
+                await service.DeleteExam(request, cancellationToken);
+                return Unit.Value;
+
+            } catch (Exception e)
+            {
+                throw new Exception("Record doesn't exists");
+            }
+        }
+           
         }
 
     }
-}
