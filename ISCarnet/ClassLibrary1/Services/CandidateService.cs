@@ -1,4 +1,5 @@
 ﻿using DataBaseLibrary.DTOs;
+using DataBaseLibrary.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ namespace DataBaseLibrary
 {
     public class CandidateService : ICandidateService
     {
-        private readonly CandidateContext context;
+        public readonly CandidateContext context;
 
         public CandidateService(CandidateContext context)
         {
@@ -30,6 +31,15 @@ namespace DataBaseLibrary
             accDTO.Password = c.UserAccount.Password;
             return accDTO;
         }
+        public ExaminatorDTO RegisterExaminator(ExaminatorDTO dto)
+        {
+            Examinator examinator = Examinator.Create(dto.FirstName, dto.LastName);
+            context.Examinators.Add(examinator);
+            context.SaveChanges();
+            dto = new ExaminatorDTO(examinator);
+            return dto;
+        }
+
 
         public Candidate FindCandidateByCNP(string cnp)
         {
@@ -90,9 +100,17 @@ namespace DataBaseLibrary
             return true;
         }
 
-        public void AddExam(DateTime examdate, int score, Candidate candidate)
+        public void AddExam(DateTime examdate, int score, Candidate candidate, Examinator examinator)
         {
-            Exam e = Exam.Create(examdate, score, candidate);
+            Exam e = Exam.Create(examdate, score, candidate, examinator);
+            context.Exams.Add(e);
+            context.SaveChanges();
+        }
+        public void AddFutureExam(DateTime examdate, string candidateUserName, string examinatorName)
+        {
+            var c = context.Candidates.FirstOrDefault(c => c.UserAccount.UserName == candidateUserName);
+            var ex = context.Examinators.FirstOrDefault(ex => ex.FirstName + " " + ex.LastName == examinatorName);
+            Exam e = Exam.CreateFutureExam(examdate, c, ex);
             context.Exams.Add(e);
             context.SaveChanges();
         }

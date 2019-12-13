@@ -14,6 +14,7 @@ namespace DataBaseLibrary
         public Account UserAccount { get; private set; }
 
         public List<Exam> PastExams { get; private set; }
+        public Candidate() { PastExams = new List<Exam>(); }
         public static Candidate Create(string firstname, string lastname, DateTime birthdate, string cnp,
             string accountpassword, int usernamenumber)
         {
@@ -33,7 +34,7 @@ namespace DataBaseLibrary
         public void AttachExam(Exam e)
         {
             // delete later : whern admin api is made
-            PastExams = new List<Exam>();
+            //PastExams = new List<Exam>();
 
             PastExams.Add(e);
         }

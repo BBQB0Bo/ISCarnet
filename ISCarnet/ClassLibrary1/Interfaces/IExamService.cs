@@ -11,7 +11,7 @@ namespace DataBaseLibrary
         public Task<List<Exam>> GetExams();
         public Task<List<Exam>> GetExamsByUsername(GetExamsCandidate request, CancellationToken cancellationToken);
 
-        public Task<Exam> AddExam(DateTime examDate, int scoreExam, String cnp, CancellationToken cancellationToken);
+        public Task<Exam> AddExam(DateTime examDate, int scoreExam, String cnp, String examinatorName, CancellationToken cancellationToken);
 
         public Task<bool> DeleteExam(DeleteExam request, CancellationToken cancellationToken);
         public Task<Exam> ExamUpdate(UpdateExam request, CancellationToken cancellationToken);

@@ -1,4 +1,5 @@
 ﻿using DataBaseLibrary.DTOs;
+using DataBaseLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -19,7 +20,7 @@ namespace DataBaseLibrary
 
         public bool UpdateCandidate(Candidate candidate);
 
-        void AddExam(DateTime examdate, int score, Candidate candidate);
+        void AddExam(DateTime examdate, int score, Candidate candidate, Examinator examinator);
 
         public Account GetAccountByUserName(string username);
         public Account GetAccountByCredentials(string username, string password);

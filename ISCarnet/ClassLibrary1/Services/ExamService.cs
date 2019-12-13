@@ -27,15 +27,16 @@ namespace DataBaseLibrary
             return await context.Exams.Where(p => p.Candidate.UserAccount.UserName == request.userNameCandidate).ToListAsync();
         }
 
-        public async Task<Exam> AddExam(DateTime examDate, int scoreExam, String cnp, CancellationToken cancellationToken)
+        public async Task<Exam> AddExam(DateTime examDate, int scoreExam, String cnp, String examinatorName, CancellationToken cancellationToken)
         {
             var candidate = context.Candidates.SingleOrDefault(p => p.CNP == cnp);
+            var examinator = context.Examinators.FirstOrDefault(e => e.FirstName + e.LastName == examinatorName);
             if (candidate == null)
             {
                 return null;
             }
 
-            var examen = Exam.Create(examDate, scoreExam, candidate);
+            var examen = Exam.Create(examDate, scoreExam, candidate, examinator);
             context.Exams.Add(examen);
 
             await context.SaveChangesAsync(cancellationToken);
@@ -65,7 +66,7 @@ namespace DataBaseLibrary
             {
                 throw new Exception("Record doesn't exists");
             }
-            exam.Update(request.ExamDate, request.Score, request.Candidate);
+            exam.Update(request.Score);
             await context.SaveChangesAsync(cancellationToken);
             return exam;
 

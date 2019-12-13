@@ -3,7 +3,6 @@ using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 using DataBaseLibrary.DTOs.PastExam;
-using System;
 
 namespace PastExamsAPI.ExamHandlers
 {
