@@ -15,7 +15,7 @@ namespace PastExamsAPI.ExamHandlers
         }
         public async Task<ExamDTO> Handle(CreateExam request, CancellationToken cancellationToken)
         {
-                Exam ex = await service.AddExam(request.ExamDate, request.Score, request.CNP, cancellationToken);
+                Exam ex = await service.AddExam(request, cancellationToken);
                  if (ex == null)
                 return null;
 

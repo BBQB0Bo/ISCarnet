@@ -14,7 +14,7 @@ namespace DataBaseLibrary.DTOs.PastExam
             this.userNameCandidate = userName;
         }
 
-        public String userNameCandidate { get; set; }
+        public String userNameCandidate { get; private set; }
 
 
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PastExamsAPI.ExamHandlers
 {
-    public class GetAllExamsHandler : IRequestHandler<GetAllExams, List<Exam>>
+    public class GetAllExamsHandler : IRequestHandler<GetAllExams, List<ExamDTO>>
     {
 
         private readonly IExamService service;
@@ -17,9 +17,16 @@ namespace PastExamsAPI.ExamHandlers
             this.service = service;
         }
 
-        public async Task<List<Exam>> Handle(GetAllExams request, CancellationToken cancellationToken)
+        public async Task<List<ExamDTO>> Handle(GetAllExams request, CancellationToken cancellationToken)
         {
-            return await service.GetExams();
+            List<ExamDTO> output = new List<ExamDTO> { };
+            var exams =  await service.GetExams();
+            foreach (Exam e in exams) {
+                ExamDTO examDTO = new ExamDTO(e);
+                output.Add(examDTO);
+
+            }
+            return output;
             
           
         }

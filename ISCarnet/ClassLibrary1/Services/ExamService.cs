@@ -27,16 +27,16 @@ namespace DataBaseLibrary
             return await context.Exams.Where(p => p.Candidate.UserAccount.UserName == request.userNameCandidate).ToListAsync();
         }
 
-        public async Task<Exam> AddExam(DateTime examDate, int scoreExam, String cnp, String examinatorName, CancellationToken cancellationToken)
+        public async Task<Exam> AddExam(CreateExam request, CancellationToken cancellationToken)
         {
-            var candidate = context.Candidates.SingleOrDefault(p => p.CNP == cnp);
-            var examinator = context.Examinators.FirstOrDefault(e => e.FirstName + e.LastName == examinatorName);
+            var candidate = context.Candidates.SingleOrDefault(p => p.CNP == request.candidate.CNP);
+            var examinator = context.Examinators.FirstOrDefault(e => e == request.Examinator);
             if (candidate == null)
             {
                 return null;
             }
 
-            var examen = Exam.Create(examDate, scoreExam, candidate, examinator);
+            var examen = Exam.Create(request.ExamDate, request.Score, candidate, examinator);
             context.Exams.Add(examen);
 
             await context.SaveChangesAsync(cancellationToken);
@@ -46,13 +46,16 @@ namespace DataBaseLibrary
 
         public async Task<bool> DeleteExam(DeleteExam request, CancellationToken cancellationToken)
         {
-            var exam = context.Exams.SingleOrDefault(p => p.ExamDate == request.ExamDate && p.Candidate.CNP == request.CNP);
+            var exam = context.Exams.SingleOrDefault(p => p.ExamDate == request.ExamDate && p.Candidate == request.Candidate);
             if (exam == null)
             {
 
                 throw new Exception("Record doesn't exists");
             }
+            exam.Examinator.RemoveExam(exam);
+            exam.Candidate.RemoveExam(exam);
             context.Exams.Remove(exam);
+           
             await context.SaveChangesAsync(cancellationToken);
             return true;
 
@@ -66,7 +69,7 @@ namespace DataBaseLibrary
             {
                 throw new Exception("Record doesn't exists");
             }
-            exam.Update(request.Score);
+            exam.UpdateExam(request.ExamDate, request.Candidate, request.Examinator);
             await context.SaveChangesAsync(cancellationToken);
             return exam;
 

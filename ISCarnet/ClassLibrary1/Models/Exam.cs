@@ -68,5 +68,16 @@ namespace DataBaseLibrary
         {
             this.Mistakes.Add(m);
         }
+
+        public void UpdateExam(DateTime examdate, Candidate candidate, Examinator examinator)
+        {
+            if (examdate != null)
+                this.ExamDate = examdate;
+            if (candidate != null)
+                this.Candidate = candidate;
+            if (examinator != null)
+                this.Examinator = examinator;
+    
+        }
     }
 }

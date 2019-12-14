@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using DataBaseLibrary.Models;
+using MediatR;
 using System;
 
 namespace DataBaseLibrary.DTOs.PastExam
@@ -9,6 +10,7 @@ namespace DataBaseLibrary.DTOs.PastExam
         public DateTime ExamDate { get;  set; }
         public int Score { get;  set; }
         public Candidate Candidate { get; set; }
+        public Examinator Examinator { get;  set; }
 
     }
 }

@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exam"
+                    "$ref": "#/components/schemas/ExamDTO"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exam"
+                    "$ref": "#/components/schemas/ExamDTO"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exam"
+                    "$ref": "#/components/schemas/ExamDTO"
                   }
                 }
               }
@@ -286,6 +286,25 @@
         },
         "additionalProperties": false
       },
+      "Mistake": {
+        "type": "object",
+        "properties": {
+          "mistakeType": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "exam": {
+            "$ref": "#/components/schemas/Exam"
+          }
+        },
+        "additionalProperties": false
+      },
       "Exam": {
         "type": "object",
         "properties": {
@@ -311,27 +330,51 @@
           },
           "candidate": {
             "$ref": "#/components/schemas/Candidate"
+          },
+          "examinator": {
+            "$ref": "#/components/schemas/Examinator"
+          },
+          "mistakes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Mistake"
+            },
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false
       },
-      "UpdateExam": {
+      "Examinator": {
         "type": "object",
         "properties": {
-          "examId": {
+          "examinatorId": {
             "type": "string",
-            "format": "uuid"
+            "format": "uuid",
+            "readOnly": true
           },
-          "examDate": {
+          "firstName": {
             "type": "string",
-            "format": "date-time"
+            "nullable": true,
+            "readOnly": true
           },
-          "score": {
-            "type": "integer",
-            "format": "int32"
+          "lastName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
           },
-          "candidate": {
-            "$ref": "#/components/schemas/Candidate"
+          "passingPercentage": {
+            "type": "number",
+            "format": "float",
+            "readOnly": true
+          },
+          "exams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Exam"
+            },
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false
@@ -353,6 +396,41 @@
             "type": "string",
             "nullable": true,
             "readOnly": true
+          },
+          "examinator": {
+            "$ref": "#/components/schemas/Examinator"
+          },
+          "mistakes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Mistake"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateExam": {
+        "type": "object",
+        "properties": {
+          "examId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "examDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          },
+          "examinator": {
+            "$ref": "#/components/schemas/Examinator"
           }
         },
         "additionalProperties": false
@@ -362,15 +440,19 @@
         "properties": {
           "examDate": {
             "type": "string",
-            "format": "date-time"
+            "format": "date-time",
+            "readOnly": true
           },
           "score": {
             "type": "integer",
-            "format": "int32"
+            "format": "int32",
+            "readOnly": true
           },
-          "cnp": {
-            "type": "string",
-            "nullable": true
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          },
+          "examinator": {
+            "$ref": "#/components/schemas/Examinator"
           }
         },
         "additionalProperties": false
@@ -382,9 +464,8 @@
             "type": "string",
             "format": "date-time"
           },
-          "cnp": {
-            "type": "string",
-            "nullable": true
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
           }
         },
         "additionalProperties": false

@@ -4,7 +4,6 @@ using DataBaseLibrary;
 using DataBaseLibrary.DTOs;
 using System.Collections.Generic;
 using System;
-using Newtonsoft.Json;
 
 namespace CandidateRegisterController.Controllers
 {
