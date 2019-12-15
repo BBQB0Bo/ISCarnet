@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\LoginAPI.csproj": {}
+    "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\LoginAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+    "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
         "projectName": "DataBaseLibrary",
-        "projectPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
-        "packagesPath": "C:\\Users\\Bobire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+        "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bobire\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -73,6 +78,14 @@
             {
               "name": "Microsoft.AspNetCore.App.Ref",
               "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -87,18 +100,23 @@
         }
       }
     },
-    "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\LoginAPI.csproj": {
+    "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\LoginAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\LoginAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\LoginAPI.csproj",
         "projectName": "LoginAPI",
-        "projectPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\LoginAPI.csproj",
-        "packagesPath": "C:\\Users\\Bobire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\obj\\",
+        "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\LoginAPI.csproj",
+        "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\LoginAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bobire\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -110,8 +128,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-                "projectPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+              "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+                "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
               }
             }
           }

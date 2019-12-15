@@ -29,7 +29,7 @@ namespace CandidateRegisterApi
         {
             services.AddControllers();
             services.AddDbContext<CandidateContext>(options =>
-                options.UseSqlServer(@"Server=DESKTOP-GLMVMO1\SQLEXPRESS;Database=ISCarnet;Trusted_Connection=True"));
+                options.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnet;Trusted_Connection=True"));
             services.AddScoped<ICandidateService, CandidateService>();
             services.AddScoped<IExamService, ExamService>();
         }

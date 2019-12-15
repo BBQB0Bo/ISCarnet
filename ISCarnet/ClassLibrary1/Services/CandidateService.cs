@@ -17,6 +17,11 @@ namespace DataBaseLibrary
             this.context = context;
         }
 
+        public CandidateService()
+        {
+            this.context = new CandidateContext();
+        }
+
         // private CandidateContext context;
 
         public AccountDTO RegisterCandidate(RegisterCandidateDTO dto)
@@ -125,6 +130,23 @@ namespace DataBaseLibrary
         {
             var account = context.Accounts.FirstOrDefault(a => a.UserName == username && a.Password == password);
             return account;
+        }
+
+        public List<ExaminatorDTO> GetExaminatorDTOs()
+        {
+            List<ExaminatorDTO> dtos = new List<ExaminatorDTO>();
+            foreach (Examinator examinator in context.Examinators.ToList())
+            {
+                dtos.Add(new ExaminatorDTO(examinator));
+            }
+            return dtos;
+        }
+
+        public ExaminatorDTO GetExaminatorByName(string fullName)
+        {
+            Examinator ex = context.Examinators.FirstOrDefault(e => e.FirstName + e.LastName == fullName);
+            ExaminatorDTO dto = new ExaminatorDTO(ex);
+            return dto;
         }
     }
 }

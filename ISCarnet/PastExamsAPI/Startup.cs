@@ -26,7 +26,7 @@ namespace PastExamsAPI
         {
             //services.AddTransient<CandidateContext, CandidateContext>();
             services.AddDbContext<CandidateContext>(options =>
-       options.UseSqlServer(@"Server=DESKTOP-GLMVMO1\SQLEXPRESS;Database=ISCarnet;Trusted_Connection=True"));
+       options.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnet;Trusted_Connection=True"));
 
             services.AddControllers();
             services.AddMediatR(typeof(Startup).Assembly);
@@ -73,7 +73,7 @@ namespace PastExamsAPI
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
- 
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

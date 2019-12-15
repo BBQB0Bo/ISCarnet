@@ -24,5 +24,12 @@ namespace DataBaseLibrary
 
         public Account GetAccountByUserName(string username);
         public Account GetAccountByCredentials(string username, string password);
+        public ExaminatorDTO RegisterExaminator(ExaminatorDTO dto);
+        public List<ExaminatorDTO> GetExaminatorDTOs();
+
+        public ExaminatorDTO GetExaminatorByName(string fullName);
+
+
+
     }
 }

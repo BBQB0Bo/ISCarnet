@@ -21,7 +21,11 @@
         <p>
             <label for="examinator">Examinator:</label>
             <InputSelect id="username" asp-items="Model.examinators" @bind-Value="dto.Examinator">
-                <option value="">Choose examinator</option>
+                @foreach (ExaminatorDTO ex in examinas)
+                {
+                    <option value="cat.Id">@(ex.LastName+" "+ex.FirstName)</option>
+                }
+
             </InputSelect>
         </p>
         <button type="submit">ADD EXAM</button>
@@ -30,29 +34,31 @@
     </div>
 </EditForm>
 
-    @code {
-        
-        
-       
-        private ExamDTO dto = new ExamDTO();
-        private ExamDTO[] examinas;
-        
+@code {
 
-        // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
-        HttpClient Http = new HttpClient();
-        private string apiUrl = "https://localhost:44316/api/pastExam/";
-        protected override async Task OnInitializedAsync()
-        {
-          examinas = await Http.GetJsonAsync<ExamDTO[]>(apiUrl);
-        }
 
-        // FUNCTIA DE SUBMIT
-        private async Task SubmitExam()
-        {
 
-            
+    private ExamDTO dto = new ExamDTO();
+    private List<ExaminatorDTO> examinas = new List<ExaminatorDTO>();
 
-        }
+
+    // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
+    HttpClient Http = new HttpClient();
+    private string apiUrl = "https://localhost:44369/api/Examinators";
+    protected override async Task OnInitializedAsync()
+    {
+        dto.ExamDate = DateTime.Today;
+        examinas = await Http.GetJsonAsync<List<ExaminatorDTO>>
+        (apiUrl);
+    }
+
+    // FUNCTIA DE SUBMIT
+    private async Task SubmitExam()
+    {
+
+
 
     }
+
+}
 

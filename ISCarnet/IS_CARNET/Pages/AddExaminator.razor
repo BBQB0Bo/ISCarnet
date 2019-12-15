@@ -18,28 +18,34 @@
             <label for="LastName">Last name:</label>
             <InputText id="LastName" @bind-Value="dto.LastName"></InputText>
         </p>
-        <p>
-            <label for="PassingPercentage">Passing Percentage:</label>
-            <InputNumber id="PassingPercentage" readonly @bind-Value="dto.PassingPercentage"></InputNumber>
-        </p>
 
         <button type="submit">ADD EXAMINATOR</button>
 
     </EditForm>
 </div>
-
+<div>
+    @if (name != "")
+    {<p>Examinatorul @name a fost adaugat cu succes!</p>
+}
+</div>
 
 @code {
 
 
     private ExaminatorDTO dto = new ExaminatorDTO();
-
+    string name = String.Empty;
 
 
     // FUNCTIA DE SUBMIT
     private async Task SubmitExaminator()
     {
-
+        name = String.Empty;
+        HttpClient Http = new HttpClient();
+        HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
+        HttpResponseMessage h = await Http.PostAsync("https://localhost:44369/api/Examinators", content);
+        var responseJSON = h.Content.ReadAsStringAsync().Result;
+        ExaminatorDTO ex = JsonConvert.DeserializeObject<ExaminatorDTO>(responseJSON);
+        name = ex.FirstName + " " + ex.LastName;
 
 
     }

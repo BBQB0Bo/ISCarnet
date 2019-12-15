@@ -37,25 +37,29 @@
         </p>
         <button type="submit">Register</button>
     </EditForm>
-    </div>
-    <div>
-        @if (username != "")
-        {<p>Register efectuat cu succes! Username-ul dumneavoastra este:@username</p>
+</div>
+<div>
+    @if (username != "")
+    {<p>Register efectuat cu succes! Username-ul dumneavoastra este:@username</p>
+}
+</div>
+
+@code {
+    private RegisterCandidateDTO dto = new RegisterCandidateDTO();
+    string username = String.Empty;
+    protected override async Task OnInitializedAsync()
+    {
+        dto.BirthDate = DateTime.Today;
     }
-    </div>
+    private async Task SubmitCandidateInformation()
+    {
 
-    @code {
-        private RegisterCandidateDTO dto = new RegisterCandidateDTO();
-        string username = String.Empty;
-        private async Task SubmitCandidateInformation()
-        {
+        HttpClient Http = new HttpClient();
+        HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
+        HttpResponseMessage h = await Http.PostAsync("https://localhost:44379/api/CandidateRegister", content);
+        var responseJSON = h.Content.ReadAsStringAsync().Result;
+        AccountDTO acc = JsonConvert.DeserializeObject<AccountDTO>(responseJSON);
+        username = acc.UserName;
 
-            HttpClient Http = new HttpClient();
-            HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
-            HttpResponseMessage h = await Http.PostAsync("https://localhost:44379/api/CandidateRegister", content);
-            var responseJSON = h.Content.ReadAsStringAsync().Result;
-            AccountDTO acc = JsonConvert.DeserializeObject<AccountDTO>(responseJSON);
-            username = acc.UserName;
-
-        }
     }
+}
