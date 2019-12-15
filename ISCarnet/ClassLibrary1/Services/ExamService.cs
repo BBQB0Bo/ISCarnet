@@ -29,14 +29,14 @@ namespace DataBaseLibrary
 
         public async Task<Exam> AddExam(CreateExam request, CancellationToken cancellationToken)
         {
-            var candidate = context.Candidates.SingleOrDefault(p => p.CNP == request.candidate.CNP);
-            var examinator = context.Examinators.FirstOrDefault(e => e == request.Examinator);
+            var candidate = context.Candidates.SingleOrDefault(p => p.UserAccount.UserName == request.usernameCandidate);
+            var examinator = context.Examinators.FirstOrDefault(e => e.FirstName + e.LastName == request.ExaminatorName);
             if (candidate == null)
             {
                 return null;
             }
 
-            var examen = Exam.Create(request.ExamDate, request.Score, candidate, examinator);
+            var examen = Exam.CreateFutureExam(request.ExamDate, candidate, examinator);
             context.Exams.Add(examen);
 
             await context.SaveChangesAsync(cancellationToken);

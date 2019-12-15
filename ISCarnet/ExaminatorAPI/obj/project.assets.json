@@ -3184,10 +3184,7 @@
         },
         "runtime": {
           "bin/placeholder/DataBaseLibrary.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -9743,27 +9740,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Claudiu\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\bianc\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj",
+      "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj",
       "projectName": "ExaminatorAPI",
-      "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj",
-      "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ExaminatorAPI\\obj\\",
+      "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj",
+      "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ExaminatorAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9775,8 +9769,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-              "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+            "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+              "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
             }
           }
         }

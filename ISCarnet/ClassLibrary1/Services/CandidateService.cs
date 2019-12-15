@@ -111,6 +111,7 @@ namespace DataBaseLibrary
             context.Exams.Add(e);
             context.SaveChanges();
         }
+
         public void AddFutureExam(DateTime examdate, string candidateUserName, string examinatorName)
         {
             var c = context.Candidates.FirstOrDefault(c => c.UserAccount.UserName == candidateUserName);
