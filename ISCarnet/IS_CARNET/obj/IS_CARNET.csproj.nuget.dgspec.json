@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj": {}
+    "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+    "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
         "projectName": "DataBaseLibrary",
-        "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
-        "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+        "packagesPath": "C:\\Users\\Bobire\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bobire\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "AspNetCore.Mvc.SelectList": {
+              "target": "Package",
+              "version": "[1.1.7, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -75,6 +76,9 @@
             }
           ],
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -83,20 +87,17 @@
         }
       }
     },
-    "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj": {
+    "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
+        "projectUniqueName": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
         "projectName": "IS_CARNET",
-        "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
-        "packagesPath": "C:\\Users\\bianc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\IS_CARNET\\obj\\",
+        "projectPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\IS_CARNET\\IS_CARNET.csproj",
+        "packagesPath": "C:\\Users\\Bobire\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\IS_CARNET\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bobire\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -109,8 +110,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-                "projectPath": "C:\\Users\\bianc\\OneDrive\\Desktop\\TW\\GIt-me\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+              "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+                "projectPath": "C:\\Users\\Bobire\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
               }
             }
           }
@@ -124,6 +125,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "AspNetCore.Mvc.SelectList": {
+              "target": "Package",
+              "version": "[1.1.7, )"
+            },
             "Json.Net": {
               "target": "Package",
               "version": "[1.0.18, )"

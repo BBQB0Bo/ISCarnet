@@ -7,11 +7,16 @@ namespace DataBaseLibrary.DTOs.PastExam
 {
     public class ExamDTO : IRequest<ExamDTO>
     {
-        public DateTime ExamDate { get; private set; }
-        public int Score { get; private set; }
-        public string Result { get; private set; }
-        public Examinator Examinator { get; private set; }
-        public List<Mistake> Mistakes { get; private set; }
+	public string Driver { get; set; }
+        public DateTime ExamDate { get; set; }
+        public int Score { get; set; }
+        public string Result { get; set; }
+        public Examinator Examinator { get; set; }
+        public List<Mistake> Mistakes { get; set; }
+	
+	  public ExamDTO()
+        {
+        }
 
         public ExamDTO(Exam e)
         {

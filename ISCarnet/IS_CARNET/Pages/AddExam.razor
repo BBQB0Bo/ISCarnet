@@ -1,0 +1,58 @@
+﻿@page "/addexam"
+
+@using IS_CARNET.Data
+
+
+<h1>ADD Exam</h1>
+
+<EditForm Model="@dto" OnValidSubmit="@SubmitExam">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="form">
+
+        <p>
+            <label for="username">Username:</label>
+            <InputText id="username" @bind-Value="dto.Driver"></InputText>
+        </p>
+        <p>
+            <label for="date">Date:</label>
+            <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
+        </p>
+        <p>
+            <label for="examinator">Examinator:</label>
+            <InputSelect id="username" asp-items="Model.examinators" @bind-Value="dto.Examinator">
+                <option value="">Choose examinator</option>
+            </InputSelect>
+        </p>
+        <button type="submit">ADD EXAM</button>
+
+
+    </div>
+</EditForm>
+
+    @code {
+        
+        
+       
+        private ExamDTO dto = new ExamDTO();
+        private ExamDTO[] examinas;
+        
+
+        // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
+        HttpClient Http = new HttpClient();
+        private string apiUrl = "https://localhost:44316/api/pastExam/";
+        protected override async Task OnInitializedAsync()
+        {
+          examinas = await Http.GetJsonAsync<ExamDTO[]>(apiUrl);
+        }
+
+        // FUNCTIA DE SUBMIT
+        private async Task SubmitExam()
+        {
+
+            
+
+        }
+
+    }
+

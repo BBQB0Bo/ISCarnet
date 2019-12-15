@@ -382,20 +382,21 @@
       "ExamDTO": {
         "type": "object",
         "properties": {
+          "driver": {
+            "type": "string",
+            "nullable": true
+          },
           "examDate": {
             "type": "string",
-            "format": "date-time",
-            "readOnly": true
+            "format": "date-time"
           },
           "score": {
             "type": "integer",
-            "format": "int32",
-            "readOnly": true
+            "format": "int32"
           },
           "result": {
             "type": "string",
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           },
           "examinator": {
             "$ref": "#/components/schemas/Examinator"
@@ -405,8 +406,7 @@
             "items": {
               "$ref": "#/components/schemas/Mistake"
             },
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           }
         },
         "additionalProperties": false

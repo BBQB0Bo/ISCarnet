@@ -7,14 +7,26 @@
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <ul class="nav flex-column">
+        @*https://aalmiray.github.io/ikonli/cheat-sheet-openiconic.html*@
+
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </li>
-        <li class="nav-item px-2">
+        <li class="nav-item px-3">
             <NavLink class="nav-link" href="/fetchpastexams" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Past Exams
+                <span class="oi oi-aperture" aria-hidden="true"></span> Past Exams
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/addexam" Match="NavLinkMatch.All">
+                <span class="oi oi-task" aria-hidden="true"></span> Add Exam
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/addexaminator" Match="NavLinkMatch.All">
+                <span class="oi oi-warning" aria-hidden="true"></span> Add Examinator
             </NavLink>
         </li>
     </ul>
