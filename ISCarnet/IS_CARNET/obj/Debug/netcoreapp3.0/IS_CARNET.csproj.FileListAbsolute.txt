@@ -1164,3 +1164,5 @@ C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcorea
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\System.Linq.Dynamic.Core.dll
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Examinators.razor.g.cs
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\Razor\Pages\Examinators.razor.g.cs
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\EditExam.razor.g.cs
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\Razor\Pages\EditExam.razor.g.cs
