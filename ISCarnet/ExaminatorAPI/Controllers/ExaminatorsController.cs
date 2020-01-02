@@ -24,14 +24,14 @@ namespace ExaminatorAPI.Controllers
 
         // GET: api/Examinators
         [HttpGet]
-        public async Task<ActionResult<List<ExaminatorDTO>>> GetExaminators()
+        public ActionResult<List<ExaminatorDTO>> GetExaminators()
         {
-            return service.GetExaminatorDTOs();
+            return Ok(service.GetExaminatorDTOs());
         }
 
         // GET: api/Examinators/5
         [HttpGet("{fullName}")]
-        public async Task<ActionResult<ExaminatorDTO>> GetExaminator(string fullName)
+        public ActionResult<ExaminatorDTO> GetExaminator(string fullName)
         {
             var examinator = service.GetExaminatorByName(fullName);
 
@@ -40,7 +40,7 @@ namespace ExaminatorAPI.Controllers
                 return NotFound();
             }
 
-            return examinator;
+            return Ok(examinator);
         }
 
         // PUT: api/Examinators/5

@@ -23,7 +23,7 @@ namespace CandidateRegisterController.Controllers
 
         // POST: api/CandidateRegistry
         [HttpPost]
-        public async Task<ActionResult<Account>> PostCandidateRegister([FromBody] RegisterCandidateDTO dto)
+        public ActionResult<Account> PostCandidateRegister([FromBody] RegisterCandidateDTO dto)
         {
 
             AccountDTO account = service.RegisterCandidate(dto);

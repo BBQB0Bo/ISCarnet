@@ -286,26 +286,36 @@
         },
         "additionalProperties": false
       },
-      "Mistake": {
+      "Examinator": {
         "type": "object",
         "properties": {
-          "mistakeId": {
+          "examinatorId": {
             "type": "string",
             "format": "uuid",
             "readOnly": true
           },
-          "mistakeType": {
+          "firstName": {
             "type": "string",
             "nullable": true,
             "readOnly": true
           },
-          "score": {
-            "type": "integer",
-            "format": "int32",
+          "lastName": {
+            "type": "string",
+            "nullable": true,
             "readOnly": true
           },
-          "exam": {
-            "$ref": "#/components/schemas/Exam"
+          "passingPercentage": {
+            "type": "number",
+            "format": "float",
+            "readOnly": true
+          },
+          "exams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Exam"
+            },
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false
@@ -350,36 +360,26 @@
         },
         "additionalProperties": false
       },
-      "Examinator": {
+      "Mistake": {
         "type": "object",
         "properties": {
-          "examinatorId": {
+          "mistakeId": {
             "type": "string",
             "format": "uuid",
             "readOnly": true
           },
-          "firstName": {
+          "mistakeType": {
             "type": "string",
             "nullable": true,
             "readOnly": true
           },
-          "lastName": {
-            "type": "string",
-            "nullable": true,
+          "score": {
+            "type": "integer",
+            "format": "int32",
             "readOnly": true
           },
-          "passingPercentage": {
-            "type": "number",
-            "format": "float",
-            "readOnly": true
-          },
-          "exams": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Exam"
-            },
-            "nullable": true,
-            "readOnly": true
+          "exam": {
+            "$ref": "#/components/schemas/Exam"
           }
         },
         "additionalProperties": false
@@ -404,7 +404,8 @@
             "nullable": true
           },
           "examinator": {
-            "$ref": "#/components/schemas/Examinator"
+            "type": "string",
+            "nullable": true
           },
           "mistakes": {
             "type": "array",
@@ -445,19 +446,19 @@
         "properties": {
           "examDate": {
             "type": "string",
-            "format": "date-time",
-            "readOnly": true
+            "format": "date-time"
           },
           "score": {
             "type": "integer",
-            "format": "int32",
-            "readOnly": true
+            "format": "int32"
           },
-          "candidate": {
-            "$ref": "#/components/schemas/Candidate"
+          "usernameCandidate": {
+            "type": "string",
+            "nullable": true
           },
-          "examinator": {
-            "$ref": "#/components/schemas/Examinator"
+          "examinatorName": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

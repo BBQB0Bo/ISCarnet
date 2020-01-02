@@ -1,0 +1,55 @@
+﻿@page "/examinators"
+
+@using IS_CARNET.Data
+
+<div class="form">
+    <h1>Examinators</h1>
+
+
+    @if (State.CurrentUser != null)
+    {
+        @if (examinators != null && examinators.Length >= 1)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var examinator in examinators)
+                    {
+                        <tr>
+                            <td>@examinator.LastName</td>
+                            <td>@examinator.FirstName</td>
+                            <td>@examinator.PassingPercentage</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        { <p>Nu sunt examinatori inregistrati</p>}
+    }
+    else
+    {
+        <p>Va rugam sa va logati pentru a accesa lista de examinatori</p>
+    }
+</div>
+
+
+@code {
+    private ExaminatorDTO[] examinators;
+
+    HttpClient Http = new HttpClient();
+    private string apiUrl = "https://localhost:44369/api/Examinators";
+    protected override async Task OnInitializedAsync()
+    {
+        examinators = await Http.GetJsonAsync<ExaminatorDTO[]>(apiUrl);
+    }
+
+
+}
+

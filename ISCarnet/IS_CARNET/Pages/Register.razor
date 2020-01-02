@@ -1,5 +1,5 @@
 ﻿@page "/register"
-@inject ProtectedSessionStorage session
+@inject NavigationManager NavigationManager
 <div class="form">
     <h1>Register</h1>
 
@@ -38,18 +38,21 @@
         <button type="submit">Register</button>
     </EditForm>
 </div>
-<div>
+
+<div class="form">
     @if (username != "")
     {<p>Register efectuat cu succes! Username-ul dumneavoastra este:@username</p>
+
 }
 </div>
+
 
 @code {
     private RegisterCandidateDTO dto = new RegisterCandidateDTO();
     string username = String.Empty;
     protected override async Task OnInitializedAsync()
     {
-        dto.BirthDate = DateTime.Today;
+        await Task.Run(() => dto.BirthDate = DateTime.Today);
     }
     private async Task SubmitCandidateInformation()
     {
@@ -60,6 +63,8 @@
         var responseJSON = h.Content.ReadAsStringAsync().Result;
         AccountDTO acc = JsonConvert.DeserializeObject<AccountDTO>(responseJSON);
         username = acc.UserName;
+        if (username != "")
+            NavigationManager.NavigateTo("Login");
 
     }
 }

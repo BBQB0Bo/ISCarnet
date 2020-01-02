@@ -1,0 +1,1 @@
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\Client\Server\obj\Debug\netcoreapp3.1\Client.Server.csprojAssemblyReference.cache

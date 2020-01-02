@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IS_CARNET", "IS_CARNET\IS_C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginAPI", "LoginAPI\LoginAPI.csproj", "{9449A84B-AD33-4E23-A6E7-16C4520DF541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExaminatorAPI", "ExaminatorAPI\ExaminatorAPI.csproj", "{98D7A338-0A4D-4D0F-8790-F82CFE9E485F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExaminatorAPI", "ExaminatorAPI\ExaminatorAPI.csproj", "{98D7A338-0A4D-4D0F-8790-F82CFE9E485F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
