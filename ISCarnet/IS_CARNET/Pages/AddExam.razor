@@ -3,11 +3,10 @@
 @using IS_CARNET.Data
 
 <EditForm Model="@dto" OnValidSubmit="@SubmitExam">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
     <div class="form">
         <h1>ADD Exam</h1>
-
+        <DataAnnotationsValidator />
+        <ValidationSummary />
         <p>
             <label for="username">Username:</label>
             <InputText id="username" @bind-Value="dto.usernameCandidate"></InputText>
@@ -31,14 +30,17 @@
 
     </div>
 </EditForm>
-
+@if (!string.IsNullOrEmpty(message))
+{
+    <p>@message</p>
+}
 @code {
 
 
 
     private CreateExam dto = new CreateExam();
     private List<ExaminatorDTO> examinas = new List<ExaminatorDTO>();
-
+    string message = string.Empty;
 
     // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
     HttpClient Http = new HttpClient();
@@ -58,6 +60,14 @@
         HttpResponseMessage h = await Http.PostAsync("https://localhost:44316/api/pastExam", content);
         var responseJSON = h.Content.ReadAsStringAsync().Result;
         Exam exam = JsonConvert.DeserializeObject<Exam>(responseJSON);
+        if (h.IsSuccessStatusCode)
+        {
+            message = "Examenul a fost adaugat cu succes";
+        }
+        else
+        {
+            message = "A aparut o eroare la adaugarea examenului";
+        }
 
     }
 

@@ -442,6 +442,10 @@
         "additionalProperties": false
       },
       "CreateExam": {
+        "required": [
+          "examinatorName",
+          "usernameCandidate"
+        ],
         "type": "object",
         "properties": {
           "examDate": {
