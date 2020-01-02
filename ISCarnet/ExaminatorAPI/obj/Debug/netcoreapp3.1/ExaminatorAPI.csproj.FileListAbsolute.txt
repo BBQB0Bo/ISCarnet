@@ -179,8 +179,6 @@ C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\bin\Debug\netc
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\bin\Debug\netcoreapp3.1\ExaminatorAPI.runtimeconfig.dev.json
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\bin\Debug\netcoreapp3.1\ExaminatorAPI.dll
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\bin\Debug\netcoreapp3.1\ExaminatorAPI.pdb
-C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\obj\Debug\netcoreapp3.1\ExaminatorAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\obj\Debug\netcoreapp3.1\ExaminatorAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\obj\Debug\netcoreapp3.1\ExaminatorAPI.dll
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\obj\Debug\netcoreapp3.1\ExaminatorAPI.pdb
 C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ExaminatorAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -368,3 +366,7 @@ C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ExaminatorAPI\obj\De
 C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ExaminatorAPI\obj\Debug\netcoreapp3.1\ExaminatorAPI.csproj.CopyComplete
 C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ExaminatorAPI\obj\Debug\netcoreapp3.1\ExaminatorAPI.dll
 C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\ExaminatorAPI\obj\Debug\netcoreapp3.1\ExaminatorAPI.pdb
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\obj\Debug\netcoreapp3.1\ExaminatorAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ExaminatorAPI\obj\Debug\netcoreapp3.1\ExaminatorAPI.MvcApplicationPartsAssemblyInfo.cache

@@ -20,6 +20,7 @@ namespace DataBaseLibrary.DTOs.PastExam
 
         public ExamDTO(Exam e)
         {
+            this.Driver = e.Candidate.LastName + " " + e.Candidate.FirstName;
             this.ExamDate = e.ExamDate;
             this.Score = e.Score;
             this.Result = e.Result;

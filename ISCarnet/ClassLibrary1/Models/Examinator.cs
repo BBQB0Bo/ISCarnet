@@ -11,7 +11,7 @@ namespace DataBaseLibrary.Models
         public string FirstName { get; private set; }
         public string LastName { get; private set; }
         public float PassingPercentage { get; private set; }
-        public List<Exam> Exams { get; private set; }
+        public virtual List<Exam> Exams { get; private set; }
         public Examinator()
         {
             Exams = new List<Exam>();

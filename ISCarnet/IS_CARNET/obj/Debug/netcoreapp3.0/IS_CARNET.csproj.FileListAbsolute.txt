@@ -1166,3 +1166,9 @@ C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcorea
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\Razor\Pages\Examinators.razor.g.cs
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\EditExam.razor.g.cs
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\Razor\Pages\EditExam.razor.g.cs
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\Castle.Core.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll

@@ -22,10 +22,12 @@ namespace DataBaseLibrary
 
         public DbSet<Mistake> Mistakes { get; set; }
 
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnet;Trusted_Connection=True");
-        }
+                    => optionsBuilder
+    .UseLazyLoadingProxies()
+    .UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnet;Trusted_Connection=True");
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

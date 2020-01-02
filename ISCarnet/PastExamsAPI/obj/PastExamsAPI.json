@@ -420,23 +420,23 @@
       "UpdateExam": {
         "type": "object",
         "properties": {
-          "examId": {
-            "type": "string",
-            "format": "uuid"
-          },
           "examDate": {
             "type": "string",
             "format": "date-time"
           },
-          "score": {
-            "type": "integer",
-            "format": "int32"
+          "usernameCandidate": {
+            "type": "string",
+            "nullable": true
           },
-          "candidate": {
-            "$ref": "#/components/schemas/Candidate"
+          "mistakes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Mistake"
+            },
+            "nullable": true
           },
-          "examinator": {
-            "$ref": "#/components/schemas/Examinator"
+          "absent": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

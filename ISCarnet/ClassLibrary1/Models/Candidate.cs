@@ -11,9 +11,9 @@ namespace DataBaseLibrary
         public DateTime BirthDate { get; private set; }
         public string CNP { get; private set; }
 
-        public Account UserAccount { get; private set; }
+        public virtual Account UserAccount { get; private set; }
 
-        public List<Exam> PastExams { get; private set; }
+        public virtual List<Exam> PastExams { get; private set; }
         public Candidate() { PastExams = new List<Exam>(); }
         public static Candidate Create(string firstname, string lastname, DateTime birthdate, string cnp,
             string accountpassword, int usernamenumber)

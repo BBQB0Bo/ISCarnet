@@ -1,4 +1,5 @@
 ﻿using DataBaseLibrary.DTOs.PastExam;
+using DataBaseLibrary.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -30,8 +31,11 @@ namespace DataBaseLibrary
         public async Task<Exam> AddExam(CreateExam request, CancellationToken cancellationToken)
         {
             var candidate = context.Candidates.SingleOrDefault(p => p.UserAccount.UserName == request.usernameCandidate);
-            var examinator = context.Examinators.FirstOrDefault(e => e.FirstName + e.LastName == request.ExaminatorName);
-            if (candidate == null)
+            var examinator = context.Examinators.FirstOrDefault(e => e.FirstName + " " + e.LastName == request.ExaminatorName);
+            var OldExam = false;
+            OldExam = CheckExam(request);
+
+            if (candidate == null || OldExam == true)
             {
                 return null;
             }
@@ -55,7 +59,7 @@ namespace DataBaseLibrary
             exam.Examinator.RemoveExam(exam);
             exam.Candidate.RemoveExam(exam);
             context.Exams.Remove(exam);
-           
+
             await context.SaveChangesAsync(cancellationToken);
             return true;
 
@@ -64,16 +68,35 @@ namespace DataBaseLibrary
         public async Task<Exam> ExamUpdate(UpdateExam request, CancellationToken cancellationToken)
         {
 
-            var exam = context.Exams.SingleOrDefault(p => p.ExamId == request.ExamId);
+            var exam = context.Exams.SingleOrDefault(p => p.ExamDate == request.ExamDate & request.UsernameCandidate == p.Candidate.UserAccount.UserName);
             if (exam == null)
             {
-                throw new Exception("Record doesn't exists");
+                return null;
             }
-            exam.UpdateExam(request.ExamDate, request.Candidate, request.Examinator);
+            if (request.Absent == true)
+            {
+                exam.AbsentCandidate();
+                return null;
+            }
+
+            foreach (Mistake m in request.Mistakes)
+                exam.AttachMistake(m);
+
+            exam.Update();
+            exam.Examinator.updatePercentage();
+
             await context.SaveChangesAsync(cancellationToken);
             return exam;
 
         }
+        public bool CheckExam(CreateExam request)
+        {
+            var result = context.Exams.Where(e => e.ExamDate == request.ExamDate & e.Candidate.UserAccount.UserName == request.usernameCandidate);
+            if (result == null)
+                return true;
+            return false;
+        }
+
 
 
     }

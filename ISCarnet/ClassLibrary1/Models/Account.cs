@@ -8,8 +8,8 @@ namespace DataBaseLibrary
         public string UserName { get; private set; }
         public string Password { get; private set; }
         public Guid CandidateForeignKey { get; private set; }
-        public Candidate AccountOwner { get; private set; }
-        private Account() { }
+        public virtual Candidate AccountOwner { get; private set; }
+        public Account() { }
         public static Account Create(Candidate candidate, string password, int usernamenumber)
         {
             Account account = new Account

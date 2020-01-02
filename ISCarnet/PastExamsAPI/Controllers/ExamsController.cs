@@ -51,6 +51,8 @@ namespace PastExamsAPI.Controllers
         public async Task<ActionResult<ExamDTO>> PutExam([FromBody]UpdateExam request)
         {
             var exam = await mediator.Send(request);
+            if (exam == null)
+                return NotFound();
 
             return exam;
         }
@@ -64,7 +66,7 @@ namespace PastExamsAPI.Controllers
 
             var exam = await mediator.Send(request);
             if (exam == null)
-                return NotFound("Candidate not found.");
+                return BadRequest("Candidate not found or exam already registered.");
 
             return Ok(exam);
 

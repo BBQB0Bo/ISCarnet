@@ -1,16 +1,16 @@
 ﻿using DataBaseLibrary.Models;
 using MediatR;
 using System;
+using System.Collections.Generic;
 
 namespace DataBaseLibrary.DTOs.PastExam
 {
     public class UpdateExam : IRequest <ExamDTO>
     {
-        public Guid ExamId { get; set; }
         public DateTime ExamDate { get;  set; }
-        public int Score { get;  set; }
-        public Candidate Candidate { get; set; }
-        public Examinator Examinator { get;  set; }
+        public String UsernameCandidate { get; set; }
+        public List<Mistake> Mistakes { get; set; }
+        public Boolean Absent { get; set; }
 
     }
 }

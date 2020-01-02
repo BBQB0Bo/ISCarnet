@@ -10,12 +10,12 @@ namespace DataBaseLibrary
         public DateTime ExamDate { get; private set; }
         public int Score { get; private set; }
         public string Result { get; private set; }
-        public Candidate Candidate { get; private set; }
+        public virtual Candidate Candidate { get; private set; }
 
-        public Examinator Examinator { get; private set; }
+        public virtual Examinator Examinator { get; private set; }
 
-        public List<Mistake> Mistakes { get; private set; }
-        private Exam() { }
+        public virtual List<Mistake> Mistakes { get; private set; }
+        public Exam() { }
 
         public static Exam Create(DateTime examdate, int score, Candidate candidate, Examinator examinator)
         {
@@ -77,7 +77,7 @@ namespace DataBaseLibrary
                 this.Candidate = candidate;
             if (examinator != null)
                 this.Examinator = examinator;
-    
+
         }
     }
 }

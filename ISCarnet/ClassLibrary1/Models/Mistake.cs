@@ -9,6 +9,7 @@ namespace DataBaseLibrary.Models
         public Guid MistakeId { get; private set; }
         public string MistakeType { get; private set; }
         public int Score { get; private set; }
-        public Exam Exam { get; private set; }
+        public virtual Exam Exam { get; private set; }
+        public Mistake() { }
     }
 }

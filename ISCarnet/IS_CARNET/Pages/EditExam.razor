@@ -21,7 +21,7 @@
             <InputSelect id="username" asp-items="Model.examinators" @bind-Value="dto.ExaminatorName">
                 @foreach (ExaminatorDTO ex in examinas)
                 {
-                    <option value="cat.Id">@(ex.LastName + " " + ex.FirstName)</option>
+                    <option value=@(ex.LastName + " " + ex.FirstName)>@(ex.LastName + " " + ex.FirstName)</option>
                 }
 
             </InputSelect>

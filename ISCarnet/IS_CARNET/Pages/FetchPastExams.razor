@@ -17,6 +17,7 @@
                         <th>Date</th>
                         <th>Score</th>
                         <th>Result</th>
+                        <th>Examinator</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -26,6 +27,7 @@
                             <td>@exam.ExamDate.ToShortDateString()</td>
                             <td>@exam.Score</td>
                             <td>@exam.Result</td>
+                            <td>@exam.Examinator</td>
                         </tr>
                     }
                 </tbody>
@@ -38,26 +40,20 @@
     {
         <p>Va rugam sa va logati pentru a accesa istoricul examenelor</p>
     }
-    </div>
+</div>
 
 
-    @code {
-        private Exam[] exams;
+@code {
+    private ExamDTO[] exams;
 
-        HttpClient Http = new HttpClient();
-        private string apiUrl = "https://localhost:44316/api/pastExam/" + State.CurrentUser;
-        protected override async Task OnInitializedAsync()
-        {
-            exams = await Http.GetJsonAsync<Exam[]>(apiUrl);
-        }
-
-
-        public class Exam
-        {
-            public DateTime ExamDate { get; set; }
-            public int Score { get; set; }
-            public string Result { get; set; }
-        }
-
+    HttpClient Http = new HttpClient();
+    private string apiUrl = "https://localhost:44316/api/pastExam/" + State.CurrentUser;
+    protected override async Task OnInitializedAsync()
+    {
+        exams = await Http.GetJsonAsync<ExamDTO[]>(apiUrl);
     }
+
+
+
+}
 
