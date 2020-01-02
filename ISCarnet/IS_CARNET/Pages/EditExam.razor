@@ -1,0 +1,65 @@
+﻿@page "/addexam"
+
+@using IS_CARNET.Data
+
+<EditForm Model="@dto" OnValidSubmit="@SubmitExam">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="form">
+        <h1>ADD Exam</h1>
+
+        <p>
+            <label for="username">Username:</label>
+            <InputText id="username" @bind-Value="dto.usernameCandidate"></InputText>
+        </p>
+        <p>
+            <label for="date">Date:</label>
+            <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
+        </p>
+        <p>
+            <label for="examinator">Examinator:</label>
+            <InputSelect id="username" asp-items="Model.examinators" @bind-Value="dto.ExaminatorName">
+                @foreach (ExaminatorDTO ex in examinas)
+                {
+                    <option value="cat.Id">@(ex.LastName + " " + ex.FirstName)</option>
+                }
+
+            </InputSelect>
+        </p>
+        <button type="submit">ADD EXAM</button>
+
+
+    </div>
+</EditForm>
+
+@code {
+
+
+
+    private CreateExam dto = new CreateExam();
+    private List<ExaminatorDTO> examinas = new List<ExaminatorDTO>();
+
+
+    // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
+    HttpClient Http = new HttpClient();
+    private string apiUrl = "https://localhost:44369/api/Examinators";
+    protected override async Task OnInitializedAsync()
+    {
+        dto.ExamDate = DateTime.Today;
+        examinas = await Http.GetJsonAsync<List<ExaminatorDTO>>
+        (apiUrl);
+    }
+
+    // FUNCTIA DE SUBMIT
+    private async Task SubmitExam()
+    {
+
+        HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
+        HttpResponseMessage h = await Http.PostAsync("https://localhost:44316/api/pastExam", content);
+        var responseJSON = h.Content.ReadAsStringAsync().Result;
+        Exam exam = JsonConvert.DeserializeObject<Exam>(responseJSON);
+
+    }
+
+}
+

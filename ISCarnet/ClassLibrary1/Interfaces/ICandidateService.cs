@@ -28,6 +28,8 @@ namespace DataBaseLibrary
         public List<ExaminatorDTO> GetExaminatorDTOs();
 
         public ExaminatorDTO GetExaminatorByName(string fullName);
+        public bool CNPAlreadyExists(string cnp);
+
 
 
 

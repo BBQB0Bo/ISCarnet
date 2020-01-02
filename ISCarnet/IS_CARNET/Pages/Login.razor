@@ -11,41 +11,42 @@
         </p>
 
         <p>
-            <label for="username">Password:</label>
-            <InputText id="username" @bind-Value="dto.Password"></InputText>
+            <label for="password">Password:</label>
+            <InputText type="password" id="password" @bind-Value="dto.Password"></InputText>
         </p>
         <button type="submit">Login</button>
     </EditForm>
 </div>
 @if (loginAttempt)
 {
-    @if (username == null)
-    {
-        <p>Username sau parola incorecte!</p>
-    }
-    else
-    {
-        <p>Login reusit!</p>
-    }
+    <p>@message</p>
 }
 @code {
+
     AccountDTO dto = new AccountDTO();
     Boolean loginAttempt = false;
     string username = "";
+    string message = String.Empty;
     private async Task SearchAccount()
     {
         HttpClient Http = new HttpClient();
         HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
         HttpResponseMessage h = await Http.PostAsync("https://localhost:44365/api/Accounts", content);
-        var responseJSON = h.Content.ReadAsStringAsync().Result;
-        AccountDTO acc = JsonConvert.DeserializeObject<AccountDTO>(responseJSON);
-        username = acc.UserName;
-        if (username != null)
+        if (h.IsSuccessStatusCode)
         {
+            var responseJSON = h.Content.ReadAsStringAsync().Result;
+            AccountDTO acc = JsonConvert.DeserializeObject<AccountDTO>(responseJSON);
+            username = acc.UserName;
             State.CurrentUser = username;
+            message = "Login reusit";
+
+
+        }
+        else
+        {
+            message = "Username sau parola incorecte!";
         }
         loginAttempt = true;
-
 
     }
 }

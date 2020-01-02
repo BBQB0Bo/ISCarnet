@@ -31,8 +31,11 @@ namespace LoginAPI.Controllers
             {
                 found.UserName = account.UserName;
                 found.Password = account.Password;
+                return Ok(found);
             }
-            return Ok(found);
+            else
+                return NotFound();
+
         }
     }
 }

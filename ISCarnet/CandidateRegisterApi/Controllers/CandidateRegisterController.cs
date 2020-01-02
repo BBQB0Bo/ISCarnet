@@ -25,7 +25,8 @@ namespace CandidateRegisterController.Controllers
         [HttpPost]
         public ActionResult<Account> PostCandidateRegister([FromBody] RegisterCandidateDTO dto)
         {
-
+            if (service.CNPAlreadyExists(dto.CNP))
+                return BadRequest();
             AccountDTO account = service.RegisterCandidate(dto);
             return CreatedAtAction(nameof(GetAccountByUserName), new { username = account.UserName }, account);
         }

@@ -26,6 +26,7 @@ namespace DataBaseLibrary
 
         public AccountDTO RegisterCandidate(RegisterCandidateDTO dto)
         {
+
             int accountnumber = context.Candidates.Where(c => c.LastName == dto.LastName).ToList().Count();
             Candidate c = Candidate.Create(dto.FirstName, dto.LastName, dto.BirthDate, dto.CNP, dto.Password, accountnumber);
             context.Candidates.Add(c);
@@ -55,7 +56,14 @@ namespace DataBaseLibrary
         {
             return context.Candidates.FirstOrDefault(c => c.CandidateId == id);
         }
-
+        public bool CNPAlreadyExists(string cnp)
+        {
+            var candidate = context.Candidates.FirstOrDefault(c => c.CNP == cnp);
+            if (candidate == null)
+                return false;
+            else
+                return true;
+        }
 
         public bool DeleteCandidateAndAccount(Guid id)
         {
