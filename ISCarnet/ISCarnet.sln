@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginAPI", "LoginAPI\LoginA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExaminatorAPI", "ExaminatorAPI\ExaminatorAPI.csproj", "{98D7A338-0A4D-4D0F-8790-F82CFE9E485F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminLoginAPI", "AdminLoginAPI\AdminLoginAPI.csproj", "{07403543-5783-4282-B1ED-469B8C9FE0F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{98D7A338-0A4D-4D0F-8790-F82CFE9E485F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98D7A338-0A4D-4D0F-8790-F82CFE9E485F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98D7A338-0A4D-4D0F-8790-F82CFE9E485F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07403543-5783-4282-B1ED-469B8C9FE0F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07403543-5783-4282-B1ED-469B8C9FE0F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07403543-5783-4282-B1ED-469B8C9FE0F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07403543-5783-4282-B1ED-469B8C9FE0F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
