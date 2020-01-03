@@ -10,35 +10,78 @@
 
         <p>
             <label for="username">Username:</label>
-            <InputText id="username" @bind-Value="dto.usernameCandidate"></InputText>
+            <InputText id="username" @bind-Value="dto.UsernameCandidate"></InputText>
         </p>
         <p>
             <label for="date">Date:</label>
             <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
-        </p>
-        <p>
-            <label for="examinator">Examinator:</label>
-            <InputSelect id="username" asp-items="Model.examinators" @bind-Value="dto.ExaminatorName">
-                @foreach (ExaminatorDTO ex in examinas)
-                {
-                    <option value=@(ex.LastName + " " + ex.FirstName)>@(ex.LastName + " " + ex.FirstName)</option>
-                }
-
-            </InputSelect>
         </p>
         <button type="submit">ADD EXAM</button>
 
 
     </div>
 </EditForm>
+<EditForm Model="@mdto">
+    <div class="form">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <p>
+            <label for="MistakeType">Mistake:</label>
+            <InputText id="MistakeType" @bind-Value="mdto.MistakeType"></InputText>
+        </p>
+        <p>
+            <label for="MistakeScore">Score:</label>
+            <InputNumber id="MistakeType" @bind-Value="mdto.Score"></InputNumber>
+        </p>
+        <button class="btn btn-primary" @onclick="AddMistake">Add mistake</button>
+        <button class="btn btn-primary" @onclick="RemoveMistake">Remove mistake</button>
+    </div>
 
+</EditForm>
+<EditForm Model="@mdto">
+    <div class="form">
+
+        <button class="btn btn-primary" @onclick="MarkAbsent ">Mark Absent</button>
+        <button class="btn btn-primary" @onclick="UnmarkAbsent">Unmark Absent</button>
+    </div>
+
+</EditForm>
+<div class="form">
+    <p>Absent:@dto.Absent</p>
+    @if (dto.Mistakes.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Mistake</th>
+                    <th>Score</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (MistakeDTO m in dto.Mistakes)
+                {
+
+
+
+                    <tr>
+                        <td>@m.MistakeType</td>
+                        <td>@m.Score</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    }
+</div>
 @code {
 
 
 
-    private CreateExam dto = new CreateExam();
-    private List<ExaminatorDTO> examinas = new List<ExaminatorDTO>();
+    private UpdateExam dto = new UpdateExam();
+    private MistakeDTO mdto = new MistakeDTO();
 
+    string message = string.Empty;
 
     // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
     HttpClient Http = new HttpClient();
@@ -46,8 +89,7 @@
     protected override async Task OnInitializedAsync()
     {
         dto.ExamDate = DateTime.Today;
-        examinas = await Http.GetJsonAsync<List<ExaminatorDTO>>
-        (apiUrl);
+
     }
 
     // FUNCTIA DE SUBMIT
@@ -55,10 +97,40 @@
     {
 
         HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
-        HttpResponseMessage h = await Http.PostAsync("https://localhost:44316/api/pastExam", content);
+        HttpResponseMessage h = await Http.PutAsync("https://localhost:44316/api/pastExam", content);
         var responseJSON = h.Content.ReadAsStringAsync().Result;
-        Exam exam = JsonConvert.DeserializeObject<Exam>(responseJSON);
+        ExamDTO exam = JsonConvert.DeserializeObject<ExamDTO>(responseJSON);
 
+    }
+    private void AddMistake()
+    {
+        if (string.IsNullOrEmpty(mdto.MistakeType) || mdto.Score < 1 || mdto.Score > 21)
+            return;
+        MistakeDTO m = new MistakeDTO();
+        m.MistakeType = mdto.MistakeType;
+        m.Score = mdto.Score;
+        dto.Mistakes.Add(m);
+        message = message + "\nA fost adaugata greseala " + m.MistakeType + " cu scorul " + m.Score;
+    }
+    private void RemoveMistake()
+    {
+        if (string.IsNullOrEmpty(mdto.MistakeType) || mdto.Score < 1 || mdto.Score > 21)
+            return;
+        MistakeDTO m = new MistakeDTO();
+        m.MistakeType = mdto.MistakeType;
+        m.Score = mdto.Score;
+        dto.Mistakes.RemoveAll(mistk => mistk.MistakeType == m.MistakeType && mistk.Score == m.Score);
+        message = message + "\nA fost adaugata greseala " + m.MistakeType + " cu scorul " + m.Score;
+    }
+
+    private void MarkAbsent()
+    {
+        dto.Absent = true;
+    }
+
+    private void UnmarkAbsent()
+    {
+        dto.Absent = false;
     }
 
 }

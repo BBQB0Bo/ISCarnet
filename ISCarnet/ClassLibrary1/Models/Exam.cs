@@ -45,6 +45,12 @@ namespace DataBaseLibrary
             return e;
         }
 
+        public void DeleteMistakes()
+        {
+            this.Score = 0;
+            this.Mistakes.Clear();
+        }
+
         public void Update()
         {
             this.Score = 0;
@@ -56,6 +62,7 @@ namespace DataBaseLibrary
                 this.Result = "Passed";
             else
                 this.Result = "Failed";
+            this.Examinator.updatePercentage();
 
         }
 

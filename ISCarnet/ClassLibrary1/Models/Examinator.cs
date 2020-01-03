@@ -36,17 +36,16 @@ namespace DataBaseLibrary.Models
             }
             else
             {
-                float totalExams = (float)Exams.Count;
-                float passedExams = (float)Exams.Where(e => e.Score >= 21).ToList().Count;
+                float totalExams = (float)Exams.Where(e => e.Score >= 0 && e.Result != "Incoming").ToList().Count;
+                float passedExams = (float)Exams.Where(e => e.Score < 21 && e.Score>0 && e.Result != "Incoming").ToList().Count;
                 PassingPercentage = passedExams / totalExams * 100;
             }
 
         }
         public void AttachExam(Exam e)
         {
-            // delete later : whern admin api is made
             this.Exams.Add(e);
-            this.updatePercentage();
+            //this.updatePercentage();
         }
         public void RemoveExam(Exam e)
         {

@@ -5,12 +5,17 @@ using System.Collections.Generic;
 
 namespace DataBaseLibrary.DTOs.PastExam
 {
-    public class UpdateExam : IRequest <ExamDTO>
+    public class UpdateExam : IRequest<ExamDTO>
     {
-        public DateTime ExamDate { get;  set; }
+        public DateTime ExamDate { get; set; }
         public String UsernameCandidate { get; set; }
-        public List<Mistake> Mistakes { get; set; }
+        public List<MistakeDTO> Mistakes { get; set; }
         public Boolean Absent { get; set; }
+
+        public UpdateExam()
+        {
+            this.Mistakes = new List<MistakeDTO>();
+        }
 
     }
 }

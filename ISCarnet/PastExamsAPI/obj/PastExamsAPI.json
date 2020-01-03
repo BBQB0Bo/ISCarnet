@@ -215,6 +215,104 @@
   },
   "components": {
     "schemas": {
+      "MistakeDTO": {
+        "required": [
+          "mistakeType"
+        ],
+        "type": "object",
+        "properties": {
+          "mistakeType": {
+            "type": "string",
+            "nullable": true
+          },
+          "score": {
+            "maximum": 21,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ExamDTO": {
+        "type": "object",
+        "properties": {
+          "driver": {
+            "type": "string",
+            "nullable": true
+          },
+          "examDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "result": {
+            "type": "string",
+            "nullable": true
+          },
+          "examinator": {
+            "type": "string",
+            "nullable": true
+          },
+          "mistakes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MistakeDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateExam": {
+        "type": "object",
+        "properties": {
+          "examDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "usernameCandidate": {
+            "type": "string",
+            "nullable": true
+          },
+          "mistakes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MistakeDTO"
+            },
+            "nullable": true
+          },
+          "absent": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateExam": {
+        "required": [
+          "examinatorName",
+          "usernameCandidate"
+        ],
+        "type": "object",
+        "properties": {
+          "examDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "usernameCandidate": {
+            "type": "string",
+            "nullable": true
+          },
+          "examinatorName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Account": {
         "type": "object",
         "properties": {
@@ -240,48 +338,6 @@
           },
           "accountOwner": {
             "$ref": "#/components/schemas/Candidate"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Candidate": {
-        "type": "object",
-        "properties": {
-          "candidateId": {
-            "type": "string",
-            "format": "uuid",
-            "readOnly": true
-          },
-          "firstName": {
-            "type": "string",
-            "nullable": true,
-            "readOnly": true
-          },
-          "lastName": {
-            "type": "string",
-            "nullable": true,
-            "readOnly": true
-          },
-          "birthDate": {
-            "type": "string",
-            "format": "date-time",
-            "readOnly": true
-          },
-          "cnp": {
-            "type": "string",
-            "nullable": true,
-            "readOnly": true
-          },
-          "userAccount": {
-            "$ref": "#/components/schemas/Account"
-          },
-          "pastExams": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Exam"
-            },
-            "nullable": true,
-            "readOnly": true
           }
         },
         "additionalProperties": false
@@ -316,6 +372,30 @@
             },
             "nullable": true,
             "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Mistake": {
+        "type": "object",
+        "properties": {
+          "mistakeId": {
+            "type": "string",
+            "format": "uuid",
+            "readOnly": true
+          },
+          "mistakeType": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "score": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "exam": {
+            "$ref": "#/components/schemas/Exam"
           }
         },
         "additionalProperties": false
@@ -360,105 +440,44 @@
         },
         "additionalProperties": false
       },
-      "Mistake": {
+      "Candidate": {
         "type": "object",
         "properties": {
-          "mistakeId": {
+          "candidateId": {
             "type": "string",
             "format": "uuid",
             "readOnly": true
           },
-          "mistakeType": {
+          "firstName": {
             "type": "string",
             "nullable": true,
             "readOnly": true
           },
-          "score": {
-            "type": "integer",
-            "format": "int32",
+          "lastName": {
+            "type": "string",
+            "nullable": true,
             "readOnly": true
           },
-          "exam": {
-            "$ref": "#/components/schemas/Exam"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ExamDTO": {
-        "type": "object",
-        "properties": {
-          "driver": {
+          "birthDate": {
             "type": "string",
-            "nullable": true
+            "format": "date-time",
+            "readOnly": true
           },
-          "examDate": {
+          "cnp": {
             "type": "string",
-            "format": "date-time"
+            "nullable": true,
+            "readOnly": true
           },
-          "score": {
-            "type": "integer",
-            "format": "int32"
+          "userAccount": {
+            "$ref": "#/components/schemas/Account"
           },
-          "result": {
-            "type": "string",
-            "nullable": true
-          },
-          "examinator": {
-            "type": "string",
-            "nullable": true
-          },
-          "mistakes": {
+          "pastExams": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Mistake"
+              "$ref": "#/components/schemas/Exam"
             },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "UpdateExam": {
-        "type": "object",
-        "properties": {
-          "examDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "usernameCandidate": {
-            "type": "string",
-            "nullable": true
-          },
-          "mistakes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Mistake"
-            },
-            "nullable": true
-          },
-          "absent": {
-            "type": "boolean"
-          }
-        },
-        "additionalProperties": false
-      },
-      "CreateExam": {
-        "required": [
-          "examinatorName",
-          "usernameCandidate"
-        ],
-        "type": "object",
-        "properties": {
-          "examDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "usernameCandidate": {
-            "type": "string",
-            "nullable": true
-          },
-          "examinatorName": {
-            "type": "string",
-            "nullable": true
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false

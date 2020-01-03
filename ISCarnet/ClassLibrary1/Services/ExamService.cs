@@ -1,4 +1,5 @@
-﻿using DataBaseLibrary.DTOs.PastExam;
+﻿using DataBaseLibrary.DTOs;
+using DataBaseLibrary.DTOs.PastExam;
 using DataBaseLibrary.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -68,20 +69,26 @@ namespace DataBaseLibrary
         public async Task<Exam> ExamUpdate(UpdateExam request, CancellationToken cancellationToken)
         {
 
-            var exam = context.Exams.SingleOrDefault(p => p.ExamDate == request.ExamDate & request.UsernameCandidate == p.Candidate.UserAccount.UserName);
+            var exam = context.Exams.FirstOrDefault(p => p.ExamDate == request.ExamDate & request.UsernameCandidate == p.Candidate.UserAccount.UserName);
             if (exam == null)
             {
                 return null;
             }
             if (request.Absent == true)
             {
+                ClearMistakes(exam);
                 exam.AbsentCandidate();
+                exam.Examinator.updatePercentage();
+                await context.SaveChangesAsync(cancellationToken);
                 return null;
             }
-
-            foreach (Mistake m in request.Mistakes)
-                exam.AttachMistake(m);
-
+            ClearMistakes(exam);
+            foreach (MistakeDTO m in request.Mistakes)
+            {
+                Mistake mistake = new Mistake(m, exam);
+                context.Mistakes.Add(mistake);
+                //exam.AttachMistake(mistake);
+            }
             exam.Update();
             exam.Examinator.updatePercentage();
 
@@ -96,6 +103,18 @@ namespace DataBaseLibrary
                 return true;
             return false;
         }
+
+        public void ClearMistakes(Exam e)
+        {
+            foreach (Mistake m in e.Mistakes)
+            {
+                context.Mistakes.Remove(m);
+            }
+            context.SaveChanges();
+            e.DeleteMistakes();
+
+        }
+
 
 
 

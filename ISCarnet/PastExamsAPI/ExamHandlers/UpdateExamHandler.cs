@@ -18,10 +18,11 @@ namespace PastExamsAPI.ExamHandlers
             this.service = service;
         }
 
-        public async Task<ExamDTO> Handle(UpdateExam request,CancellationToken cancellationToken)
+        public async Task<ExamDTO> Handle(UpdateExam request, CancellationToken cancellationToken)
         {
-           Exam exam = await service.ExamUpdate(request, cancellationToken);
-
+            Exam exam = await service.ExamUpdate(request, cancellationToken);
+            if (exam == null)
+                return null;
             ExamDTO examReturn = new ExamDTO(exam);
             return examReturn;
 
