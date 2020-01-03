@@ -1,79 +1,87 @@
 ﻿@page "/editexam"
 
 @using IS_CARNET.Data
-
-<EditForm Model="@dto" OnValidSubmit="@SubmitExam">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
-    <div class="form">
-        <h1>ADD Exam</h1>
-
-        <p>
-            <label for="username">Username:</label>
-            <InputText id="username" @bind-Value="dto.UsernameCandidate"></InputText>
-        </p>
-        <p>
-            <label for="date">Date:</label>
-            <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
-        </p>
-        <button type="submit">ADD EXAM</button>
-
-
-    </div>
-</EditForm>
-<EditForm Model="@mdto">
-    <div class="form">
+@if (!string.IsNullOrEmpty(AdminState.CurrentUser))
+{
+    <EditForm Model="@dto" OnValidSubmit="@SubmitExam">
         <DataAnnotationsValidator />
         <ValidationSummary />
-        <p>
-            <label for="MistakeType">Mistake:</label>
-            <InputText id="MistakeType" @bind-Value="mdto.MistakeType"></InputText>
-        </p>
-        <p>
-            <label for="MistakeScore">Score:</label>
-            <InputNumber id="MistakeType" @bind-Value="mdto.Score"></InputNumber>
-        </p>
-        <button class="btn btn-primary" @onclick="AddMistake">Add mistake</button>
-        <button class="btn btn-primary" @onclick="RemoveMistake">Remove mistake</button>
-    </div>
+        <div class="form">
+            <h1>ADD Exam</h1>
 
-</EditForm>
-<EditForm Model="@mdto">
+            <p>
+                <label for="username">Username:</label>
+                <InputText id="username" @bind-Value="dto.UsernameCandidate"></InputText>
+            </p>
+            <p>
+                <label for="date">Date:</label>
+                <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
+            </p>
+            <button type="submit">ADD EXAM</button>
+
+
+        </div>
+    </EditForm>
+    <EditForm Model="@mdto">
+        <div class="form">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <p>
+                <label for="MistakeType">Mistake:</label>
+                <InputText id="MistakeType" @bind-Value="mdto.MistakeType"></InputText>
+            </p>
+            <p>
+                <label for="MistakeScore">Score:</label>
+                <InputNumber id="MistakeType" @bind-Value="mdto.Score"></InputNumber>
+            </p>
+            <button class="btn btn-primary" @onclick="AddMistake">Add mistake</button>
+            <button class="btn btn-primary" @onclick="RemoveMistake">Remove mistake</button>
+        </div>
+
+    </EditForm>
+    <EditForm Model="@mdto">
+        <div class="form">
+
+            <button class="btn btn-primary" @onclick="MarkAbsent ">Mark Absent</button>
+            <button class="btn btn-primary" @onclick="UnmarkAbsent">Unmark Absent</button>
+        </div>
+
+    </EditForm>
     <div class="form">
-
-        <button class="btn btn-primary" @onclick="MarkAbsent ">Mark Absent</button>
-        <button class="btn btn-primary" @onclick="UnmarkAbsent">Unmark Absent</button>
-    </div>
-
-</EditForm>
-<div class="form">
-    <p>Absent:@dto.Absent</p>
-    @if (dto.Mistakes.Count > 0)
-    {
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Mistake</th>
-                    <th>Score</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (MistakeDTO m in dto.Mistakes)
-                {
-
-
-
+        <p>Absent:@dto.Absent</p>
+        @if (dto.Mistakes.Count > 0)
+        {
+            <table class="table">
+                <thead>
                     <tr>
-                        <td>@m.MistakeType</td>
-                        <td>@m.Score</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+                        <th>Mistake</th>
+                        <th>Score</th>
 
-    }
-</div>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (MistakeDTO m in dto.Mistakes)
+                    {
+
+
+
+                        <tr>
+                            <td>@m.MistakeType</td>
+                            <td>@m.Score</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        }
+    </div>
+}
+else
+{
+    <div class="form">
+        <p>Trebuie sa fiti logat ca admin pentru a accesa aceasta pagina!</p>
+    </div>
+}
 @code {
 
 

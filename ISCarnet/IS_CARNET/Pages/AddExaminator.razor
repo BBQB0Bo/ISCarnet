@@ -3,25 +3,32 @@
 @using IS_CARNET.Data
 @using System.Globalization
 <div class="form">
-    <h1>ADD Examinator</h1>
+    @if (!string.IsNullOrEmpty(AdminState.CurrentUser))
+    {
+        <h1>ADD Examinator</h1>
 
-    <EditForm Model="@dto" OnValidSubmit="@SubmitExaminator">
-        <DataAnnotationsValidator />
-        <ValidationSummary />
+        <EditForm Model="@dto" OnValidSubmit="@SubmitExaminator">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
 
 
-        <p>
-            <label for="FirstName">First name:</label>
-            <InputText id="FirstName" @bind-Value="dto.FirstName"></InputText>
-        </p>
-        <p>
-            <label for="LastName">Last name:</label>
-            <InputText id="LastName" @bind-Value="dto.LastName"></InputText>
-        </p>
+            <p>
+                <label for="FirstName">First name:</label>
+                <InputText id="FirstName" @bind-Value="dto.FirstName"></InputText>
+            </p>
+            <p>
+                <label for="LastName">Last name:</label>
+                <InputText id="LastName" @bind-Value="dto.LastName"></InputText>
+            </p>
 
-        <button type="submit">ADD EXAMINATOR</button>
+            <button type="submit">ADD EXAMINATOR</button>
 
-    </EditForm>
+        </EditForm>
+    }
+    else
+    {
+        <p>Trebuie sa fiti logat ca administrator pentru a accesa aceasta pagina!</p>
+    }
 </div>
 <div>
     @if (name != "")

@@ -6,7 +6,7 @@
     <h1>Examinators</h1>
 
 
-    @if (State.CurrentUser != null)
+    @if (!string.IsNullOrEmpty(State.CurrentUser) || !string.IsNullOrEmpty(AdminState.CurrentUser))
     {
         @if (examinators != null && examinators.Length >= 1)
         {

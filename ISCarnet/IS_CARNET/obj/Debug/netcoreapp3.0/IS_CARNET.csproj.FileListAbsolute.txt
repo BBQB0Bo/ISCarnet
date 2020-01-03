@@ -1172,3 +1172,5 @@ C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcorea
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\AdminLogin.razor.g.cs
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\Razor\Pages\AdminLogin.razor.g.cs
