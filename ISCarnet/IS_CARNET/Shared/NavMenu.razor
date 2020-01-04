@@ -51,7 +51,10 @@
         }
 
     </ul>
-    <button class="btn btn-primary" @onclick="Logout">LOGOUT</button>
+    @if (!string.IsNullOrEmpty(State.CurrentUser) || !string.IsNullOrEmpty(AdminState.CurrentUser))
+    {
+        <button class="btn btn-primary" @onclick="Logout">LOGOUT</button>
+    }
 </div>
 
 @code {
