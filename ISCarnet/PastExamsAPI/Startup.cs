@@ -26,7 +26,7 @@ namespace PastExamsAPI
         {
             //services.AddTransient<CandidateContext, CandidateContext>();
             services.AddDbContext<CandidateContext>(options =>
-       options.UseSqlServer(@"Server=DESKTOP-GLMVMO1\SQLEXPRESS;Database=ISCarnet;Trusted_Connection=True"));
+       options.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=ISCARNET;Trusted_Connection=True"));
 
             services.AddControllers();
             services.AddMediatR(typeof(Startup).Assembly);

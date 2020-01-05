@@ -26,7 +26,7 @@ namespace DataBaseLibrary
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
                     => optionsBuilder
     .UseLazyLoadingProxies()
-    .UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnet;Trusted_Connection=True");
+    .UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=ISCARNETadmin;Trusted_Connection=True");
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

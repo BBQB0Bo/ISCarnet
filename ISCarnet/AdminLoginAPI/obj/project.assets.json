@@ -9981,27 +9981,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Claudiu\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\BOBIRE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\AdminLoginAPI\\AdminLoginAPI.csproj",
+      "projectUniqueName": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\AdminLoginAPI\\AdminLoginAPI.csproj",
       "projectName": "AdminLoginAPI",
-      "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\AdminLoginAPI\\AdminLoginAPI.csproj",
-      "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\AdminLoginAPI\\obj\\",
+      "projectPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\AdminLoginAPI\\AdminLoginAPI.csproj",
+      "packagesPath": "C:\\Users\\BOBIRE\\.nuget\\packages\\",
+      "outputPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\AdminLoginAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\BOBIRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -10013,8 +10006,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-              "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+            "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+              "projectPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
             }
           }
         }

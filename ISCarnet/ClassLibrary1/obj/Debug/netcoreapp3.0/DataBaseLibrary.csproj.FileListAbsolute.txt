@@ -38,3 +38,11 @@ C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netco
 C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.dll
 C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.pdb
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.csprojAssemblyReference.cache
+D:\dev\New folder\ISCarnet\ClassLibrary1\bin\Debug\netcoreapp3.0\DataBaseLibrary.deps.json
+D:\dev\New folder\ISCarnet\ClassLibrary1\bin\Debug\netcoreapp3.0\DataBaseLibrary.dll
+D:\dev\New folder\ISCarnet\ClassLibrary1\bin\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+D:\dev\New folder\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.csprojAssemblyReference.cache
+D:\dev\New folder\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.AssemblyInfoInputs.cache
+D:\dev\New folder\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.AssemblyInfo.cs
+D:\dev\New folder\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.dll
+D:\dev\New folder\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.pdb
