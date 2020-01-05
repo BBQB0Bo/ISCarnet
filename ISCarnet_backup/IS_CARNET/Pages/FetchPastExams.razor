@@ -1,0 +1,62 @@
+﻿@page "/fetchpastexams"
+
+@using IS_CARNET.Data
+
+<div class="form">
+    <h1>Past Exams</h1>
+
+
+    @if (State.CurrentUser != null)
+    {
+        <p>@State.CurrentUser</p>
+        @if (exams != null && exams.Length >= 1)
+        {
+            @foreach (var exam in exams)
+            {
+                <h4>@("Date:" + exam.ExamDate.ToShortDateString() + "Score:" + exam.Score + " Result:" + exam.Result + " Examinator:" + exam.Examinator)</h4>
+                if (exam.Mistakes.Count > 0)
+                { <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Mistake</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var mistake in exam.Mistakes)
+                            {
+                                <tr>
+                                    <td>@mistake.MistakeType</td>
+                                    <td>@mistake.Score</td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+            }
+        }
+        else
+        { <p>Nu aveti examene inregistrate</p>}
+    }
+    else
+    {
+        <p>Va rugam sa va logati pentru a accesa istoricul examenelor</p>
+    }
+</div>
+
+
+@code {
+    private ExamDTO[] exams;
+
+    HttpClient Http = new HttpClient();
+    private string apiUrl = "https://localhost:44316/api/pastExam/" + State.CurrentUser;
+    protected override async Task OnInitializedAsync()
+    {
+        exams = await Http.GetJsonAsync<ExamDTO[]>(apiUrl);
+    }
+
+
+
+}
+

@@ -1,0 +1,61 @@
+﻿@page "/addexaminator"
+
+@using IS_CARNET.Data
+@using System.Globalization
+<div class="form">
+    @if (!string.IsNullOrEmpty(AdminState.CurrentUser))
+    {
+        <h1>ADD Examinator</h1>
+
+        <EditForm Model="@dto" OnValidSubmit="@SubmitExaminator">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+
+            <p>
+                <label for="FirstName">First name:</label>
+                <InputText id="FirstName" @bind-Value="dto.FirstName"></InputText>
+            </p>
+            <p>
+                <label for="LastName">Last name:</label>
+                <InputText id="LastName" @bind-Value="dto.LastName"></InputText>
+            </p>
+
+            <button type="submit">ADD EXAMINATOR</button>
+
+        </EditForm>
+    }
+    else
+    {
+        <p>Trebuie sa fiti logat ca administrator pentru a accesa aceasta pagina!</p>
+    }
+</div>
+<div>
+    @if (name != "")
+    {<p>Examinatorul @name a fost adaugat cu succes!</p>
+}
+</div>
+
+@code {
+
+
+    private ExaminatorDTO dto = new ExaminatorDTO();
+    string name = String.Empty;
+
+
+    // FUNCTIA DE SUBMIT
+    private async Task SubmitExaminator()
+    {
+        name = String.Empty;
+        HttpClient Http = new HttpClient();
+        HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
+        HttpResponseMessage h = await Http.PostAsync("https://localhost:44369/api/Examinators", content);
+        var responseJSON = h.Content.ReadAsStringAsync().Result;
+        ExaminatorDTO ex = JsonConvert.DeserializeObject<ExaminatorDTO>(responseJSON);
+        name = ex.FirstName + " " + ex.LastName;
+
+
+    }
+
+}
+

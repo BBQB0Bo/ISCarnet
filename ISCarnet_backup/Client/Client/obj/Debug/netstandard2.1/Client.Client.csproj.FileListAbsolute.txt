@@ -1,0 +1,1 @@
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\Client\Client\obj\Debug\netstandard2.1\Client.Client.csprojAssemblyReference.cache

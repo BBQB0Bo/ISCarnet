@@ -1,0 +1,599 @@
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.exe
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csprojAssemblyReference.cache
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.Manifest.cache
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.xml
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfoInputs.cache
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfo.cs
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csproj.CopyComplete
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.deps.json
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.json
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.dev.json
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.exe
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.deps.json
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.json
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.dev.json
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csprojAssemblyReference.cache
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.Manifest.cache
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.xml
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfoInputs.cache
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.RazorTargetAssemblyInfo.cache
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csproj.CopyComplete
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csprojAssemblyReference.cache
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.Manifest.cache
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.xml
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfoInputs.cache
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.exe
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.deps.json
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.json
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.dev.json
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.RazorTargetAssemblyInfo.cache
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csproj.CopyComplete
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\bianc\OneDrive\Desktop\.NET\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\bianc\OneDrive\Desktop\TW\GIt-me\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.exe
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.deps.json
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.json
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.dev.json
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csprojAssemblyReference.cache
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.Manifest.cache
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.xml
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfoInputs.cache
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.RazorTargetAssemblyInfo.cache
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csproj.CopyComplete
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\bianc\OneDrive\Desktop\.Net V1\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.exe
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.deps.json
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.json
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.dev.json
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csprojAssemblyReference.cache
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.Manifest.cache
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.xml
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfoInputs.cache
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfo.cs
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csproj.CopyComplete
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\AspNetCore.Mvc.SelectList.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Database.Initialization.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\EntityFrameworkCore.Initialization.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\LiteDB.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Client.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Core.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Direct.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Cosmos.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.NetTopologySuite.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NETCore.Encrypt.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NetTopologySuite.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NetTopologySuite.IO.SpatiaLite.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Data.SqlClient.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.ServiceModel.Primitives.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.ServiceModel.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Cosmos.CRTCompat.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libfreexl-1.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libgcc_s_seh-1.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libgeos.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libgeos_c.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libiconv-2.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\liblzma-5.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libproj-13.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libstdc++-6.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libwinpthread-1.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libxml2-2.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\mod_spatialite.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\zlib1.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libfreexl-1.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libgcc_s_dw2-1.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libgeos.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libgeos_c.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libiconv-2.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\liblzma-5.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libproj-13.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libstdc++-6.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libwinpthread-1.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libxml2-2.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\mod_spatialite.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\zlib1.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bobire\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\AspNetCore.Mvc.SelectList.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Database.Initialization.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\EntityFrameworkCore.Initialization.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\LiteDB.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Client.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Core.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Direct.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Cosmos.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.NetTopologySuite.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NETCore.Encrypt.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NetTopologySuite.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NetTopologySuite.IO.SpatiaLite.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Data.SqlClient.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.ServiceModel.Primitives.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.ServiceModel.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Cosmos.CRTCompat.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libfreexl-1.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libgcc_s_seh-1.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libgeos.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libgeos_c.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libiconv-2.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\liblzma-5.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libproj-13.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libstdc++-6.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libwinpthread-1.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libxml2-2.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\mod_spatialite.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\zlib1.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libfreexl-1.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libgcc_s_dw2-1.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libgeos.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libgeos_c.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libiconv-2.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\liblzma-5.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libproj-13.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libstdc++-6.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libwinpthread-1.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libxml2-2.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\mod_spatialite.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\zlib1.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.exe
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.deps.json
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.json
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.runtimeconfig.dev.json
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\AspNetCore.Mvc.SelectList.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Database.Initialization.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\EntityFrameworkCore.Initialization.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\LiteDB.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Client.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Core.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Direct.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Data.Sqlite.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Cosmos.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Sqlite.NetTopologySuite.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Identity.Client.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.OpenApi.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NETCore.Encrypt.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NetTopologySuite.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NetTopologySuite.IO.SpatiaLite.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\NetTopologySuite.IO.SqlServerBytes.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.core.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.ServiceModel.Primitives.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.ServiceModel.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Cosmos.CRTCompat.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libfreexl-1.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libgcc_s_seh-1.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libgeos.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libgeos_c.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libiconv-2.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\liblzma-5.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libproj-13.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libstdc++-6.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libwinpthread-1.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\libxml2-2.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\mod_spatialite.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\zlib1.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libfreexl-1.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libgcc_s_dw2-1.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libgeos.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libgeos_c.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libiconv-2.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\liblzma-5.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libproj-13.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libstdc++-6.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libwinpthread-1.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\libxml2-2.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\mod_spatialite.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\zlib1.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\sni.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csprojAssemblyReference.cache
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.Manifest.cache
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\staticwebassets\PastExamsAPI.StaticWebAssets.xml
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfoInputs.cache
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.AssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.RazorTargetAssemblyInfo.cache
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.csproj.CopyComplete
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.pdb
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Castle.Core.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\PastExamsAPI\obj\Debug\netcoreapp3.0\PastExamsAPI.MvcApplicationPartsAssemblyInfo.cache

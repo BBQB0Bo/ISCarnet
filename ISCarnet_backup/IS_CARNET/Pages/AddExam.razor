@@ -1,0 +1,83 @@
+﻿@page "/addexam"
+
+@using IS_CARNET.Data
+
+<EditForm Model="@dto" OnValidSubmit="@SubmitExam">
+    <div class="form">
+        @if (!string.IsNullOrEmpty(AdminState.CurrentUser))
+        {
+            <h1>ADD Exam</h1>
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <p>
+                <label for="username">Username:</label>
+                <InputText id="username" @bind-Value="dto.usernameCandidate"></InputText>
+            </p>
+            <p>
+                <label for="date">Date:</label>
+                <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
+            </p>
+            <p>
+                <label for="examinator">Examinator:</label>
+                <InputSelect id="username" asp-items="Model.examinators" @bind-Value="dto.ExaminatorName">
+                    @foreach (ExaminatorDTO ex in examinas)
+                        {
+                        <option value=@(ex.FirstName + " " + ex.LastName)>@(ex.FirstName + " " + ex.LastName)</option>
+                        }
+                    /**/
+                    /**/
+
+                </InputSelect>
+            </p>
+            <button type="submit">ADD EXAM</button>
+        }
+        else
+        {
+            <p>Trebuie sa fiti logat ca administrator pentru a accesa aceasta pagina!</p>
+        }
+
+    </div>
+</EditForm>
+@if (!string.IsNullOrEmpty(message))
+{
+    <p>@message</p>
+}
+@code {
+
+
+
+    private CreateExam dto = new CreateExam();
+    private List<ExaminatorDTO> examinas = new List<ExaminatorDTO>();
+    string message = string.Empty;
+
+    // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
+    HttpClient Http = new HttpClient();
+    private string apiUrl = "https://localhost:44369/api/Examinators";
+    protected override async Task OnInitializedAsync()
+    {
+        dto.ExamDate = DateTime.Today;
+        examinas = await Http.GetJsonAsync<List<ExaminatorDTO>>
+        (apiUrl);
+    }
+
+    // FUNCTIA DE SUBMIT
+    private async Task SubmitExam()
+    {
+
+        HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
+        HttpResponseMessage h = await Http.PostAsync("https://localhost:44316/api/pastExam", content);
+        var responseJSON = h.Content.ReadAsStringAsync().Result;
+        Exam exam = JsonConvert.DeserializeObject<Exam>(responseJSON);
+        if (h.IsSuccessStatusCode)
+        {
+            message = "Examenul a fost adaugat cu succes";
+        }
+        else
+        {
+            message = "A aparut o eroare la adaugarea examenului";
+        }
+
+    }
+
+}
+

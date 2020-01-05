@@ -1,0 +1,5 @@
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\Client\Shared\bin\Debug\netstandard2.1\Client.Shared.deps.json
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\Client\Shared\bin\Debug\netstandard2.1\Client.Shared.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\Client\Shared\obj\Debug\netstandard2.1\Client.Shared.csprojAssemblyReference.cache
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\Client\Shared\obj\Debug\netstandard2.1\Client.Shared.AssemblyInfoInputs.cache
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\Client\Shared\obj\Debug\netstandard2.1\Client.Shared.AssemblyInfo.cs

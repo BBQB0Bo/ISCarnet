@@ -1,0 +1,77 @@
+﻿@page "/register"
+@inject NavigationManager NavigationManager
+<div class="form">
+    <h1>Register</h1>
+
+
+    <EditForm Model="@dto" OnValidSubmit="@SubmitCandidateInformation">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <p>
+            <label for="firstname">First Name:</label>
+            <InputText id="firstname" @bind-Value="dto.FirstName"></InputText>
+        </p>
+
+        <p>
+            <label for="lastname">Last Name:</label>
+            <InputText id="lastname" @bind-Value="dto.LastName"></InputText>
+        </p>
+        <p>
+            <label for="birthdate">BirthDate:</label>
+            <InputDate id="birthdate" @bind-Value="dto.BirthDate"></InputDate>
+        </p>
+
+        <p>
+            <label for="cnp">CNP:</label>
+            <InputText id="cnp" @bind-Value="dto.CNP"></InputText>
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <InputText type="password" id="password" @bind-Value="dto.Password"></InputText>
+        </p>
+
+        <p>
+            <label for="confirmpassword">Confirm Password:</label>
+            <InputText type="password" id="confirmpassword" @bind-Value="dto.ConfirmPassword"></InputText>
+        </p>
+        <button type="submit">Register</button>
+    </EditForm>
+</div>
+
+<div class="form">
+    @if (!string.IsNullOrEmpty(message))
+    {<p>@message</p>
+}
+</div>
+
+
+@code {
+    private RegisterCandidateDTO dto = new RegisterCandidateDTO();
+    string username = String.Empty;
+    string message = String.Empty;
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Run(() => dto.BirthDate = DateTime.Today);
+    }
+    private async Task SubmitCandidateInformation()
+    {
+
+        HttpClient Http = new HttpClient();
+        HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
+        HttpResponseMessage h = await Http.PostAsync("https://localhost:44379/api/CandidateRegister", content);
+        if (h.IsSuccessStatusCode)
+        {
+            var responseJSON = h.Content.ReadAsStringAsync().Result;
+            AccountDTO acc = JsonConvert.DeserializeObject<AccountDTO>(responseJSON);
+            username = acc.UserName;
+            message = "Register efectuat cu succes! Username-ul dumneavoastra este:" + username;
+            //NavigationManager.NavigateTo("Login");
+
+        }
+        else
+        {
+            message = "Register esuat!Codul Numeric Personal introdus aparinte deja altui candidat sau campul destintat confirmarii parolei nu corespunde cu parola!";
+        }
+    }
+}
