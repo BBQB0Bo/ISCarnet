@@ -16,6 +16,7 @@ namespace DataBaseLibrary.DTOs.PastExam
 
         public ExamDTO()
         {
+            this.Mistakes = new List<MistakeDTO>();
         }
 
         public ExamDTO(Exam e)

@@ -18,7 +18,7 @@ namespace DataBaseLibrary
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=ISCARNETadmin;Trusted_Connection=True");
+        => optionsBuilder.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnetAdmin;Trusted_Connection=True");
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

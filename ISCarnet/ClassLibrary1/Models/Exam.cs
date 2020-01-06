@@ -15,7 +15,10 @@ namespace DataBaseLibrary
         public virtual Examinator Examinator { get; private set; }
 
         public virtual List<Mistake> Mistakes { get; private set; }
-        public Exam() { }
+        public Exam()
+        {
+            this.Mistakes = new List<Mistake>();
+        }
 
         public static Exam Create(DateTime examdate, int score, Candidate candidate, Examinator examinator)
         {

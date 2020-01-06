@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj": {}
+    "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj": {}
   },
   "projects": {
-    "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+    "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
         "projectName": "DataBaseLibrary",
-        "projectPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
-        "packagesPath": "C:\\Users\\BOBIRE\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
+        "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj",
+        "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\BOBIRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -99,18 +104,23 @@
         }
       }
     },
-    "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj": {
+    "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj",
         "projectName": "ExaminatorAPI",
-        "projectPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj",
-        "packagesPath": "C:\\Users\\BOBIRE\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ExaminatorAPI\\obj\\",
+        "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ExaminatorAPI\\ExaminatorAPI.csproj",
+        "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ExaminatorAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\BOBIRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -122,8 +132,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-                "projectPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+              "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+                "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
               }
             }
           }

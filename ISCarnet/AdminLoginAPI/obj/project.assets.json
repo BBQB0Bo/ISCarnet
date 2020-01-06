@@ -3271,10 +3271,7 @@
         },
         "runtime": {
           "bin/placeholder/DataBaseLibrary.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -9981,20 +9978,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BOBIRE\\.nuget\\packages\\": {}
+    "C:\\Users\\Claudiu\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\AdminLoginAPI\\AdminLoginAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\AdminLoginAPI\\AdminLoginAPI.csproj",
       "projectName": "AdminLoginAPI",
-      "projectPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\AdminLoginAPI\\AdminLoginAPI.csproj",
-      "packagesPath": "C:\\Users\\BOBIRE\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\AdminLoginAPI\\obj\\",
+      "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\AdminLoginAPI\\AdminLoginAPI.csproj",
+      "packagesPath": "C:\\Users\\Claudiu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\AdminLoginAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\BOBIRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Claudiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -10006,8 +10010,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
-              "projectPath": "D:\\dev\\Github\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
+            "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj": {
+              "projectPath": "C:\\Users\\Claudiu\\Documents\\GitHub\\ISCarnet\\ISCarnet\\ClassLibrary1\\DataBaseLibrary.csproj"
             }
           }
         }

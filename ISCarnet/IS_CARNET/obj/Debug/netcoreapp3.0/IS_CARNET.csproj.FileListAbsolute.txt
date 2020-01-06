@@ -1706,3 +1706,5 @@ D:\dev\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.Views.pdb
 D:\dev\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.csproj.CopyComplete
 D:\dev\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.dll
 D:\dev\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\IS_CARNET.pdb
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\RazorDeclaration\Pages\Info.razor.g.cs
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\IS_CARNET\obj\Debug\netcoreapp3.0\Razor\Pages\Info.razor.g.cs
