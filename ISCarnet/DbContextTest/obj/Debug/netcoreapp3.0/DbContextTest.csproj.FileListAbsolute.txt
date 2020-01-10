@@ -833,3 +833,11 @@ C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netc
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
 C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\Castle.Core.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Claudiu\Documents\GitHub\ISCarnet\ISCarnet\DbContextTest\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll

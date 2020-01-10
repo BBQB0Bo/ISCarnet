@@ -12,6 +12,7 @@ namespace DataBaseLibrary.DTOs.PastExam
         public int Score { get; set; }
         public string Result { get; set; }
         public string Examinator { get; set; }
+        public LocationDTO Location { get; set; }
         public List<MistakeDTO> Mistakes { get; set; }
 
         public ExamDTO()
@@ -26,6 +27,7 @@ namespace DataBaseLibrary.DTOs.PastExam
             this.Score = e.Score;
             this.Result = e.Result;
             this.Examinator = e.Examinator.LastName + " " + e.Examinator.FirstName;
+            this.Location = new LocationDTO(e.Location);
             this.Mistakes = new List<MistakeDTO>();
             foreach (Mistake m in e.Mistakes)
                 this.Mistakes.Add(new MistakeDTO(m));

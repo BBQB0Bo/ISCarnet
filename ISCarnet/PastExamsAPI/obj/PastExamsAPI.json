@@ -215,6 +215,27 @@
   },
   "components": {
     "schemas": {
+      "LocationDTO": {
+        "type": "object",
+        "properties": {
+          "locationName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "float",
+            "readOnly": true
+          },
+          "longitute": {
+            "type": "number",
+            "format": "float",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
       "MistakeDTO": {
         "required": [
           "mistakeType"
@@ -257,6 +278,9 @@
             "type": "string",
             "nullable": true
           },
+          "location": {
+            "$ref": "#/components/schemas/LocationDTO"
+          },
           "mistakes": {
             "type": "array",
             "items": {
@@ -294,6 +318,7 @@
       "CreateExam": {
         "required": [
           "examinatorName",
+          "locationName",
           "usernameCandidate"
         ],
         "type": "object",
@@ -307,6 +332,10 @@
             "nullable": true
           },
           "examinatorName": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationName": {
             "type": "string",
             "nullable": true
           }
@@ -376,6 +405,40 @@
         },
         "additionalProperties": false
       },
+      "Location": {
+        "type": "object",
+        "properties": {
+          "locationId": {
+            "type": "string",
+            "format": "uuid",
+            "readOnly": true
+          },
+          "locationName": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "float",
+            "readOnly": true
+          },
+          "longitute": {
+            "type": "number",
+            "format": "float",
+            "readOnly": true
+          },
+          "exams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Exam"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Mistake": {
         "type": "object",
         "properties": {
@@ -428,6 +491,9 @@
           },
           "examinator": {
             "$ref": "#/components/schemas/Examinator"
+          },
+          "location": {
+            "$ref": "#/components/schemas/Location"
           },
           "mistakes": {
             "type": "array",

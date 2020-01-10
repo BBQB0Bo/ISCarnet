@@ -14,13 +14,15 @@ namespace DataBaseLibrary
 
         public virtual Examinator Examinator { get; private set; }
 
+        public virtual Location Location { get; private set; }
+
         public virtual List<Mistake> Mistakes { get; private set; }
         public Exam()
         {
             this.Mistakes = new List<Mistake>();
         }
 
-        public static Exam Create(DateTime examdate, int score, Candidate candidate, Examinator examinator)
+        public static Exam Create(DateTime examdate, int score, Candidate candidate, Examinator examinator, Location location)
         {
             Exam e = new Exam();
             e.ExamId = Guid.NewGuid();
@@ -29,12 +31,14 @@ namespace DataBaseLibrary
             e.Result = score < 21 ? "Passed" : "Failed";
             e.Candidate = candidate;
             e.Examinator = examinator;
+            e.Location = location;
             candidate.AttachExam(e);
             examinator.AttachExam(e);
+            location.AttachExam(e);
             return e;
         }
 
-        public static Exam CreateFutureExam(DateTime examdate, Candidate candidate, Examinator examinator)
+        public static Exam CreateFutureExam(DateTime examdate, Candidate candidate, Examinator examinator, Location location)
         {
             Exam e = new Exam();
             e.ExamId = Guid.NewGuid();
@@ -43,8 +47,10 @@ namespace DataBaseLibrary
             e.Result = "Incoming";
             e.Candidate = candidate;
             e.Examinator = examinator;
+            e.Location = location;
             candidate.AttachExam(e);
             examinator.AttachExam(e);
+            location.AttachExam(e);
             return e;
         }
 

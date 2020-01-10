@@ -22,6 +22,8 @@ namespace DataBaseLibrary
 
         public DbSet<Mistake> Mistakes { get; set; }
 
+        public DbSet<Location> Locations { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
                     => optionsBuilder
@@ -46,6 +48,10 @@ namespace DataBaseLibrary
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.Examinator)
                 .WithMany(c => c.Exams);
+
+            modelBuilder.Entity<Exam>()
+                .HasOne(e => e.Location)
+                .WithMany(l => l.Exams);
 
             modelBuilder.Entity<Candidate>()
                 .Property(C => C.FirstName)

@@ -33,6 +33,7 @@ namespace DataBaseLibrary
         {
             var candidate = context.Candidates.SingleOrDefault(p => p.UserAccount.UserName == request.usernameCandidate);
             var examinator = context.Examinators.FirstOrDefault(e => e.FirstName + " " + e.LastName == request.ExaminatorName);
+            var location = context.Locations.FirstOrDefault(l => l.LocationName == request.LocationName);
             var OldExam = false;
             OldExam = CheckExam(request);
 
@@ -41,7 +42,7 @@ namespace DataBaseLibrary
                 return null;
             }
 
-            var examen = Exam.CreateFutureExam(request.ExamDate, candidate, examinator);
+            var examen = Exam.CreateFutureExam(request.ExamDate, candidate, examinator, location);
             context.Exams.Add(examen);
 
             await context.SaveChangesAsync(cancellationToken);

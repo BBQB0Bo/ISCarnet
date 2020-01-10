@@ -20,7 +20,7 @@ namespace DataBaseLibrary
 
         public bool UpdateCandidate(Candidate candidate);
 
-        void AddExam(DateTime examdate, int score, Candidate candidate, Examinator examinator);
+        void AddExam(DateTime examdate, int score, Candidate candidate, Examinator examinator, Location location);
 
         public Account GetAccountByUserName(string username);
         public Account GetAccountByCredentials(string username, string password);

@@ -113,18 +113,19 @@ namespace DataBaseLibrary
             return true;
         }
 
-        public void AddExam(DateTime examdate, int score, Candidate candidate, Examinator examinator)
+        public void AddExam(DateTime examdate, int score, Candidate candidate, Examinator examinator, Location location)
         {
-            Exam e = Exam.Create(examdate, score, candidate, examinator);
+            Exam e = Exam.Create(examdate, score, candidate, examinator, location);
             context.Exams.Add(e);
             context.SaveChanges();
         }
 
-        public void AddFutureExam(DateTime examdate, string candidateUserName, string examinatorName)
+        public void AddFutureExam(DateTime examdate, string candidateUserName, string examinatorName, string locationName)
         {
             var c = context.Candidates.FirstOrDefault(c => c.UserAccount.UserName == candidateUserName);
             var ex = context.Examinators.FirstOrDefault(ex => ex.FirstName + " " + ex.LastName == examinatorName);
-            Exam e = Exam.CreateFutureExam(examdate, c, ex);
+            var l = context.Locations.FirstOrDefault(l => l.LocationName == locationName);
+            Exam e = Exam.CreateFutureExam(examdate, c, ex, l);
             context.Exams.Add(e);
             context.SaveChanges();
         }
