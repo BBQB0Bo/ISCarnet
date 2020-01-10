@@ -9,9 +9,9 @@ namespace DataBaseLibrary.Models
         public Guid LocationId { get; private set; }
         public string LocationName { get; private set; }
         public float Latitude { get; private set; }
-        public float Longitute { get; private set; }
+        public float Longitude { get; private set; }
 
-        public List<Exam> Exams { get; private set; }
+        public virtual List<Exam> Exams { get; private set; }
 
         public Location()
         {
@@ -23,7 +23,7 @@ namespace DataBaseLibrary.Models
             location.LocationId = Guid.NewGuid();
             location.LocationName = locationName;
             location.Latitude = latitude;
-            location.Longitute = longitude;
+            location.Longitude = longitude;
             return location;
         }
 

@@ -26,7 +26,7 @@ namespace DataBaseLibrary.Services
 
         public LocationDTO RegisterLocation(LocationDTO dto)
         {
-            Location location = Location.Create(dto.LocationName, dto.Latitude, dto.Longitute);
+            Location location = Location.Create(dto.LocationName, dto.Latitude, dto.Longitude);
             context.Locations.Add(location);
             context.SaveChanges();
             dto = new LocationDTO(location);

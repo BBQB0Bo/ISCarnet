@@ -7,15 +7,15 @@ namespace DataBaseLibrary.DTOs
 {
     public class LocationDTO
     {
-        public string LocationName { get; private set; }
-        public float Latitude { get; private set; }
-        public float Longitute { get; private set; }
+        public string LocationName { get; set; }
+        public float Latitude { get; set; }
+        public float Longitude { get; set; }
 
         public LocationDTO() { }
         public LocationDTO(Location location)
         {
             this.LocationName = location.LocationName;
-            this.Longitute = location.Longitute;
+            this.Longitude = location.Longitude;
             this.Latitude = location.Latitude;
         }
     }

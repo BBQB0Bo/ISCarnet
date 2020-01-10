@@ -20,9 +20,9 @@ namespace LocationAPI.Controllers
 
         // POST: api/Location
         [HttpPost]
-        public ActionResult<Location> PostLocation([FromBody] LocationDTO dto)
+        public ActionResult<LocationDTO> PostLocation([FromBody] LocationDTO dto)
         {
-           if(service.LocationAlreadyExists(dto.LocationName))
+            if (service.LocationAlreadyExists(dto.LocationName))
                 return BadRequest();
             LocationDTO location = service.RegisterLocation(dto);
             return Ok(location);
@@ -43,7 +43,7 @@ namespace LocationAPI.Controllers
 
         // GET: api/Locations
         [HttpGet("{locationName}")]
-        public ActionResult<Location> GetLocationByName(string locationName)
+        public ActionResult<LocationDTO> GetLocationByName(string locationName)
         {
             var location = service.GetLocationByName(locationName);
             if (location == null)
