@@ -25,17 +25,19 @@
                         <option value=@(ex.FirstName + " " + ex.LastName)>@(ex.FirstName + " " + ex.LastName)</option>
                         }
                     /**/
+                    /**/
 
 
                 </InputSelect>
             </p>
             <p>
-                <label for="examinator">Examinator:</label>
+                <label for="examinator">Locatie de plecare:</label>
                 <InputSelect id="username" asp-items="Model.locations" @bind-Value="dto.LocationName">
                     @foreach (LocationDTO l in locations)
                         {
                         <option value=@l.LocationName>@l.LocationName</option>
                         }
+                    /**/
                     /**/
 
 
