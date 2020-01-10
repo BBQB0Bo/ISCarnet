@@ -25,7 +25,19 @@
                         <option value=@(ex.FirstName + " " + ex.LastName)>@(ex.FirstName + " " + ex.LastName)</option>
                         }
                     /**/
+
+
+                </InputSelect>
+            </p>
+            <p>
+                <label for="examinator">Examinator:</label>
+                <InputSelect id="username" asp-items="Model.locations" @bind-Value="dto.LocationName">
+                    @foreach (LocationDTO l in locations)
+                        {
+                        <option value=@l.LocationName>@l.LocationName</option>
+                        }
                     /**/
+
 
                 </InputSelect>
             </p>
@@ -48,16 +60,20 @@
 
     private CreateExam dto = new CreateExam();
     private List<ExaminatorDTO> examinas = new List<ExaminatorDTO>();
+    private List<LocationDTO> locations = new List<LocationDTO>();
+
     string message = string.Empty;
 
     // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
     HttpClient Http = new HttpClient();
     private string apiUrl = "https://localhost:44369/api/Examinators";
+    private string locationsApiUrl = "https://localhost:44363/api/Location";
     protected override async Task OnInitializedAsync()
     {
         dto.ExamDate = DateTime.Today;
         examinas = await Http.GetJsonAsync<List<ExaminatorDTO>>
         (apiUrl);
+        locations = await Http.GetJsonAsync<List<LocationDTO>>(locationsApiUrl);
     }
 
     // FUNCTIA DE SUBMIT

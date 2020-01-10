@@ -220,18 +220,15 @@
         "properties": {
           "locationName": {
             "type": "string",
-            "nullable": true,
-            "readOnly": true
+            "nullable": true
           },
           "latitude": {
             "type": "number",
-            "format": "float",
-            "readOnly": true
+            "format": "float"
           },
-          "longitute": {
+          "longitude": {
             "type": "number",
-            "format": "float",
-            "readOnly": true
+            "format": "float"
           }
         },
         "additionalProperties": false
@@ -423,7 +420,7 @@
             "format": "float",
             "readOnly": true
           },
-          "longitute": {
+          "longitude": {
             "type": "number",
             "format": "float",
             "readOnly": true
