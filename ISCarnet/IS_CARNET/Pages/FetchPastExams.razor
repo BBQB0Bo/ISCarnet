@@ -1,46 +1,47 @@
 ﻿@page "/fetchpastexams"
-
+@inject IJSRuntime JSRuntime
 @using IS_CARNET.Data
-    <style>
-    h1{
-        color:white
+<style>
+    h1 {
+        color: white
     }
-    p{
-        color:white
+
+    p {
+        color: white
     }
-    </style>
-    <div style="width:500px;margin-left:auto;margin-right:auto;">
-        <div style="margin-left:60px">
-            <h1><b>Examene</b></h1>
-        </div>
+</style>
+<div style="width:500px;margin-left:auto;margin-right:auto;">
+    <div style="margin-left:60px">
+        <h1><b>Examene</b></h1>
+    </div>
 
 
-        @if (State.CurrentUser != null)
-        {   <div style="margin-left:80px">
+    @if (State.CurrentUser != null)
+    {<div style="margin-left:80px">
             <p>Utilizatorul: <b>@State.CurrentUser</b></p>
-            </div>
-            @if (exams != null)
-            {
-                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@exams" PageSize="4" TItem="ExamDTO">
-                    <Template Context="exam">
-                        <RadzenCard Style="width:300px;margin-top:20px">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div style="margin-top:20px;margin-left:20px">
-                                        Data:
-                                        <br />
-                                        <b>@exam.ExamDate.ToShortDateString()</b>
-                                    </div>
-
+        </div>
+        @if (exams != null)
+        {
+            <RadzenDataList WrapItems="true" AllowPaging="true" Data="@exams" PageSize="4" TItem="ExamDTO">
+                <Template Context="exam">
+                    <RadzenCard Style="width:400px;margin-top:20px">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div style="margin-top:20px;margin-left:20px">
+                                    Data:
                                     <br />
-                                    <div style="margin-left:20px;margin-bottom:20px">
-                                        Examinator:
-                                        <br />
-                                        <b>@exam.Examinator</b>
-                                    </div>
-                                    <div style="margin-left:20px;margin-bottom:20px">
-                                       @if (exam.Mistakes.Count > 0)
-                                        { <table class="table">
+                                    <b>@exam.ExamDate.ToShortDateString()</b>
+                                </div>
+
+                                <br />
+                                <div style="margin-left:20px;margin-bottom:20px">
+                                    Examinator:
+                                    <br />
+                                    <b>@exam.Examinator</b>
+                                </div>
+                                <div style="margin-left:20px;margin-bottom:20px">
+                                    @if (exam.Mistakes.Count > 0)
+                                    {<table class="table">
                                             <thead>
                                                 <tr>
                                                     <th>Greseli</th>
@@ -58,58 +59,67 @@
                                                 }
                                             </tbody>
                                         </table>
-                                       }
-                                       else
-                                       {
-                                           <p1>Numar Greseli: <b>0</b></p1>
-                                       }
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div style="margin-top:20px;margin-left:20px">
-                                            Scor:
-                                            <br />
-                                            <b>@exam.Score</b>
-                                        </div>
-                                        <div style="margin-top:20px;margin-left:20px">
-                                            Rezultat:
-                                            <br />
-                                            <b>@exam.Result</b>
-                                        </div>
-                                        <div style="margin-top:20px;margin-left:20px;margin-bottom:20px">
-                                            Oras:
-                                            <br />
-                                            <b>Iasi</b>
-                                        </div>
-                                    </div>
+                                    }
+                                    else
+                                    {
+                                        <p1>Numar Greseli: <b>0</b></p1>
+                                    }
                                 </div>
-                        </RadzenCard>
-                    </Template>
-                </RadzenDataList>
+                            </div>
+                            <div class="col-md-6">
+                                <div style="margin-top:20px;margin-left:20px">
+                                    Scor:
+                                    <br />
+                                    <b>@exam.Score</b>
+                                </div>
+                                <div style="margin-top:20px;margin-left:20px">
+                                    Rezultat:
+                                    <br />
+                                    <b>@exam.Result</b>
+                                </div>
+                                <div style="margin-top:20px;margin-left:20px;margin-bottom:20px">
+                                    Oras:
+                                    <br />
+                                    <b>Iasi</b>
+                                </div>
+                            </div>
+                        </div>
+                    </RadzenCard>
+                </Template>
+            </RadzenDataList>
 
-              }
-                
-            else
-            { <p>Nu aveti examene inregistrate</p>}
         }
+
         else
-        {
+        { <p>Nu aveti examene inregistrate</p>}
+    }
+    else
+    {
         <p>Va rugam sa va logati pentru a accesa istoricul examenelor</p>
-        }
+    }
 </div>
+<div id="map"></div>
 
+@code {
+    private IEnumerable<ExamDTO> exams;
 
-        @code {
-            private IEnumerable<ExamDTO> exams;
+    HttpClient Http = new HttpClient();
+    private string apiUrl = "https://localhost:44316/api/pastExam/" + State.CurrentUser;
+    protected override async Task OnInitializedAsync()
+    {
+        exams = await Http.GetJsonAsync<IEnumerable<ExamDTO>>(apiUrl);
+    }
+    private IEnumerable<ExaminatorDTO> examinators;
 
-            HttpClient Http = new HttpClient();
-            private string apiUrl = "https://localhost:44316/api/pastExam/" + State.CurrentUser;
-            protected override async Task OnInitializedAsync()
-            {
-                exams = await Http.GetJsonAsync<IEnumerable<ExamDTO>>(apiUrl);
-            }
-            private IEnumerable<ExaminatorDTO> examinators;
-
-
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initMap", null);
+            StateHasChanged();
         }
+
+    }
+
+}
 
