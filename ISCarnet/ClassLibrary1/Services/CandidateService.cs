@@ -22,7 +22,6 @@ namespace DataBaseLibrary
             this.context = new CandidateContext();
         }
 
-        // private CandidateContext context;
 
         public AccountDTO RegisterCandidate(RegisterCandidateDTO dto)
         {
@@ -37,14 +36,7 @@ namespace DataBaseLibrary
             accDTO.Password = c.UserAccount.Password;
             return accDTO;
         }
-        public ExaminatorDTO RegisterExaminator(ExaminatorDTO dto)
-        {
-            Examinator examinator = Examinator.Create(dto.FirstName, dto.LastName);
-            context.Examinators.Add(examinator);
-            context.SaveChanges();
-            dto = new ExaminatorDTO(examinator);
-            return dto;
-        }
+
 
 
         public Candidate FindCandidateByCNP(string cnp)
@@ -142,21 +134,6 @@ namespace DataBaseLibrary
             return account;
         }
 
-        public List<ExaminatorDTO> GetExaminatorDTOs()
-        {
-            List<ExaminatorDTO> dtos = new List<ExaminatorDTO>();
-            foreach (Examinator examinator in context.Examinators.ToList())
-            {
-                dtos.Add(new ExaminatorDTO(examinator));
-            }
-            return dtos;
-        }
 
-        public ExaminatorDTO GetExaminatorByName(string fullName)
-        {
-            Examinator ex = context.Examinators.FirstOrDefault(e => e.FirstName + e.LastName == fullName);
-            ExaminatorDTO dto = new ExaminatorDTO(ex);
-            return dto;
-        }
     }
 }

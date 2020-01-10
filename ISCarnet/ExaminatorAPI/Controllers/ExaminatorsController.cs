@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DataBaseLibrary;
 using DataBaseLibrary.Models;
 using DataBaseLibrary.DTOs;
+using DataBaseLibrary.Interfaces;
 
 namespace ExaminatorAPI.Controllers
 {
@@ -11,9 +11,9 @@ namespace ExaminatorAPI.Controllers
     [ApiController]
     public class ExaminatorsController : ControllerBase
     {
-        private readonly ICandidateService service;
+        private readonly IExaminatorService service;
 
-        public ExaminatorsController(ICandidateService service)
+        public ExaminatorsController(IExaminatorService service)
         {
             this.service = service;
         }

@@ -46,3 +46,11 @@ D:\dev\New folder\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary
 D:\dev\New folder\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.AssemblyInfo.cs
 D:\dev\New folder\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.dll
 D:\dev\New folder\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\ClassLibrary1\bin\Debug\netcoreapp3.0\DataBaseLibrary.deps.json
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\ClassLibrary1\bin\Debug\netcoreapp3.0\DataBaseLibrary.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\ClassLibrary1\bin\Debug\netcoreapp3.0\DataBaseLibrary.pdb
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.csprojAssemblyReference.cache
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.AssemblyInfoInputs.cache
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.AssemblyInfo.cs
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.dll
+C:\Users\bianc\OneDrive\Desktop\Proiect .net\ISCarnet\ISCarnet\ClassLibrary1\obj\Debug\netcoreapp3.0\DataBaseLibrary.pdb
