@@ -1,53 +1,86 @@
 ﻿@page "/examinators"
 
 @using IS_CARNET.Data
+<style>
+    h1{
+        color:white
+    }
+    p{
+        color:white
+    }
+</style>
+    <div style="width:500px;margin-left:auto;margin-right:auto;">
+        <div style="margin-left:30px">
+        <h1><b>Examinatori</b></h1>
+        </div>
 
-<div class="form">
-    <h1>Examinators</h1>
-
-
-    @if (!string.IsNullOrEmpty(State.CurrentUser) || !string.IsNullOrEmpty(AdminState.CurrentUser))
-    {
-        @if (examinators != null && examinators.Length >= 1)
+        @if (!string.IsNullOrEmpty(State.CurrentUser) || !string.IsNullOrEmpty(AdminState.CurrentUser))
         {
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Percentage</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var examinator in examinators)
-                    {
-                        <tr>
-                            <td>@examinator.LastName</td>
-                            <td>@examinator.FirstName</td>
-                            <td>@examinator.PassingPercentage</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+            @if (examinators != null)
+            {
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@examinators" PageSize="4" TItem="ExaminatorDTO">
+                    <Template Context="examinator">
+                        <RadzenCard Style="width:300px;margin-top:20px">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div style="margin-top:20px;margin-left:20px">
+                                        Nume:
+                                        <br />
+                                        <b>@examinator.LastName</b>
+                                    </div>
+
+                                    <br />
+                                    <div style="margin-left:20px;margin-bottom:20px">
+                                        <RadzenImage Path="https://p.kindpng.com/picc/s/468-4689556_significa-police-officer-en-espaol-hd-png-download.png" Style="width:100px;">
+                                        </RadzenImage>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="margin-top:20px;margin-left:20px">
+                                        Prenume:
+                                        <br />
+                                        <b>@examinator.FirstName</b>
+                                    </div>
+                                    <div style="margin-top:20px;margin-left:20px">
+                                        Procentaj:
+                                        <br />
+                                        <b>@examinator.PassingPercentage %</b>
+                                    </div>
+                                    <div style="margin-top:20px;margin-left:20px">
+                                        Oras:
+                                        <br />
+                                        <b>Iasi</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </RadzenCard>
+                    </Template>
+                </RadzenDataList>
+
+            }
+            else
+            {
+                <p>Nu sunt examinatori inregistrati</p>}
         }
         else
-        { <p>Nu sunt examinatori inregistrati</p>}
-    }
-    else
-    {
-        <p>Va rugam sa va logati pentru a accesa lista de examinatori</p>
-    }
-</div>
+        {
+            <p>Va rugam sa va logati pentru a accesa lista de examinatori</p>
+        }
+
+    </div>
+
 
 
 @code {
-    private ExaminatorDTO[] examinators;
+
+    private IEnumerable<ExaminatorDTO> examinators;
 
     HttpClient Http = new HttpClient();
     private string apiUrl = "https://localhost:44369/api/Examinators";
     protected override async Task OnInitializedAsync()
     {
-        examinators = await Http.GetJsonAsync<ExaminatorDTO[]>(apiUrl);
+        examinators = await Http.GetJsonAsync<IEnumerable<ExaminatorDTO>>(apiUrl);
     }
 
 
