@@ -1,662 +1,664 @@
 ﻿@page "/info"
 
-<div class="login-page">
-    <img src="img/logo.png" class="logo">
-</div>
-<div class="form2">
-
-
-    <h3>INTREBARI FRECVENTE</h3>
-    <RadzenAccordion Multiple="true" Collapse="@((args) => Change(args))"
-                     Expand="@((args) => Change(args))">
-        <Items>
-
-            <RadzenAccordionItem Text="CODUL RUTIER ACTUALIZAT PDF">
-                <button onclick="location.href = 'https://legestart.ro/wp-content/uploads/2018/08/codul-rutier_actualizat.pdf'" class="homeButton"> CLICK HERE TO REDIRECT  </button>
-            </RadzenAccordionItem>
-
-            <RadzenAccordionItem Text="Conditii pentru inscrierea la examenul auto">
-                <strong>Persoana care solicită examinarea pentru a obţine permisul de conducere trebuie să îndeplinească – la data verificării dosarului de examinare, respectiv la data susţinerii probelor – următoarele condiţii:</strong><br>
-                <br>
-                <strong>a) Vârsta minimă pentru obţinerea permisului de conducere este de:</strong>
-
-                <ul>
-                    <li style="text-align:justify">16 ani împliniţi, pentru categoriile de vehicule AM, A1 şi B1;</li>
-                    <li style="text-align:justify">18 ani împliniţi, pentru categoriile de vehicule A2, B, BE, C1, C1E şi Tr;</li>
-                    <li style="text-align:justify">20 de ani împliniţi, dacă persoana are o experienţă de cel puţin 2 ani de conducere a motocicletelor din categoria A2, sau 24 de ani împliniţi, pentru motocicletele din categoria A;</li>
-                    <li style="text-align:justify">21 de ani pentru categoriile de vehicule C, CE, D1 si D1E, precum şi pentru triciclurile cu motor din categoria A;</li>
-                    <li style="text-align:justify">24 de ani pentru categoriile de vehicule D, DE, Tb si Tv.</li>
-                </ul>
-                <br>
-                <strong>b)&nbsp;să fie aptă din punct de vedere medical şi psihologic pentru conducerea pe drumurile publice a autovehiculelor din categoriile şi subcategoriile pentru care solicită examinarea;</strong><br>
-                <br>
-                <strong>c)</strong>&nbsp;<strong>să facă dovada pregătirii teoretice şi practice, realizată prin cursuri organizate de unităţi autorizate pentru categoriile sau subcategoriile pentru care solicită examinarea</strong>; &nbsp;<br>
-                <br>
-                <strong>d)</strong>&nbsp;<strong>&nbsp;</strong><strong>să facă dovada că domiciliază sau că are reşedinţa, astfel cum sunt reglementate de art. 23^1 din OUG nr. 195/2002 privind circulația pe drumurile publice cu modific</strong><strong>ă</strong><strong>rile si completarile ulterioare, pe raza de competență a Serviciului Public Comunitar Regim Permise de Conducere şi Înmatriculare București</strong>. &nbsp;<br>
-                <br>
-                <strong>e)</strong>&nbsp;<strong>să nu se afle în una dintre situaţiile prevăzute la art. 24 alin. (6) din OUG 195/2002 privind circulaţia pe drumurile publice, republicată, cu modificările şi completările ulterioare sau să facă dovada că a intervenit una din excepțiile prevăzute de art. 116 alin. 1 din OUG nr. 195/2002</strong>.
-
-            </RadzenAccordionItem>
-
-            <RadzenAccordionItem Text="Continutul dosarului de examen">
-                <p><strong>1)</strong> cerere tip (<em>de la ghișeele serviciilor publice comunitare regim permise de conducere si inmatriculare a vehiculelor</em>);</p>
-
-                <p><strong>2)</strong> fișa de școlarizare – valabilă un an de zile de la data absolvirii cursurilor – emisă de şcoala de conducători auto în cadrul căreia a absolvit cursurile de pregătire teoretică şi practică, în care se consemnează şi avizul medical;</p>
-
-                <p><strong>3)</strong> certificatul de cazier judiciar, în termenul de valabilitate și după caz copia hotărârii judecătoreşti de condamnare, rămasă definitivă, în cazul condamnarii la pedeapsa inchisorii cu executare sau la pedeapsa amenzii, copia biletului de liberare sau a documentului care atesta executarea pedepsei amenzii;</p>
-
-                <p><strong>4)</strong> chitanţa de plată a contravalorii permisului de conducere - 68 lei, se poate achita numerar la ghișeu odată cu depunerea documentelor.</p>
-
-                <p><em>Contravaloarea permisului de conducere de 68 lei se poate achita prin Internet Banking (pentru confirmarea tranzacției este necesara o perioada mai mare de 24 ore), virament bancar, mandat poștal, numerar - la ghișeu. Pe documentul de plată vor fi inscrise urmatoarele informatii: codul numeric personal, numele si prenumele persoanei beneficiare a serviciului solicitat, contul IBAN, codul fiscal al Institutiei Prefectului, suma si tipul documentului pentru care se efectueaza plata.</em></p>
-            </RadzenAccordionItem>
-
-            <RadzenAccordionItem Text="Continut dosar rerdobandire permis auto ANULAT">
-                <strong>Dosarul de examen în vederea redobândirii permisului de conducere trebuie să cuprindă următoarele documente:</strong><br>
-                <br>
-                a)&nbsp;cerere tip&nbsp;
-                <br>
-                b)&nbsp;certificatul de cazier judiciar, în termenul de valabilitate și după caz&nbsp;copia hotărârii judecătoreşti de condamnare, rămasă definitivă, în cazul condamnării la pedeapsa închisorii cu executare sau la pedeapsa amenzii, copia biletului de liberare sau a documentului care atesta executarea pedepsei amenzii;<br>
-                <br>
-                c)&nbsp;actul de identitate, în original şi copie;<br>
-                <br>
-                d)&nbsp;copia hotărârii judecătoreşti de condamnare, rămasă definitivă;<br>
-                <br>
-                e)&nbsp;fişa medicală, în original şi copie, completată de&nbsp; o unitate de asistenţă medicală ambulatorie de specialitate autorizată, cu menţionarea categoriilor pentru care solicitantul este apt de a conduce autovehicule, cu mențiunea că&nbsp;este apt din punct de vedere medical pentru conducerea autovehiculelor din grupa din care face parte categoria solicitată;<br>
-                <br>
-                f)&nbsp;documentul eliberat de un laborator de specialitate autorizat din care rezultă că este apt din punct de vedere psihologic pentru a conduce autovehicule pe drumurile publice;<br>
-                <br>
-                g)&nbsp;chitanţa de plată a contravalorii permisului de conducere – 68 lei.
-            </RadzenAccordionItem>
-
-            <RadzenAccordionItem Text="Puncte de penalizare traseu categoria A">
-                <h2>PENALIZAREA GREȘELILOR COMISE DE CANDIDAT</h2>
-
-                <h3>(PUNCTE DE PENALIZARE)</h3>
-                <strong>
-                    Aplicate pentru nerespectarea normelor rutiere/neexecutarea ori executarea incorectă a manevrelor indicate<br>
-                    La examenul practic fiecare greșeală primește un număr de puncte de penalizare, dacă se cumulează 21 de puncte de penalizare la traseu, candidatul este respins.
-                </strong>
-
-                <h3>Categoria A (A, A1, A2, AM)</h3>
-
-                <h4><strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICULULUI</strong></h4>
-                - neutilizarea echipamentului de protecție: mănuși, cizme, îmbrăcăminte și cască de protecție; (pentru AM, numai casca de protecție)<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-                - neverificarea stării anvelopelor și a comutatorului de oprire în caz de urgență;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-                - verificarea prin intermediul aparaturii de bord sau comenzilor autovehiculului, funcționalitatea direcției, frânei, transmisiei, instalației de ungere/răcire, luminilor, semnalizării, catadioptrilor și avertizorului sonor.<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong>
-
-                <h4><strong>II. MANEVRE SPECIALE ÎN POLIGON (se penalizează executarea incorectă a acestora)</strong></h4>
-                - așezarea/coborârea vehiculului pe/de suportul de sprijin/cric și deplasrea pe jos pe lângă vehicul;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-                - pornirea motorului și demararea ușoară fără bruscarea vehiculului;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-                - accelerarea progresivă, menținerea direcției de mers, inclusiv la schimbarea vitezelor;<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - menținerea poziție pe vehicul, tehnica menținerii direcției (echilibrul permanent fără sprijirea de carosabil);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - manvrarea ambreiajului în combinație cu frâna, schimbarea vitezelor;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-                - executarea slalomului printre 5 jaloane;<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - executarea de opturi printre 4 jaloane;<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - ocolirea jalonului, fără lovirea/răsturnarea acestuia;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-                - îndemânarea privind manevrarea frânei față/spate la frânarea de urgență, menținerea direcției vizuale și poziția pe vehicul);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - executarea manevrei&nbsp;de evitare a unui obstacol la viteză de peste 30 km/h (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - executarea manevrei&nbsp;de evitare a unui obstacol la viteză minimă de 50 km/h (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - executarea frânării, inclusiv frânarea de urgență, la o viteză minimă de 50 km/h (fără&nbsp;AM).<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong>
+    <div class="hero">
+        <div class="login-page">
+            <img src="img/logo.png" class="logo">
+        </div>
+        <button onclick="location.href = '/'" class="fixedButton"><i class="fa fa-home"/>HOME</button>
+        <div class="form2">
+
+
+            <h1>INTREBARI FRECVENTE</h1>
+            <RadzenAccordion Multiple="true" Collapse="@((args) => Change(args))"
+                             Expand="@((args) => Change(args))">
+                <Items>
+
+                    <RadzenAccordionItem Text="CODUL RUTIER ACTUALIZAT PDF">
+                        <button onclick="location.href = 'https://legestart.ro/wp-content/uploads/2018/08/codul-rutier_actualizat.pdf'" class="homeButton"> CLICK HERE TO REDIRECT  </button>
+                    </RadzenAccordionItem>
+
+                    <RadzenAccordionItem Text="Conditii pentru inscrierea la examenul auto">
+                        <strong>Persoana care solicită examinarea pentru a obţine permisul de conducere trebuie să îndeplinească – la data verificării dosarului de examinare, respectiv la data susţinerii probelor – următoarele condiţii:</strong><br>
+                        <br>
+                        <strong>a) Vârsta minimă pentru obţinerea permisului de conducere este de:</strong>
+
+                        <ul>
+                            <li style="text-align:justify">16 ani împliniţi, pentru categoriile de vehicule AM, A1 şi B1;</li>
+                            <li style="text-align:justify">18 ani împliniţi, pentru categoriile de vehicule A2, B, BE, C1, C1E şi Tr;</li>
+                            <li style="text-align:justify">20 de ani împliniţi, dacă persoana are o experienţă de cel puţin 2 ani de conducere a motocicletelor din categoria A2, sau 24 de ani împliniţi, pentru motocicletele din categoria A;</li>
+                            <li style="text-align:justify">21 de ani pentru categoriile de vehicule C, CE, D1 si D1E, precum şi pentru triciclurile cu motor din categoria A;</li>
+                            <li style="text-align:justify">24 de ani pentru categoriile de vehicule D, DE, Tb si Tv.</li>
+                        </ul>
+                        <br>
+                        <strong>b)&nbsp;să fie aptă din punct de vedere medical şi psihologic pentru conducerea pe drumurile publice a autovehiculelor din categoriile şi subcategoriile pentru care solicită examinarea;</strong><br>
+                        <br>
+                        <strong>c)</strong>&nbsp;<strong>să facă dovada pregătirii teoretice şi practice, realizată prin cursuri organizate de unităţi autorizate pentru categoriile sau subcategoriile pentru care solicită examinarea</strong>; &nbsp;<br>
+                        <br>
+                        <strong>d)</strong>&nbsp;<strong>&nbsp;</strong><strong>să facă dovada că domiciliază sau că are reşedinţa, astfel cum sunt reglementate de art. 23^1 din OUG nr. 195/2002 privind circulația pe drumurile publice cu modific</strong><strong>ă</strong><strong>rile si completarile ulterioare, pe raza de competență a Serviciului Public Comunitar Regim Permise de Conducere şi Înmatriculare București</strong>. &nbsp;<br>
+                        <br>
+                        <strong>e)</strong>&nbsp;<strong>să nu se afle în una dintre situaţiile prevăzute la art. 24 alin. (6) din OUG 195/2002 privind circulaţia pe drumurile publice, republicată, cu modificările şi completările ulterioare sau să facă dovada că a intervenit una din excepțiile prevăzute de art. 116 alin. 1 din OUG nr. 195/2002</strong>.
+
+                    </RadzenAccordionItem>
+
+                    <RadzenAccordionItem Text="Continutul dosarului de examen">
+                        <p><strong>1)</strong> cerere tip (<em>de la ghișeele serviciilor publice comunitare regim permise de conducere si inmatriculare a vehiculelor</em>);</p>
+
+                        <p><strong>2)</strong> fișa de școlarizare – valabilă un an de zile de la data absolvirii cursurilor – emisă de şcoala de conducători auto în cadrul căreia a absolvit cursurile de pregătire teoretică şi practică, în care se consemnează şi avizul medical;</p>
+
+                        <p><strong>3)</strong> certificatul de cazier judiciar, în termenul de valabilitate și după caz copia hotărârii judecătoreşti de condamnare, rămasă definitivă, în cazul condamnarii la pedeapsa inchisorii cu executare sau la pedeapsa amenzii, copia biletului de liberare sau a documentului care atesta executarea pedepsei amenzii;</p>
+
+                        <p><strong>4)</strong> chitanţa de plată a contravalorii permisului de conducere - 68 lei, se poate achita numerar la ghișeu odată cu depunerea documentelor.</p>
+
+                        <p><em>Contravaloarea permisului de conducere de 68 lei se poate achita prin Internet Banking (pentru confirmarea tranzacției este necesara o perioada mai mare de 24 ore), virament bancar, mandat poștal, numerar - la ghișeu. Pe documentul de plată vor fi inscrise urmatoarele informatii: codul numeric personal, numele si prenumele persoanei beneficiare a serviciului solicitat, contul IBAN, codul fiscal al Institutiei Prefectului, suma si tipul documentului pentru care se efectueaza plata.</em></p>
+                    </RadzenAccordionItem>
+
+                    <RadzenAccordionItem Text="Continut dosar rerdobandire permis auto ANULAT">
+                        <strong>Dosarul de examen în vederea redobândirii permisului de conducere trebuie să cuprindă următoarele documente:</strong><br>
+                        <br>
+                        a)&nbsp;cerere tip&nbsp;
+                        <br>
+                        b)&nbsp;certificatul de cazier judiciar, în termenul de valabilitate și după caz&nbsp;copia hotărârii judecătoreşti de condamnare, rămasă definitivă, în cazul condamnării la pedeapsa închisorii cu executare sau la pedeapsa amenzii, copia biletului de liberare sau a documentului care atesta executarea pedepsei amenzii;<br>
+                        <br>
+                        c)&nbsp;actul de identitate, în original şi copie;<br>
+                        <br>
+                        d)&nbsp;copia hotărârii judecătoreşti de condamnare, rămasă definitivă;<br>
+                        <br>
+                        e)&nbsp;fişa medicală, în original şi copie, completată de&nbsp; o unitate de asistenţă medicală ambulatorie de specialitate autorizată, cu menţionarea categoriilor pentru care solicitantul este apt de a conduce autovehicule, cu mențiunea că&nbsp;este apt din punct de vedere medical pentru conducerea autovehiculelor din grupa din care face parte categoria solicitată;<br>
+                        <br>
+                        f)&nbsp;documentul eliberat de un laborator de specialitate autorizat din care rezultă că este apt din punct de vedere psihologic pentru a conduce autovehicule pe drumurile publice;<br>
+                        <br>
+                        g)&nbsp;chitanţa de plată a contravalorii permisului de conducere – 68 lei.
+                    </RadzenAccordionItem>
+
+                    <RadzenAccordionItem Text="Puncte de penalizare traseu categoria A">
+                        <h2>PENALIZAREA GREȘELILOR COMISE DE CANDIDAT</h2>
+
+                        <h3>(PUNCTE DE PENALIZARE)</h3>
+                        <strong>
+                            Aplicate pentru nerespectarea normelor rutiere/neexecutarea ori executarea incorectă a manevrelor indicate<br>
+                            La examenul practic fiecare greșeală primește un număr de puncte de penalizare, dacă se cumulează 21 de puncte de penalizare la traseu, candidatul este respins.
+                        </strong>
+
+                        <h3>Categoria A (A, A1, A2, AM)</h3>
+
+                        <h4><strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICULULUI</strong></h4>
+                        - neutilizarea echipamentului de protecție: mănuși, cizme, îmbrăcăminte și cască de protecție; (pentru AM, numai casca de protecție)<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - neverificarea stării anvelopelor și a comutatorului de oprire în caz de urgență;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - verificarea prin intermediul aparaturii de bord sau comenzilor autovehiculului, funcționalitatea direcției, frânei, transmisiei, instalației de ungere/răcire, luminilor, semnalizării, catadioptrilor și avertizorului sonor.<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong>
+
+                        <h4><strong>II. MANEVRE SPECIALE ÎN POLIGON (se penalizează executarea incorectă a acestora)</strong></h4>
+                        - așezarea/coborârea vehiculului pe/de suportul de sprijin/cric și deplasrea pe jos pe lângă vehicul;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - pornirea motorului și demararea ușoară fără bruscarea vehiculului;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - accelerarea progresivă, menținerea direcției de mers, inclusiv la schimbarea vitezelor;<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - menținerea poziție pe vehicul, tehnica menținerii direcției (echilibrul permanent fără sprijirea de carosabil);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - manvrarea ambreiajului în combinație cu frâna, schimbarea vitezelor;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - executarea slalomului printre 5 jaloane;<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - executarea de opturi printre 4 jaloane;<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - ocolirea jalonului, fără lovirea/răsturnarea acestuia;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - îndemânarea privind manevrarea frânei față/spate la frânarea de urgență, menținerea direcției vizuale și poziția pe vehicul);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - executarea manevrei&nbsp;de evitare a unui obstacol la viteză de peste 30 km/h (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - executarea manevrei&nbsp;de evitare a unui obstacol la viteză minimă de 50 km/h (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - executarea frânării, inclusiv frânarea de urgență, la o viteză minimă de 50 km/h (fără&nbsp;AM).<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong>
 
-                <h4><strong>Greșeli care atrag acordarea calificativului “RESPINS”</strong></h4>
-                - a depășit timpul alocat executării manevrelor în poligon;<strong><span style="color:rgb(255, 0, 0)">-16p</span></strong><br>
-                - a căzut cu mopedul/motocicleta;<strong><span style="color:rgb(255, 0, 0)">-16p</span></strong><br>
-                - nu a respectat traseul stabilit în poligon.<strong><span style="color:rgb(255, 0, 0)">-16p</span></strong>
+                        <h4><strong>Greșeli care atrag acordarea calificativului “RESPINS”</strong></h4>
+                        - a depășit timpul alocat executării manevrelor în poligon;<strong><span style="color:rgb(255, 0, 0)">-16p</span></strong><br>
+                        - a căzut cu mopedul/motocicleta;<strong><span style="color:rgb(255, 0, 0)">-16p</span></strong><br>
+                        - nu a respectat traseul stabilit în poligon.<strong><span style="color:rgb(255, 0, 0)">-16p</span></strong>
 
-                <h4><strong>III. COMPORTAMENTUL&nbsp;ÎN TRAFIC</strong></h4>
-                - nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză) (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - nemenținerea direcției de mers (fără&nbsp;AM);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-                - folosirea incorectă a drumului cu sau fără marcaj (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - neasigurarea la schimbarea direcției de mers(fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
-                - executarea neregulamentară a virajelor (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - folosirea incorectă a luminilor de întâlnire/luminilor de drum;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-                - neîncadrarea corespunzătoare în raport cu direcția de mers indicată(fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - efectuarea unor manevre interzise (oprire, staționare,întoarcere)(fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - neasigurarea la pătrunderea în intersecții/la părăsirea&nbsp;zonei de staționare (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
-                - folosirea incorectă a benzilor la intrarea/ieșirea pe/de pe autostradă/artere similare (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
-                - conducerea în mod neeconomic și agresiv pentru mediu înconjurător (turație excesivă, frânare/accelerare nejustificate) (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - manevrarea incorectă la urcarea rampelor/coborârea pantelor lungi, la circulația în tuneluri (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-                - nerespectarea normelor legale referitoare la manevra de depășire;<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
-                - ezitarea repetată de a depăși alte vehicule;<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - neacordarea priorității de trecere vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în intersecții, sens giratoriu, stație mijloc de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere de pietoni) (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
+                        <h4><strong>III. COMPORTAMENTUL&nbsp;ÎN TRAFIC</strong></h4>
+                        - nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză) (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - nemenținerea direcției de mers (fără&nbsp;AM);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - folosirea incorectă a drumului cu sau fără marcaj (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - neasigurarea la schimbarea direcției de mers(fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
+                        - executarea neregulamentară a virajelor (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - folosirea incorectă a luminilor de întâlnire/luminilor de drum;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - neîncadrarea corespunzătoare în raport cu direcția de mers indicată(fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - efectuarea unor manevre interzise (oprire, staționare,întoarcere)(fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - neasigurarea la pătrunderea în intersecții/la părăsirea&nbsp;zonei de staționare (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
+                        - folosirea incorectă a benzilor la intrarea/ieșirea pe/de pe autostradă/artere similare (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
+                        - conducerea în mod neeconomic și agresiv pentru mediu înconjurător (turație excesivă, frânare/accelerare nejustificate) (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - manevrarea incorectă la urcarea rampelor/coborârea pantelor lungi, la circulația în tuneluri (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - nerespectarea normelor legale referitoare la manevra de depășire;<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
+                        - ezitarea repetată de a depăși alte vehicule;<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - neacordarea priorității de trecere vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în intersecții, sens giratoriu, stație mijloc de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere de pietoni) (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
 
-                - nerespectarea semnificației culorii roșii a semaforului/ a semnalelor polițistului rutier/ a semnalelor altor persoane cu atribuții legale similare (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
-                - nerespectarea semnificației indicatoarelor/&nbsp;marcajelor/ culorii semaforului (cu excepția culorii roșii);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
-                - nerespectarea normelor legale referitoare la trecerea la nivel cu calea ferată(fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
-                - depășirea vitezei legale maxime admise (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
-                - tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
-                - neîndemânrea în conducere în condiții de carosabil alunecos (reducerea vitezei, conduită preventivă) (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
-                - nerespectarea comenzii examinatorului privind traseul de urmat.<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong>
+                        - nerespectarea semnificației culorii roșii a semaforului/ a semnalelor polițistului rutier/ a semnalelor altor persoane cu atribuții legale similare (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
+                        - nerespectarea semnificației indicatoarelor/&nbsp;marcajelor/ culorii semaforului (cu excepția culorii roșii);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
+                        - nerespectarea normelor legale referitoare la trecerea la nivel cu calea ferată(fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
+                        - depășirea vitezei legale maxime admise (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
+                        - tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong><br>
+                        - neîndemânrea în conducere în condiții de carosabil alunecos (reducerea vitezei, conduită preventivă) (fără&nbsp;AM);<strong><span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
+                        - nerespectarea comenzii examinatorului privind traseul de urmat.<strong><span style="color:rgb(255, 0, 0)">-6p</span></strong>
 
-                <h4><strong>IV. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
-                - prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea candidaților;<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
-                - intervenția instructorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong>
+                        <h4><strong>IV. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
+                        - prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea candidaților;<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong><br>
+                        - intervenția instructorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<strong><span style="color:rgb(255, 0, 0)">-21p</span></strong>
 
-            </RadzenAccordionItem>
+                    </RadzenAccordionItem>
 
-<RadzenAccordionItem Text="Puncte de penalizare traseu categoria B">
-    <h2>PENALIZAREA GREȘELILOR COMISE DE CANDIDAT</h2>
+                    <RadzenAccordionItem Text="Puncte de penalizare traseu categoria B">
+                        <h2>PENALIZAREA GREȘELILOR COMISE DE CANDIDAT</h2>
 
-    <h3>(PUNCTE DE PENALIZARE)</h3>
-    <strong>
-        Aplicate pentru nerespectarea normelor rutiere/neexecutarea ori executarea incorectă a manevrelor indicate<br>
-        La examenul practic fiecare greșeală primește un număr de puncte de penalizare, dacă se cumulează 21 de puncte de penalizare la traseu, candidatul este respins.
-    </strong>
+                        <h3>(PUNCTE DE PENALIZARE)</h3>
+                        <strong>
+                            Aplicate pentru nerespectarea normelor rutiere/neexecutarea ori executarea incorectă a manevrelor indicate<br>
+                            La examenul practic fiecare greșeală primește un număr de puncte de penalizare, dacă se cumulează 21 de puncte de penalizare la traseu, candidatul este respins.
+                        </strong>
 
-    <h3><u><strong>Categoria B (B, B1)</strong></u></h3>
+                        <h3><u><strong>Categoria B (B, B1)</strong></u></h3>
 
-    <div>
-        <h4><strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICLULUI/ANSAMBLULUI</strong></h4>
+                        <div>
+                            <h4><strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICLULUI/ANSAMBLULUI</strong></h4>
 
-        <div style="line-height: 20.8px;">- neverificarea, prin intermediul aparaturii de bord sau a comenzilor autovehiculului, a functionării direcției, frânei, a instalației de ungere/ răcire, a luminilor, a semnalizării și a avertizorului sonor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
+                            <div style="line-height: 20.8px;">- neverificarea, prin intermediul aparaturii de bord sau a comenzilor autovehiculului, a functionării direcției, frânei, a instalației de ungere/ răcire, a luminilor, a semnalizării și a avertizorului sonor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- nereglarea scaunului, a oglinzilor retrovizoare, nefixarea centurii de siguranță, neeliberarea frânei de ajutor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
+                            <div style="line-height: 20.8px;">- nereglarea scaunului, a oglinzilor retrovizoare, nefixarea centurii de siguranță, neeliberarea frânei de ajutor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- necunoașterea aparaturii de bord sau a comenzilor autovehiculului.<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
+                            <div style="line-height: 20.8px;">- necunoașterea aparaturii de bord sau a comenzilor autovehiculului.<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
 
-        <div style="line-height: 20.8px;">&nbsp;</div>
+                            <div style="line-height: 20.8px;">&nbsp;</div>
 
-        <h4><strong>II. COMPORTARE ÎN TRAFIC</strong></h4>
+                            <h4><strong>II. COMPORTARE ÎN TRAFIC</strong></h4>
 
-        <h4><strong>MANEVRAREA ȘI POZIȚIA AUTOVEHICULULUI ÎN TIMPUL MERSULUI</strong></h4>
+                            <h4><strong>MANEVRAREA ȘI POZIȚIA AUTOVEHICULULUI ÎN TIMPUL MERSULUI</strong></h4>
 
-        <div style="line-height: 20.8px;">- nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- nemenținerea direcției de mers;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
+                            <div style="line-height: 20.8px;">- nemenținerea direcției de mers;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- folosirea incorectă a drumului cu sau fără marcaj;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
+                            <div style="line-height: 20.8px;">- folosirea incorectă a drumului cu sau fără marcaj;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
+                            <div style="line-height: 20.8px;">- manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- întoarcerea incorectă pe o stradă cu mai multe benzi de circulație pe sens;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- întoarcerea incorectă pe o stradă cu mai multe benzi de circulație pe sens;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- manevrarea incorectă la urcarea rampelor/coborârea pantelor lungi, la circulația în tuneluri;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- manevrarea incorectă la urcarea rampelor/coborârea pantelor lungi, la circulația în tuneluri;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- folosirea incorectă a luminilor de întâlnire/luminilor de drum;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
+                            <div style="line-height: 20.8px;">- folosirea incorectă a luminilor de întâlnire/luminilor de drum;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- conducerea în mod neeconomic și agresiv pentru mediul înconjurător (turație&nbsp;excesivă, frânare/accelerare nejustificate);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- conducerea în mod neeconomic și agresiv pentru mediul înconjurător (turație&nbsp;excesivă, frânare/accelerare nejustificate);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
 
-        <h4><strong>MANEVRE SPECIALE PRIVID SIGURANȚA TRAFICULUI</strong></h4>
+                            <h4><strong>MANEVRE SPECIALE PRIVID SIGURANȚA TRAFICULUI</strong></h4>
 
-        <div style="line-height: 20.8px;">- executarea incorectă a mersul înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- executarea incorectă a mersul înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- executarea incorectă a întoarcerii vehiculului cu fața în sens opus prin efectuarea manevrelor de mers înainte și înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- executarea incorectă a întoarcerii vehiculului cu fața în sens opus prin efectuarea manevrelor de mers înainte și înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- executarea incorectă a parcării cu fața, spatele sau lateral;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- executarea incorectă a parcării cu fața, spatele sau lateral;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- executarea incorectă a frânării cu precizie;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- executarea incorectă a frânării cu precizie;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
-        <h4><strong>SCHIMBAREA DIRECȚIEI DE MERS ȘI EFECTUAREA VIRAJELOR</strong></h4>
+                            <h4><strong>SCHIMBAREA DIRECȚIEI DE MERS ȘI EFECTUAREA VIRAJELOR</strong></h4>
 
-        <div style="line-height: 20.8px;">- neasigurarea la schimbarea direcției de mers/ la părăsirea locului de staționare;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
+                            <div style="line-height: 20.8px;">- neasigurarea la schimbarea direcției de mers/ la părăsirea locului de staționare;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- executarea neregulamentară a virajelor;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
+                            <div style="line-height: 20.8px;">- executarea neregulamentară a virajelor;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
+                            <div style="line-height: 20.8px;">- nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
 
-        <h4><strong>CIRCULAȚIA ÎN INTERSECȚII, POZIȚII ÎN TIMPUL MERSULUI</strong></h4>
+                            <h4><strong>CIRCULAȚIA ÎN INTERSECȚII, POZIȚII ÎN TIMPUL MERSULUI</strong></h4>
 
-        <div style="line-height: 20.8px;">- încadrarea necorespunzătoare în raport cu direcția de mers indicată;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
+                            <div style="line-height: 20.8px;">- încadrarea necorespunzătoare în raport cu direcția de mers indicată;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- efectuarea unor manevre interzise (oprire, staționare, întoarcere, mers înapoi);<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
+                            <div style="line-height: 20.8px;">- efectuarea unor manevre interzise (oprire, staționare, întoarcere, mers înapoi);<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- neasigurare la pătrunderea în intersecții;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
+                            <div style="line-height: 20.8px;">- neasigurare la pătrunderea în intersecții;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- folosirea incorectă a benzilor la intrarea/ieșirea pe/de pe autostradă/artere similare;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- folosirea incorectă a benzilor la intrarea/ieșirea pe/de pe autostradă/artere similare;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus.&nbsp;<span style="color:rgb(255, 0, 0)"><strong>- 9p</strong></span></div>
+                            <div style="line-height: 20.8px;">- nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus.&nbsp;<span style="color:rgb(255, 0, 0)"><strong>- 9p</strong></span></div>
 
-        <h4><strong>DEPĂȘIREA</strong></h4>
+                            <h4><strong>DEPĂȘIREA</strong></h4>
 
-        <div style="line-height: 20.8px;">- ezitarea repetată de a depăși alte vehicule;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
+                            <div style="line-height: 20.8px;">- ezitarea repetată de a depăși alte vehicule;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- nerespectarea regulilor de executare a depășirii ori efectuarea acestora în locuri și situații interzise.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
+                            <div style="line-height: 20.8px;">- nerespectarea regulilor de executare a depășirii ori efectuarea acestora în locuri și situații interzise.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
 
-        <h4><strong>PRIORITATEA</strong></h4>
+                            <h4><strong>PRIORITATEA</strong></h4>
 
-        <div style="line-height: 20.8px;">- neacordarea priorității vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în&nbsp;intersecții, sens giratoriu, stație de mijloac de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere&nbsp;de pietoni);<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
+                            <div style="line-height: 20.8px;">- neacordarea priorității vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în&nbsp;intersecții, sens giratoriu, stație de mijloac de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere&nbsp;de pietoni);<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
+                            <div style="line-height: 20.8px;">- tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span></div>
 
-        <h4><strong>NERESPECTAREA SEMNIFICAȚIEI INDICATOARELOR ȘI MIJLOACELOR DE SEMNALIZARE RUTIERĂ</strong></h4>
+                            <h4><strong>NERESPECTAREA SEMNIFICAȚIEI INDICATOARELOR ȘI MIJLOACELOR DE SEMNALIZARE RUTIERĂ</strong></h4>
 
-        <div style="line-height: 20.8px;">- nerespectarea semnificației indicatoarelor/ marcajelor/ culorilor semaforului (cu excepția culorii roșii);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
+                            <div style="line-height: 20.8px;">- nerespectarea semnificației indicatoarelor/ marcajelor/ culorilor semaforului (cu excepția culorii roșii);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- nerespectarea semnificației culorii roșii a semaforului/ a semnalelor polițistului rutier/ a semnalelor altor persoane cu atribuții legale similare.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
+                            <div style="line-height: 20.8px;">- nerespectarea semnificației culorii roșii a semaforului/ a semnalelor polițistului rutier/ a semnalelor altor persoane cu atribuții legale similare.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
 
-        <h4><strong>VITEZA</strong></h4>
+                            <h4><strong>VITEZA</strong></h4>
 
-        <div style="line-height: 20.8px;">- depășirea vitezei maxime admise;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
+                            <div style="line-height: 20.8px;">- depășirea vitezei maxime admise;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic.<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
+                            <div style="line-height: 20.8px;">- conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic.<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span></div>
 
-        <h4><strong>CONDUCEREA PE TIMP NEFAVORABIL</strong></h4>
+                            <h4><strong>CONDUCEREA PE TIMP NEFAVORABIL</strong></h4>
 
-        <div style="line-height: 20.8px;">- neîndemanarea în conducere în condiții de ploaie, zăpadă, mâzgă, polei;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
+                            <div style="line-height: 20.8px;">- neîndemanarea în conducere în condiții de ploaie, zăpadă, mâzgă, polei;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- deplasarea cu viteza neadaptată condițiilor atmosferice și de drum;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
+                            <div style="line-height: 20.8px;">- deplasarea cu viteza neadaptată condițiilor atmosferice și de drum;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span></div>
 
-        <h4><strong>NERESPECTAREA NORMELOR LEGALE LA TRECERILE LA NIVEL CU CALEA FERATĂ.<span style="color:rgb(255, 0, 0)">-21p</span></strong></h4>
+                            <h4><strong>NERESPECTAREA NORMELOR LEGALE LA TRECERILE LA NIVEL CU CALEA FERATĂ.<span style="color:rgb(255, 0, 0)">-21p</span></strong></h4>
 
-        <h4><strong>III. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
+                            <h4><strong>III. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
 
-        <div style="line-height: 20.8px;">- prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea celorlalți candidați;<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
+                            <div style="line-height: 20.8px;">- prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea celorlalți candidați;<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
 
-        <div style="line-height: 20.8px;">- intervenția examinatorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
+                            <div style="line-height: 20.8px;">- intervenția examinatorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span></div>
+                        </div>
+                        &nbsp;
+
+
+                        <h3><strong><u>Categoria BE</u></strong></h3>
+
+                        <h4><strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICLULUI/ANSAMBLULUI</strong></h4>
+
+                        <div>
+                            - neverificarea, prin intermediul aparaturii de bord sau a comenzilor autovehiculului, a functionării direcției, frânei, a instalației de ungere/ răcire, a luminilor, a semnalizării și a avertizorului sonor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                            -&nbsp;neverificarea dispozitivului de cuplare și conexiunilor instalației de frânare/ electrice a catadioptrilor;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                            - neverificarea elementelor de siguranță legate de încărcătura vehiculului, fixare, închidere&nbsp;uși/obloane;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                            - nereglarea scaunului, a oglinzilor retrovizoare, nefixarea centurii de siguranță, neeliberarea frânei de ajutor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                            - necunoașterea aparaturii de bord sau a comenzilor autovehiculului.<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span>
+                        </div>
+
+                        <h4><strong>II. COMPORTARE ÎN TRAFIC</strong></h4>
+
+                        <h4><strong>MANEVRAREA ȘI POZIȚIA AUTOVEHICULULUI ÎN TIMPUL MERSULUI</strong></h4>
+
+                        <div>
+                            - nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                            - nemenținerea direcției de mers;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                            - folosirea incorectă a drumului cu sau fără marcaj;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                            - manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                            - întoarcerea incorectă pe o stradă cu mai multe benzi de circulație pe sens;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                            - manevrarea incorectă la urcarea rampelor/coborârea pantelor lungi, la circulația în tuneluri;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                            - folosirea incorectă a luminilor de întâlnire/luminilor de drum;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                            - conducerea în mod neeconomic și agresiv pentru mediul înconjurător (turație&nbsp;excesivă, frânare/accelerare nejustificate);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span>
+                        </div>
+
+                        <h4><strong>MANEVRE SPECIALE PRIVID SIGURANȚA TRAFICULUI</strong></h4>
+
+                        <div>
+                            - executarea incorectă a mersul înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                            - executarea incorectă a întoarcerii vehiculului cu fața în sens opus prin efectuarea manevrelor de mers înainte și înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                            - executarea incorectă a parcării cu fața, spatele sau lateral;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                            - executarea incorectă a frânării cu precizie;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                            - executarea incorectă a cuplării/decuplării remorcii la/de la autovehicul trăgător.<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span>
+                        </div>
+
+                        <h4><strong>SCHIMBAREA DIRECȚIEI DE MERS ȘI EFECTUAREA VIRAJELOR</strong></h4>
+
+                        <div>
+                            - neasigurarea la schimbarea direcției de mers/ la părăsirea locului de staționare;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                            - executarea neregulamentară a virajelor;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                            - nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
+                        </div>
+
+                        <h4><strong>CIRCULAȚIA ÎN INTERSECȚII, POZIȚII ÎN TIMPUL MERSULUI</strong></h4>
+
+                        <div>
+                            - încadrarea necorespunzătoare în raport cu direcția de mers indicată;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                            - efectuarea unor manevre interzise (oprire, staționare, întoarcere, mers înapoi);<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                            - neasigurare la pătrunderea în intersecții;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                            - folosirea incorectă a benzilor la intrarea/ieșirea pe/de pe autostradă/artere similare;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                            - nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus.&nbsp;<span style="color:rgb(255, 0, 0)"><strong>- 9p</strong></span>
+                        </div>
+
+                        <h4><strong>DEPĂȘIREA</strong></h4>
+
+                        <div>
+                            - ezitarea repetată de a depăși alte vehicule;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                            - nerespectarea regulilor de executare a depășirii ori efectuarea acestora în locuri și situații interzise.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
+                        </div>
+
+                        <h4><strong>PRIORITATEA</strong></h4>
+
+                        <div>
+                            - neacordarea priorității vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în&nbsp;intersecții, sens giratoriu, stație de mijloac de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere&nbsp;de pietoni);<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
+                            - tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
+                        </div>
+
+                        <h4><strong>NERESPECTAREA SEMNIFICAȚIEI INDICATOARELOR ȘI MIJLOACELOR DE SEMNALIZARE RUTIERĂ</strong></h4>
+
+                        <div>
+                            - nerespectarea semnificației indicatoarelor/ marcajelor/ culorilor semaforului (cu excepția culorii roșii);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                            - nerespectarea semnificației culorii roșii a semaforului/ a semnalelor polițistului rutier/ a semnalelor altor persoane cu atribuții legale similare.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
+                        </div>
+
+                        <h4><strong>VITEZA</strong></h4>
+
+                        <div>
+                            - depășirea vitezei maxime admise;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                            - conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic.<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span>
+                        </div>
+
+                        <h4><strong>CONDUCEREA PE TIMP NEFAVORABIL</strong></h4>
+
+                        <div>
+                            - neîndemanarea în conducere în condiții de ploaie, zăpadă, mâzgă, polei;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                            - deplasarea cu viteza neadaptată condițiilor atmosferice și de drum;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
+                        </div>
+
+                        <h4><strong>NERESPECTAREA NORMELOR LEGALE LA TRECERILE LA NIVEL CU CALEA FERATĂ.<span style="color:rgb(255, 0, 0)">-21p</span></strong></h4>
+
+                        <h4><strong>III. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
+
+                        <div>
+                            - prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea celorlalți candidați;<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
+                            - intervenția examinatorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
+                        </div>
+                    </RadzenAccordionItem>
+
+                    <RadzenAccordionItem Text="Puncte de penalizare traseu categoria C">
+                        <h2><strong>PENALIZAREA GREȘELILOR COMISE DE CANDIDAT</strong></h2>
+
+                        <h3><strong>(PUNCTE DE PENALIZARE)</strong></h3>
+                        <strong>
+                            Aplicate pentru nerespectarea normelor rutiere/neexecutarea ori executarea incorectă a manevrelor indicate<br>
+                            La examenul practic fiecare greșeală primește un număr de puncte de penalizare, dacă se cumulează 21 de puncte de penalizare la traseu, candidatul este respins.
+                        </strong>
+
+                        <h3><u><strong>Categoria C (C,&nbsp;CE, C1, C1E, Tr)</strong></u></h3>
+                        <strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICLULUI/ ANSAMBLULUI DE VEHICULE</strong><br>
+                        - neefectuarea controlului vizual, în ordine aleatorie privind: starea anvelopelor, fixarea roților (starea piulițelor), starea elementelor suspensiei, a rezervoarelor de aer, a parbrizului, ferestrelor, a fluidelor (ulei motor, lichid răcire, fluid spălare parbriz), a blocului de lumini/ semnalizare față/ spate, catadioptrii, trusa medicală, triunghiul&nbsp;reflectorizant, stingător de incendiu;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                        - neefectuarea controlului caroseriei, a învelișului ușilor pentru marfă, a mecanismului de încărcare, a fixării încărcăturii&nbsp;<strong>(numai pentru&nbsp;C, CE, C1, C1E, Tr);<span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
+                        - neverificarea, prin intermediul aparaturii de bord sau a comenzilor autovehiculului, a functionării direcției, frânei, instalației de ungere/ răcire, a luminilor, a semnalizării și a avertizorului sonor;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - necunoașterea aparaturii de înregistrare a activității conducătorului auto (Cu exceptia C1 C1E Tr care nu intră&nbsp;în domeniul Regulamentului (CEE) nr 3,821/85);<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - neverificarea dispozitivului de cuplare și a conexiunilor instalației de frânare/ electrice, a catadioptrilor&nbsp;<strong>(numai pentru CE, C1E, D1E, DE, Tr);</strong><span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - neverificarea caroseriei, a ușilor de serviciu, a ieșirilor de urgență, a echipamentul de prim-ajutor, a stingatoarelor de incendiu și a altor echipamente de siguranță&nbsp;<strong>(numai pentru D, DE, D1, D1E, Tb,Tv);<span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - nereglarea scaunului, a oglinzilor retrovizoare, nefixarea centurii de siguranță, neeliberarea frânei de ajutor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                        - necunoașterea aparaturii de bord sau a comenzilor autovehiculului.<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong>
+
+                        <h4><strong>II. MANEVRE&nbsp;SPECIALE PRIVIND SIGURANȚA&nbsp;TRAFICULUI (se penalizează executarea incorectă a acestora)</strong></h4>
+                        - cuplarea unei remorci de autovehiculul trăgător din/ cu revenire la poziția inițială în staționare paralel;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - mersul înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - parcarea în siguranță, cu fața/ cu spatele/ laterală, pentru încărcare/ descărcare, sau la o rampă/ platformă de încărcare, sau la o instalație similară;<strong><span style="color:rgb(255, 0, 0)">-7p</span></strong><br>
+                        - oprirea pentru a permite călătorilor urcarea/ coborârea în/ din autobuz/ tramvai/ troleibuz, în siguranță.&nbsp;<strong>(numai pentru D, DE, D1, D1E, Tb,Tv).</strong><span style="color:rgb(255, 0, 0)"><strong>-7p</strong></span>
+
+                        <h4><strong>III. COMPORTARE ÎN TRAFIC</strong></h4>
+
+                        <h4><strong>MANEVREAREA ȘI POZIȚIA AUTOVEHICULULUI ÎN TIMPUL MERSULUI</strong></h4>
+                        - nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - nemenținerea direcției de mers;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - folosirea incorectă a drumului, cu sau fără marcaje;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - executarea incorectă a mersului înapoi, a parcării cu fața, spatele sau lateral;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - executarea incorectă a întoarcerii vehiculului cu fața în sens opus prin efectuarea manevrelor de mers înainte și înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - întoarcerea incorectă pe o stradă cu mai multe benzi de circulație pe sens;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - manevrarea incorectă la urcarea rampelor/ coborârea pantelor lungi, la circulația în tuneluri;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - folosirea incorectă a luminilor de întâlnire/ luminilor de drum;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                        - conducerea în mod neeconomic și agresiv pentru mediul înconjurător (turație excesivă, frânare/ accelerare nejustificate).<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span>
+
+                        <h4><strong>SCHIMBAREA DIRECȚIEI DE MERS ȘI EFECTUAREA VIRAJELOR</strong></h4>
+                        - neasigurarea la schimbarea direcției de mers/ părăsirea locului de staționare;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - executarea neregulamentară a virajelor;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
+
+                        <h4><strong>CIRCULAȚIA ÎN INTERSECȚII, POZIȚII ÎN TIMPUL MERSULUI</strong></h4>
+                        - încadrarea necorespunzătoare în raport cu direcția de mers indicată;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - efectuarea unor manevre interzise (oprire, staționare, întoarcere, mers înapoi);<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - neasigurarea la pătrunderea în intersecții;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - folosirea incorectă a benzilor de intrare/ ieșire pe/ de pe autostradă/ artere similare;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus.<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
+
+                        <h4><strong>DEPĂȘIREA</strong></h4>
+                        - ezitarea repetată de a depăși alte vehicule;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - nerespectarea regulilor de executare a depășirii ori efectuarea acesteia în locuri și situații interzise.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
+
+                        <h4><strong>PRIORITATEA</strong></h4>
+                        - neacordarea priorității vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în intersecții, sens giratoriu, stație de mijloac&nbsp;de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere de pietoni);<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
+                        - tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
+
+                        <h4><strong>NERESPECTAREA SEMNIFICAȚIEI INDICATOARELOR ȘI MIJLOACELOR DE SEMNALIZARE RUTIERĂ</strong></h4>
+                        - nerespectarea semnificiației indicatoarelor/ marcajelor/ culorilor semaforului (cu excepția culorii roșii);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - nerespectarea semnificației culorii roșii a semaforului/ semnalelor polițistului rutier/ semnalelor altor persoane cu atribuții legale similare.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
+
+                        <h4><strong>VITEZA</strong></h4>
+                        - depășirea vitezei legale maxime admise;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
+
+                        <h4><strong>CONDUCEREA PE TIMP NEFAVORABIL</strong></h4>
+                        - neîndemânarea în conducere în condiții de ploaie, zăpadă, mâzgă, polei;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - deplasarea cu viteza neadaptată condițiilor atmosferice și de drum;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
+
+                        <h4><strong>NERESPECTAREA NORMELOR LEGALE LA TRECERILE LA NIVEL CU CALEA FERATĂ.<span style="color:rgb(255, 0, 0)">-21p</span></strong></h4>
+
+                        <h4><strong>IV. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
+                        - prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea celorlalți candidați;<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
+                        - intervenția examinatorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
+
+                    </RadzenAccordionItem>
+
+                    <RadzenAccordionItem Text="Puncte de penalizare traseu categoria D">
+                        <h3>(PUNCTE DE PENALIZARE)</h3>
+                        <strong>
+                            Aplicate pentru nerespectarea normelor rutiere/neexecutarea ori executarea incorectă a manevrelor indicate<br>
+                            La examenul practic fiecare greșeală primește un număr de puncte de penalizare, dacă se cumulează 21 de puncte de penalizare la traseu, candidatul este respins.
+                        </strong>
+
+                        <h3><u><strong>Categoria D (D, DE, D1, D1E, Tb, Tv)</strong></u></h3>
+                        <strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICLULUI/ ANSAMBLULUI DE VEHICULE</strong><br>
+                        - neefectuarea controlului vizual, în ordine aleatorie privind: starea anvelopelor, fixarea roților (starea piulițelor), starea elementelor suspensiei, a rezervoarelor de aer, a parbrizului, ferestrelor, a fluidelor (ulei motor, lichid răcire, fluid spălare parbriz), a blocului de lumini/ semnalizare față/ spate, catadioptrii, trusa medicală, triunghiul&nbsp;reflectorizant, stingător de incendiu;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                        - neefectuarea controlului caroseriei, a învelișului ușilor pentru marfă, a mecanismului de încărcare, a fixării încărcăturii&nbsp;<strong>(numai pentru&nbsp;C, CE, C1, C1E, Tr);<span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
+                        - neverificarea, prin intermediul aparaturii de bord sau a comenzilor autovehiculului, a functionării direcției, frânei, instalației de ungere/ răcire, a luminilor, a semnalizării și a avertizorului sonor;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - necunoașterea aparaturii de înregistrare a activității conducătorului auto (Cu exceptia C1 C1E Tr care nu intră&nbsp;în domeniul Regulamentului (CEE) nr 3,821/85);<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
+                        - neverificarea dispozitivului de cuplare și a conexiunilor instalației de frânare/ electrice, a catadioptrilor&nbsp;<strong>(numai pentru CE, C1E, D1E, DE, Tr);</strong><span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - neverificarea caroseriei, a ușilor de serviciu, a ieșirilor de urgență, a echipamentul de prim-ajutor, a stingatoarelor de incendiu și a altor echipamente de siguranță&nbsp;<strong>(numai pentru D, DE, D1, D1E, Tb,Tv);<span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
+                        - nereglarea scaunului, a oglinzilor retrovizoare, nefixarea centurii de siguranță, neeliberarea frânei de ajutor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                        - necunoașterea aparaturii de bord sau a comenzilor autovehiculului.<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong>
+
+
+                        <h4><strong>II. MANEVRE&nbsp;SPECIALE PRIVIND SIGURANȚA&nbsp;TRAFICULUI (se penalizează executarea incorectă a acestora)</strong></h4>
+                        - cuplarea unei remorci de autovehiculul trăgător din/ cu revenire la poziția inițială în staționare paralel;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - mersul înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - parcarea în siguranță, cu fața/ cu spatele/ laterală, pentru încărcare/ descărcare, sau la o rampă/ platformă de încărcare, sau la o instalație similară;<strong><span style="color:rgb(255, 0, 0)">-7p</span></strong><br>
+                        - oprirea pentru a permite călătorilor urcarea/ coborârea în/ din autobuz/ tramvai/ troleibuz, în siguranță.&nbsp;<strong>(numai pentru D, DE, D1, D1E, Tb,Tv).</strong><span style="color:rgb(255, 0, 0)"><strong>-7p</strong></span>
+
+                        <h4><strong>III. COMPORTARE ÎN TRAFIC</strong></h4>
+
+                        <h4><strong>MANEVREAREA ȘI POZIȚIA AUTOVEHICULULUI ÎN TIMPUL MERSULUI</strong></h4>
+                        - nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - nemenținerea direcției de mers;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - folosirea incorectă a drumului, cu sau fără marcaje;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - executarea incorectă a mersului înapoi, a parcării cu fața, spatele sau lateral;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - executarea incorectă a întoarcerii vehiculului cu fața în sens opus prin efectuarea manevrelor de mers înainte și înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - întoarcerea incorectă pe o stradă cu mai multe benzi de circulație pe sens;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - manevrarea incorectă la urcarea rampelor/ coborârea pantelor lungi, la circulația în tuneluri;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - folosirea incorectă a luminilor de întâlnire/ luminilor de drum;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
+                        - conducerea în mod neeconomic și agresiv pentru mediul înconjurător (turație excesivă, frânare/ accelerare nejustificate).<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span>
+
+                        <h4><strong>SCHIMBAREA DIRECȚIEI DE MERS ȘI EFECTUAREA VIRAJELOR</strong></h4>
+                        - neasigurarea la schimbarea direcției de mers/ părăsirea locului de staționare;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - executarea neregulamentară a virajelor;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
+
+                        <h4><strong>CIRCULAȚIA ÎN INTERSECȚII, POZIȚII ÎN TIMPUL MERSULUI</strong></h4>
+                        - încadrarea necorespunzătoare în raport cu direcția de mers indicată;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - efectuarea unor manevre interzise (oprire, staționare, întoarcere, mers înapoi);<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - neasigurarea la pătrunderea în intersecții;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - folosirea incorectă a benzilor de intrare/ ieșire pe/ de pe autostradă/ artere similare;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
+                        - nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus.<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
+
+                        <h4><strong>DEPĂȘIREA</strong></h4>
+                        - ezitarea repetată de a depăși alte vehicule;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
+                        - nerespectarea regulilor de executare a depășirii ori efectuarea acesteia în locuri și situații interzise.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
+
+                        <h4><strong>PRIORITATEA</strong></h4>
+                        - neacordarea priorității vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în intersecții, sens giratoriu, stație de mijloac&nbsp;de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere de pietoni);<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
+                        - tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
+
+                        <h4><strong>NERESPECTAREA SEMNIFICAȚIEI INDICATOARELOR ȘI MIJLOACELOR DE SEMNALIZARE RUTIERĂ</strong></h4>
+                        - nerespectarea semnificiației indicatoarelor/ marcajelor/ culorilor semaforului (cu excepția culorii roșii);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - nerespectarea semnificației culorii roșii a semaforului/ semnalelor polițistului rutier/ semnalelor altor persoane cu atribuții legale similare.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
+
+                        <h4><strong>VITEZA</strong></h4>
+                        - depășirea vitezei legale maxime admise;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
+
+                        <h4><strong>CONDUCEREA PE TIMP NEFAVORABIL</strong></h4>
+                        - neîndemânarea în conducere în condiții de ploaie, zăpadă, mâzgă, polei;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
+                        - deplasarea cu viteza neadaptată condițiilor atmosferice și de drum;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
+
+                        <h4><strong>NERESPECTAREA NORMELOR LEGALE LA TRECERILE LA NIVEL CU CALEA FERATĂ.<span style="color:rgb(255, 0, 0)">-21p</span></strong></h4>
+
+                        <h4><strong>IV. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
+                        - prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea celorlalți candidați;<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
+                        - intervenția examinatorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
+
+
+                    </RadzenAccordionItem>
+
+                    <RadzenAccordionItem Text="Redobandirea permisului suspendat">
+                        <br>
+                        <strong>Daca ai avut nefericitul moment în care dintr-o simplă manevră de neatenție, nu ai acordat prioritate, fie la o simplă ieșire din parcare, sau la un indicator de cedează trecerea, etc., cu siguranță permisul de conducere ți-a fost suspendat în cazul în care a avut loc un accident ușor, sau pentru o alcoolemie de până la 0.80mg/l, dar fără accident (atât de ușor de ridicat și atât de greu de redobândit).</strong><br>
+                        <br>
+                        <p>La prima vedere, chiar dacă accidentul a fost unul ușor, soldat cu avarii ușoare, și crezi că prin plata amenzii și înmanarea poliței de asigurare RCA celui accidentat, ai scăpat de griji, te înșeli, de fapt de aici încolo încep marile probleme datorate birocrației din România. Mai grav este că nici nu vei găsi prea ușor ceea ce ar trebui să faci ca să îți redobândești permisul de conducere, nimeni nu te informează în mod clar și corect.</p>
+
+                        <p><strong>În continuare avem un ghid în care o să răspundem la întrebările pe care le are orice șofer care are permisul de conducere suspendat și care dorește să își reducă perioada de suspendare.</strong></p>
+
+                        <p>&nbsp;</p>
+
+                        <h2 style="text-align:center">Obligații în cazul permisului suspendat.</h2>
+
+                        <blockquote>
+                            <h5>Este obligatorie susținerea examenului de verificare a cunoașterii regulilor de circulație (adică testul de redobândire 13 din 15)? <em>- OUG 195/2002 Articolul 106^1 alin (1) și (2)</em></h5>
+
+                            <p>Da, pentru unele cazuri specifice este obligatorie susținerea acestui examen. Acest examen se susține doar în timpul perioadei de suspendare, ori de cate ori dorești, până îl promovezi. Cazurile în care este obligatorie susținerea examenului sunt următoarele:</p>
+
+                            <ul>
+                                <li>conducerea sub influența băuturilor alcoolice;</li>
+                                <li>nerespectarea regulilor privind prioritatea de trecere, depășirea sau trecerea la culoarea roșie a semaforului, dacă prin aceasta s-a produs un accident de circulație din care au rezultat avarierea unui vehicul sau alte pagube materiale;</li>
+                                <li>când fapta conducătorului de autovehicul sau tramvai a fost urmărită ca infracțiune contra siguranței circulației pe drumurile publice și procurorul sau instanța de judecată a dispus clasarea în condițiile art. 16 alin. (1) lit. b) teza a II-a din Codul de procedură penală, renunțarea la urmărirea penală, renunțarea la aplicarea pedepsei sau amânarea aplicării pedepsei dacă nu a fost dispusă obligația prevăzută la art. 85 alin. (2) lit. g) din Codul penal.</li>
+                            </ul>
+                        </blockquote>
+
+                        <blockquote>
+                            <h5>Ce se întâmplă dacă nu promovez sau nu mă prezint la examenul obligatoriu (adică testul de redobândire 13 din 15)? <em>- OUG 195/2002 Articolul 106^1 alin (2)</em></h5>
+
+                            <p>În cazul în care nu promovezi sau nu te prezinți la examen până îți expiră perioada de suspendare, se prelungește automat perioada de suspendare cu încă 30 de zile. Adică o să îți recuperezi permisul cu 30 de zile mai târziu față de data la care iți expira inițial suspendarea.</p>
+
+                            <p><strong><em>Exemplul 1</em></strong><em>: dacă ai permisul suspendat pentru 60 de zile, dacă examenul este obligatoriu pentru fapta ta, iar tu te duci să dai examenul și îl promovezi, îți recuperezi permisul în 60 de zile.</em></p>
+
+                            <p><strong><em>Exemplul 2</em></strong><em>: dacă ai permisul suspendat pentru 60 de zile, dacă examenul este obligatoriu pentru fapta ta, iar tu nu dai examenul sau îl dai de cate ori vrei dar nu îl promovezi, îți recuperezi permisul în 60 + încă 30 de zile =&nbsp; 90 de zile.</em></p>
+                        </blockquote>
+
+                        <blockquote>
+                            <h5>Unde se susține acest examen de redobândire (13 din 15)? <em>- OUG 195/2002 Articolul 106^2 alin (1)</em></h5>
+
+                            <p>Acest test se poate susține în următoarele două locuri:</p>
+
+                            <ul>
+                                <li>la serviciul poliției rutiere care are în evidență titularul permisului de conducere;</li>
+                                <li>la serviciul poliției rutiere pe raza căruia a fost constatată contravenția ori au fost constatate prin același proces-verbal contravențiile.</li>
+                            </ul>
+
+                            <p>Testul se poate susține ori când dorești, săptămânal și este gratuit. Important este faptul că examenul poate fi susținut doar în perioada suspendării. Acesta se programează, numai după expirarea dovezii de circulație, de regula cu o valabilitate de 15 zile (la cei cu 0 zile dovada - pt. alcoolemie - din prima zi de suspendare), în unul din cele două locuri de mai sus în care se poate susține examenul, având la tine Cartea de Identitate și dovada de conducere, de obicei între orele 8 și 9. Examenul va fi susținut 20 de minute, cu întrebări 13 corecte din 15, întrebări care se regăsesc aici pe Școala Rutieră la categoria Redobândire. Întrebările au variante de raspuns a), b) și c) din care doar una poate fi corectă (nu sunt corecte mai multe variante de răspuns ca la examenul standard).</p>
+
+                            <p>Ai mare grijă să nu rupi sub nici o formă dovada de conducere, chiar dacă a expirat termenul de valabilitate, și chiar dacă pe ea nu se specifică termenul de valabilitate, fără ea nu vei putea susține examenul, și nici nu vei putea ridica permisul. Deci va fi nevoie de o nouă dovadă (sau declarație de pierdere/deteriorare la notariat) cu costuri ceva mai mari.</p>
+
+                            <p>Testul nu este greu, ideea este să înveți și să nu dai răspunsuri din "experiență sau practică" ci din lege. Așadar, pentru a avea o reușită sigură în redobândirea permisului, va trebui să alegi aici pe site-ul Școala Rutieră categoria Redobândire ("13 din 15"), și să parcurgi toți cei 4 pași de învățare.</p>
+                        </blockquote>
+
+                        <h2 style="text-align:center">Reducerea Perioadei de suspendare.</h2>
+
+                        <blockquote>
+                            <h5>Se poate reduce perioada de suspendare? <em>- OUG 195/2002 Articolul 104 alin (1) și Articolul 106</em></h5>
+
+                            <p>Da, se poate să ți se reducă perioada de suspendare de la 60/90 de zile la 30 de zile, însă nu oricine poate beneficia de aceasta reducere. Dar trebuie știut că aceasta reducere nu se face din oficiu. Pentru a beneficia de această reducere trebuie să faci o cerere specială în acest sens, este o cerere tip care se găsește de regula la centrele de copiere. Aceasta cerere, dacă este făcută corect și îndeplinești condițiile, cu siguranță se va aproba, nu trebuie să îți faci griji.</p>
+                        </blockquote>
+
+                        <blockquote>
+                            <h5>Care sunt condițiile pentru a beneficia de reducerea perioadei de suspendare? <em>- OUG 195/2002 Articolul 104 alin (2)</em></h5>
+
+                            <p>Pentru a beneficia de aceasta reducere trebuie să îndeplinești aceste două condiții:</p>
+
+                            <ul>
+                                <li>să fi declarat admis la testul de verificare a cunoașterii regulilor de circulație (testul 13 din 15) ;</li>
+                                <li>să ai permisul de conducere de mai mult de un an când săvârșești fapta, mai exact, să nu fi începător.</li>
+                            </ul>
+                        </blockquote>
+
+                        <blockquote>
+                            <h5>Care sunt faptele pentru care <strong><u>SE POATE</u></strong> beneficia de reducerea perioadei de suspendare? <em>- OUG 195/2002 Articolul 104 alin (3)</em></h5>
+
+                            <p>Perioada de suspendare se reduce la 30 de zile (de la 60 sau 90 de zile), doar la cererea titularului (Atenție! Doar dacă faci o cerere în acest sens), pentru următoarele fapte:</p>
+
+                            <ul>
+                                <li>nerespectarea regulilor privind prioritatea de trecere, depășirea sau trecerea la culoarea roșie a semaforului, dacă prin aceasta s-a produs un accident de circulație din care au rezultat avarierea unui vehicul sau alte pagube materiale;<em> - de la 60 de zile la 30 de zile</em></li>
+                                <li>nerespectarea interdicției temporare de circulație instituite pe un anumit segment de drum public;<em> - de la 60 de zile la 30 de zile</em></li>
+                                <li>nerespectarea regulilor de circulație la trecerea unei coloane oficiale sau intercalarea într-o astfel de coloana;<em> - de la 60 de zile la 30 de zile</em></li>
+                                <li>circulația pe sens opus, cu excepția cazurilor în care se efectuează regulamentar manevra de depășire.<em> - de la 60 de zile la 30 de zile</em></li>
+                                <li>conducerea sub influenta băuturilor alcoolice, dacă fapta nu constituie, potrivit legii, infracțiune;<em> - de la 90 de zile la 30 de zile</em></li>
+                                <li>când fapta conducătorului de autovehicul sau tramvai a fost urmărită ca infracțiune contra siguranței circulației pe drumurile publice și procurorul sau instanța de judecată a dispus clasarea în condițiile art. 16 alin. (1) lit. b) teza a II-a din Codul de procedură penală, renunțarea la urmărirea penală, renunțarea la aplicarea pedepsei sau amânarea aplicării pedepsei dacă nu a fost dispusă obligația prevăzută la art. 85 alin. (2) lit. g) din Codul penal;<em> - de la 90 de zile la 30 de zile</em></li>
+                            </ul>
+
+                            <p>Însă dacă ți-a fost suspendat permisul pentru depășirea cu mai mult de 50 km/h a vitezei maxime admise se mai adaugă încă două condiții ca să se poată obțină reducerea perioadei de suspendare, acestea fiind:</p>
+
+                            <ul>
+                                <li>viteza cu care te-a prins radarul că ai depășit limita maxima admisa sa nu fie mai mare de 70 km/h. De exemplu, dacă limita maxima este de 90, radarul să nu te prindă cu mai mult de 160 de km/h;</li>
+                                <li>sau dacă viteza cu care te-a prins radarul că ai depășit limita maxima admisa este mai mare de 70 km/h, acest lucru să se fi întâmplat maxim o dată în ultimele 12 luni.</li>
+                            </ul>
+                        </blockquote>
+
+                        <blockquote>
+                            <h5>Care sunt situațiile în care <u><strong>NU SE POATE</strong></u> beneficia de reducerea perioadei de suspendare? <em>- OUG 195/2002 Articolul 104 alin (6)</em></h5>
+
+                            <p>Nu toți cei care au permisul suspendat își pot reduce perioada de suspendare. Sunt unele situații în care reducerea nu se poate aplica, acestea sunt:</p>
+
+                            <ul>
+                                <li>dacă ai cumulat, din nou, cel puțin 15 puncte de penalizare în următoarele 12 luni de la data expirării ultimei suspendări a exercitării dreptului de a conduce;</li>
+                                <li>dacă ai fost implicat într-un accident de circulație din care au rezultat numai pagube materiale, iar rezultatul testării aerului expirat sau al probelor biologice a stabilit că ai condus vehiculul în timp ce te aflai sub influența alcoolului;</li>
+                                <li>dacă sancțiunea contravențională complementară s-a dispus ca urmare a neopririi la trecerea la nivel cu calea ferată când barierele sau semibarierele sunt coborâte ori în curs de coborâre sau când semnalele cu lumini roșii și/sau sonore sunt în funcțiune.</li>
+                            </ul>
+                        </blockquote>
+
+                        <blockquote>
+                            <h5>Dacă fac cerere de reducere a perioadei de suspendare, când susțin examenul de verificare a cunoașterii regulilor de circulație (redobândire 13 din 15)? <em>- OUG 195/2002 &nbsp;Articolul 106</em></h5>
+
+                            <p>În cazul în care ai făcut o cerere de reducere a perioadei de suspendare, examenul se va da în primele 30 de zile de suspendare, inclusiv in a în a 30-a zi. Nu se mai dă examenul oricând se dorește pe toata perioada de suspendare de 60 sau 90 de zile așa cum se face în mod normal, când nu faci cerere de reducere.</p>
+                        </blockquote>
+
+                        <p><strong>După admiterea examenului (ați răspuns la cel putin 13 întrebări correct din 15), dacă sunteți pentru reducerea cu 30 de zile veți avea nevoie de urmatoarele documente:</strong></p>
+
+                        <p>
+                            - Copie dovadă conducere față verso (pe verso completată de polițist cu admiterea dumneavoastră);<br>
+                            - Copie carte de identitate;<br>
+                            - Copie proces verbal (unde este specificată și amenda);<br>
+                            - Copie dovadă amendă plătită;<br>
+                            - Cerere tip, de reducere a suspendării (o găsești la centrele de copiere de pe lângă poliție).<br>
+                            <br>
+                            Cu aceste copii de documente mergi la ghiseu și depui acele copii pentru analizare și aprobare. În mod normal această analiză durează cam o saptămână dar uneori poate dura până la o lună, depinde de solicitarea sistemului. Din fericire rezultatul aprobării cererii de suspendare se transmite prin calculator și întodeauna este favorabil dacă îndeplinești condițiile.<br>
+                            <br>
+                            Ultimul pas, la expirarea celor 30 de zile în cazul în care ai avut permisul suspendat pe 60 sau 90 de zile și ai beneficiat de reducerea perioadei, mergi la sediul Poliției, de unde cu dovada de conducere (în original) și cartea de identitate (buletinul), îți ridici în cele din urmă prețiosul permis de care mulți nu ne putem lipsi. În această fază finală este ultimul drum al actului "dovada de conducere", care în mod normal nu are niciunde indicat sa fie pastrată și după expirarea celor 15 zile (multi având instinctul de a o arunca după expirare). Suntem în România, așa că nu se știe cănd ai nevoie de un document doar pentru faptul că instituțiile merg prost și se pierd documente din vina nimanui!<br>
+                            <br>
+                            Nu uita, la redobandirea permisului, ești „pătat” pentru 2 luni conform legislației în vigoare, adică dacă în decursul primelor 2 luni după redobândire ți se va mai suspenda permisul, se vor mai adauga 30 de zile la suspendare. Iar dacă ai cumulat, din nou, cel puțin 15 puncte de penalizare în următoarele 12 luni de la data expirării ultimei suspendări a exercitării dreptului de a conduce, nu mai poți beneficia de reducerea perioadei de suspendare. Deci, grijă mare!
+                        </p>
+                    </RadzenAccordionItem>
+
+                    <RadzenAccordionItem Text="Cand expira scoala de soferi?">
+                        <strong>Scoala de soferi este valabila 12 luni de la data absolvirii, adica de la data efectuarii ultimei ore de conducere (data este inscrisa in fisa de scolarizare).&nbsp;Este recomandat sa se sustina acest examen de permis imediat dupa terminarea scolii, deoarece cunostintele asimilate sunt proaspete iar in perioada de un an se pot schimba multe din punct de vedere legislativ la regimul rutier.</strong><br>
+                        <br>
+                        Daca pe parcursul unui an de la absolvirea scolii dvs. nu reusiti sa promovati examenul organizat de Serviciul public comunitar regim permise de conducere si inmatriculare a vehiculelor, atunci dupa un an trebuie sa reluati procesul de pregatire, pregatirea teoretica si toate orele de conducere minim obligatorii, inclusiv intocmirea din nou a dosarului pentru permis (cu toate actele necesare).<br>
+                        <br>
+                        <strong>Valabilitatea restului de documente din dosarul pentru permis:</strong>
+                        <ul>
+                            <li>Avizul psihologic si fisa medicala&nbsp;sunt valabile 1 an de la data efectuarii lor.</li>
+                            <li>Cazierul judiciar&nbsp;este valabil 6 luni de la data eliberarii.</li>
+                            <li>Fisa de scolarizare: este documentul eliberat de scoala de soferi&nbsp;la finalul pregatirii. Fisa de scolarizare este valabila 1 an de la data efectuarii ultimei ore de conducere.</li>
+                            <li>Taxa pentru permis, (cea de 68 de lei), nu are valabilitate. Daca intr-un an de zile, cat este valabil dosarul de scolarizare, nu promovati examenul auto, taxa se poate folosi la un nou dosar.</li>
+                        </ul>
+                    </RadzenAccordionItem>
+                </Items>
+            </RadzenAccordion>
+            <br />
+        </div>
     </div>
-    &nbsp;
-
-
-    <h3><strong><u>Categoria BE</u></strong></h3>
-
-    <h4><strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICLULUI/ANSAMBLULUI</strong></h4>
-
-    <div>
-        - neverificarea, prin intermediul aparaturii de bord sau a comenzilor autovehiculului, a functionării direcției, frânei, a instalației de ungere/ răcire, a luminilor, a semnalizării și a avertizorului sonor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-        -&nbsp;neverificarea dispozitivului de cuplare și conexiunilor instalației de frânare/ electrice a catadioptrilor;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-        - neverificarea elementelor de siguranță legate de încărcătura vehiculului, fixare, închidere&nbsp;uși/obloane;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-        - nereglarea scaunului, a oglinzilor retrovizoare, nefixarea centurii de siguranță, neeliberarea frânei de ajutor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-        - necunoașterea aparaturii de bord sau a comenzilor autovehiculului.<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span>
-    </div>
-
-    <h4><strong>II. COMPORTARE ÎN TRAFIC</strong></h4>
-
-    <h4><strong>MANEVRAREA ȘI POZIȚIA AUTOVEHICULULUI ÎN TIMPUL MERSULUI</strong></h4>
-
-    <div>
-        - nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-        - nemenținerea direcției de mers;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-        - folosirea incorectă a drumului cu sau fără marcaj;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-        - manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-        - întoarcerea incorectă pe o stradă cu mai multe benzi de circulație pe sens;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-        - manevrarea incorectă la urcarea rampelor/coborârea pantelor lungi, la circulația în tuneluri;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-        - folosirea incorectă a luminilor de întâlnire/luminilor de drum;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-        - conducerea în mod neeconomic și agresiv pentru mediul înconjurător (turație&nbsp;excesivă, frânare/accelerare nejustificate);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span>
-    </div>
-
-    <h4><strong>MANEVRE SPECIALE PRIVID SIGURANȚA TRAFICULUI</strong></h4>
-
-    <div>
-        - executarea incorectă a mersul înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-        - executarea incorectă a întoarcerii vehiculului cu fața în sens opus prin efectuarea manevrelor de mers înainte și înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-        - executarea incorectă a parcării cu fața, spatele sau lateral;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-        - executarea incorectă a frânării cu precizie;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-        - executarea incorectă a cuplării/decuplării remorcii la/de la autovehicul trăgător.<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span>
-    </div>
-
-    <h4><strong>SCHIMBAREA DIRECȚIEI DE MERS ȘI EFECTUAREA VIRAJELOR</strong></h4>
-
-    <div>
-        - neasigurarea la schimbarea direcției de mers/ la părăsirea locului de staționare;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-        - executarea neregulamentară a virajelor;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-        - nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
-    </div>
-
-    <h4><strong>CIRCULAȚIA ÎN INTERSECȚII, POZIȚII ÎN TIMPUL MERSULUI</strong></h4>
-
-    <div>
-        - încadrarea necorespunzătoare în raport cu direcția de mers indicată;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-        - efectuarea unor manevre interzise (oprire, staționare, întoarcere, mers înapoi);<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-        - neasigurare la pătrunderea în intersecții;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-        - folosirea incorectă a benzilor la intrarea/ieșirea pe/de pe autostradă/artere similare;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-        - nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus.&nbsp;<span style="color:rgb(255, 0, 0)"><strong>- 9p</strong></span>
-    </div>
-
-    <h4><strong>DEPĂȘIREA</strong></h4>
-
-    <div>
-        - ezitarea repetată de a depăși alte vehicule;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-        - nerespectarea regulilor de executare a depășirii ori efectuarea acestora în locuri și situații interzise.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
-    </div>
-
-    <h4><strong>PRIORITATEA</strong></h4>
-
-    <div>
-        - neacordarea priorității vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în&nbsp;intersecții, sens giratoriu, stație de mijloac de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere&nbsp;de pietoni);<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
-        - tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
-    </div>
-
-    <h4><strong>NERESPECTAREA SEMNIFICAȚIEI INDICATOARELOR ȘI MIJLOACELOR DE SEMNALIZARE RUTIERĂ</strong></h4>
-
-    <div>
-        - nerespectarea semnificației indicatoarelor/ marcajelor/ culorilor semaforului (cu excepția culorii roșii);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-        - nerespectarea semnificației culorii roșii a semaforului/ a semnalelor polițistului rutier/ a semnalelor altor persoane cu atribuții legale similare.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
-    </div>
-
-    <h4><strong>VITEZA</strong></h4>
-
-    <div>
-        - depășirea vitezei maxime admise;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-        - conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic.<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span>
-    </div>
-
-    <h4><strong>CONDUCEREA PE TIMP NEFAVORABIL</strong></h4>
-
-    <div>
-        - neîndemanarea în conducere în condiții de ploaie, zăpadă, mâzgă, polei;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-        - deplasarea cu viteza neadaptată condițiilor atmosferice și de drum;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
-    </div>
-
-    <h4><strong>NERESPECTAREA NORMELOR LEGALE LA TRECERILE LA NIVEL CU CALEA FERATĂ.<span style="color:rgb(255, 0, 0)">-21p</span></strong></h4>
-
-    <h4><strong>III. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
-
-    <div>
-        - prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea celorlalți candidați;<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
-        - intervenția examinatorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
-    </div>
-</RadzenAccordionItem>
-
-<RadzenAccordionItem Text="Puncte de penalizare traseu categoria C">
-    <h2><strong>PENALIZAREA GREȘELILOR COMISE DE CANDIDAT</strong></h2>
-
-    <h3><strong>(PUNCTE DE PENALIZARE)</strong></h3>
-    <strong>
-        Aplicate pentru nerespectarea normelor rutiere/neexecutarea ori executarea incorectă a manevrelor indicate<br>
-        La examenul practic fiecare greșeală primește un număr de puncte de penalizare, dacă se cumulează 21 de puncte de penalizare la traseu, candidatul este respins.
-    </strong>
-
-    <h3><u><strong>Categoria C (C,&nbsp;CE, C1, C1E, Tr)</strong></u></h3>
-    <strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICLULUI/ ANSAMBLULUI DE VEHICULE</strong><br>
-    - neefectuarea controlului vizual, în ordine aleatorie privind: starea anvelopelor, fixarea roților (starea piulițelor), starea elementelor suspensiei, a rezervoarelor de aer, a parbrizului, ferestrelor, a fluidelor (ulei motor, lichid răcire, fluid spălare parbriz), a blocului de lumini/ semnalizare față/ spate, catadioptrii, trusa medicală, triunghiul&nbsp;reflectorizant, stingător de incendiu;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-    - neefectuarea controlului caroseriei, a învelișului ușilor pentru marfă, a mecanismului de încărcare, a fixării încărcăturii&nbsp;<strong>(numai pentru&nbsp;C, CE, C1, C1E, Tr);<span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
-    - neverificarea, prin intermediul aparaturii de bord sau a comenzilor autovehiculului, a functionării direcției, frânei, instalației de ungere/ răcire, a luminilor, a semnalizării și a avertizorului sonor;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-    - necunoașterea aparaturii de înregistrare a activității conducătorului auto (Cu exceptia C1 C1E Tr care nu intră&nbsp;în domeniul Regulamentului (CEE) nr 3,821/85);<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-    - neverificarea dispozitivului de cuplare și a conexiunilor instalației de frânare/ electrice, a catadioptrilor&nbsp;<strong>(numai pentru CE, C1E, D1E, DE, Tr);</strong><span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - neverificarea caroseriei, a ușilor de serviciu, a ieșirilor de urgență, a echipamentul de prim-ajutor, a stingatoarelor de incendiu și a altor echipamente de siguranță&nbsp;<strong>(numai pentru D, DE, D1, D1E, Tb,Tv);<span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-    - nereglarea scaunului, a oglinzilor retrovizoare, nefixarea centurii de siguranță, neeliberarea frânei de ajutor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-    - necunoașterea aparaturii de bord sau a comenzilor autovehiculului.<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong>
-
-    <h4><strong>II. MANEVRE&nbsp;SPECIALE PRIVIND SIGURANȚA&nbsp;TRAFICULUI (se penalizează executarea incorectă a acestora)</strong></h4>
-    - cuplarea unei remorci de autovehiculul trăgător din/ cu revenire la poziția inițială în staționare paralel;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - mersul înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - parcarea în siguranță, cu fața/ cu spatele/ laterală, pentru încărcare/ descărcare, sau la o rampă/ platformă de încărcare, sau la o instalație similară;<strong><span style="color:rgb(255, 0, 0)">-7p</span></strong><br>
-    - oprirea pentru a permite călătorilor urcarea/ coborârea în/ din autobuz/ tramvai/ troleibuz, în siguranță.&nbsp;<strong>(numai pentru D, DE, D1, D1E, Tb,Tv).</strong><span style="color:rgb(255, 0, 0)"><strong>-7p</strong></span>
-
-    <h4><strong>III. COMPORTARE ÎN TRAFIC</strong></h4>
-
-    <h4><strong>MANEVREAREA ȘI POZIȚIA AUTOVEHICULULUI ÎN TIMPUL MERSULUI</strong></h4>
-    - nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - nemenținerea direcției de mers;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - folosirea incorectă a drumului, cu sau fără marcaje;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - executarea incorectă a mersului înapoi, a parcării cu fața, spatele sau lateral;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - executarea incorectă a întoarcerii vehiculului cu fața în sens opus prin efectuarea manevrelor de mers înainte și înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - întoarcerea incorectă pe o stradă cu mai multe benzi de circulație pe sens;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - manevrarea incorectă la urcarea rampelor/ coborârea pantelor lungi, la circulația în tuneluri;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - folosirea incorectă a luminilor de întâlnire/ luminilor de drum;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-    - conducerea în mod neeconomic și agresiv pentru mediul înconjurător (turație excesivă, frânare/ accelerare nejustificate).<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span>
-
-    <h4><strong>SCHIMBAREA DIRECȚIEI DE MERS ȘI EFECTUAREA VIRAJELOR</strong></h4>
-    - neasigurarea la schimbarea direcției de mers/ părăsirea locului de staționare;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - executarea neregulamentară a virajelor;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
-
-    <h4><strong>CIRCULAȚIA ÎN INTERSECȚII, POZIȚII ÎN TIMPUL MERSULUI</strong></h4>
-    - încadrarea necorespunzătoare în raport cu direcția de mers indicată;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - efectuarea unor manevre interzise (oprire, staționare, întoarcere, mers înapoi);<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - neasigurarea la pătrunderea în intersecții;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - folosirea incorectă a benzilor de intrare/ ieșire pe/ de pe autostradă/ artere similare;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus.<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
-
-    <h4><strong>DEPĂȘIREA</strong></h4>
-    - ezitarea repetată de a depăși alte vehicule;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - nerespectarea regulilor de executare a depășirii ori efectuarea acesteia în locuri și situații interzise.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
-
-    <h4><strong>PRIORITATEA</strong></h4>
-    - neacordarea priorității vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în intersecții, sens giratoriu, stație de mijloac&nbsp;de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere de pietoni);<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
-    - tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
-
-    <h4><strong>NERESPECTAREA SEMNIFICAȚIEI INDICATOARELOR ȘI MIJLOACELOR DE SEMNALIZARE RUTIERĂ</strong></h4>
-    - nerespectarea semnificiației indicatoarelor/ marcajelor/ culorilor semaforului (cu excepția culorii roșii);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - nerespectarea semnificației culorii roșii a semaforului/ semnalelor polițistului rutier/ semnalelor altor persoane cu atribuții legale similare.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
-
-    <h4><strong>VITEZA</strong></h4>
-    - depășirea vitezei legale maxime admise;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
-
-    <h4><strong>CONDUCEREA PE TIMP NEFAVORABIL</strong></h4>
-    - neîndemânarea în conducere în condiții de ploaie, zăpadă, mâzgă, polei;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - deplasarea cu viteza neadaptată condițiilor atmosferice și de drum;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
-
-    <h4><strong>NERESPECTAREA NORMELOR LEGALE LA TRECERILE LA NIVEL CU CALEA FERATĂ.<span style="color:rgb(255, 0, 0)">-21p</span></strong></h4>
-
-    <h4><strong>IV. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
-    - prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea celorlalți candidați;<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
-    - intervenția examinatorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
-
-</RadzenAccordionItem>
-
-<RadzenAccordionItem Text="Puncte de penalizare traseu categoria D">
-    <h3>(PUNCTE DE PENALIZARE)</h3>
-    <strong>
-        Aplicate pentru nerespectarea normelor rutiere/neexecutarea ori executarea incorectă a manevrelor indicate<br>
-        La examenul practic fiecare greșeală primește un număr de puncte de penalizare, dacă se cumulează 21 de puncte de penalizare la traseu, candidatul este respins.
-    </strong>
-
-    <h3><u><strong>Categoria D (D, DE, D1, D1E, Tb, Tv)</strong></u></h3>
-    <strong>I. PREGĂTIREA ȘI VERIFICAREA TEHNICĂ A AUTOVEHICLULUI/ ANSAMBLULUI DE VEHICULE</strong><br>
-    - neefectuarea controlului vizual, în ordine aleatorie privind: starea anvelopelor, fixarea roților (starea piulițelor), starea elementelor suspensiei, a rezervoarelor de aer, a parbrizului, ferestrelor, a fluidelor (ulei motor, lichid răcire, fluid spălare parbriz), a blocului de lumini/ semnalizare față/ spate, catadioptrii, trusa medicală, triunghiul&nbsp;reflectorizant, stingător de incendiu;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-    - neefectuarea controlului caroseriei, a învelișului ușilor pentru marfă, a mecanismului de încărcare, a fixării încărcăturii&nbsp;<strong>(numai pentru&nbsp;C, CE, C1, C1E, Tr);<span style="color:rgb(255, 0, 0)">-9p</span></strong><br>
-    - neverificarea, prin intermediul aparaturii de bord sau a comenzilor autovehiculului, a functionării direcției, frânei, instalației de ungere/ răcire, a luminilor, a semnalizării și a avertizorului sonor;<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-    - necunoașterea aparaturii de înregistrare a activității conducătorului auto (Cu exceptia C1 C1E Tr care nu intră&nbsp;în domeniul Regulamentului (CEE) nr 3,821/85);<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong><br>
-    - neverificarea dispozitivului de cuplare și a conexiunilor instalației de frânare/ electrice, a catadioptrilor&nbsp;<strong>(numai pentru CE, C1E, D1E, DE, Tr);</strong><span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - neverificarea caroseriei, a ușilor de serviciu, a ieșirilor de urgență, a echipamentul de prim-ajutor, a stingatoarelor de incendiu și a altor echipamente de siguranță&nbsp;<strong>(numai pentru D, DE, D1, D1E, Tb,Tv);<span style="color:rgb(255, 0, 0)">-5p</span></strong><br>
-    - nereglarea scaunului, a oglinzilor retrovizoare, nefixarea centurii de siguranță, neeliberarea frânei de ajutor;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-    - necunoașterea aparaturii de bord sau a comenzilor autovehiculului.<strong><span style="color:rgb(255, 0, 0)">-3p</span></strong>
-
-
-    <h4><strong>II. MANEVRE&nbsp;SPECIALE PRIVIND SIGURANȚA&nbsp;TRAFICULUI (se penalizează executarea incorectă a acestora)</strong></h4>
-    - cuplarea unei remorci de autovehiculul trăgător din/ cu revenire la poziția inițială în staționare paralel;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - mersul înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - parcarea în siguranță, cu fața/ cu spatele/ laterală, pentru încărcare/ descărcare, sau la o rampă/ platformă de încărcare, sau la o instalație similară;<strong><span style="color:rgb(255, 0, 0)">-7p</span></strong><br>
-    - oprirea pentru a permite călătorilor urcarea/ coborârea în/ din autobuz/ tramvai/ troleibuz, în siguranță.&nbsp;<strong>(numai pentru D, DE, D1, D1E, Tb,Tv).</strong><span style="color:rgb(255, 0, 0)"><strong>-7p</strong></span>
-
-    <h4><strong>III. COMPORTARE ÎN TRAFIC</strong></h4>
-
-    <h4><strong>MANEVREAREA ȘI POZIȚIA AUTOVEHICULULUI ÎN TIMPUL MERSULUI</strong></h4>
-    - nesincronizarea comenzilor (oprirea motorului, accelerarea excesivă, folosirea incorectă a treptelor de viteză);<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - nemenținerea direcției de mers;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - folosirea incorectă a drumului, cu sau fără marcaje;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - manevrarea incorectă la încrucișarea cu alte vehicule, inclusiv în spații restrânse;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - executarea incorectă a mersului înapoi, a parcării cu fața, spatele sau lateral;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - executarea incorectă a întoarcerii vehiculului cu fața în sens opus prin efectuarea manevrelor de mers înainte și înapoi;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - întoarcerea incorectă pe o stradă cu mai multe benzi de circulație pe sens;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - manevrarea incorectă la urcarea rampelor/ coborârea pantelor lungi, la circulația în tuneluri;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - folosirea incorectă a luminilor de întâlnire/ luminilor de drum;<span style="color:rgb(255, 0, 0)"><strong>-3p</strong></span><br>
-    - conducerea în mod neeconomic și agresiv pentru mediul înconjurător (turație excesivă, frânare/ accelerare nejustificate).<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span>
-
-    <h4><strong>SCHIMBAREA DIRECȚIEI DE MERS ȘI EFECTUAREA VIRAJELOR</strong></h4>
-    - neasigurarea la schimbarea direcției de mers/ părăsirea locului de staționare;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - executarea neregulamentară a virajelor;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - nesemnalizarea sau semnalizarea greșită a schimbării direcției de mers.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
-
-    <h4><strong>CIRCULAȚIA ÎN INTERSECȚII, POZIȚII ÎN TIMPUL MERSULUI</strong></h4>
-    - încadrarea necorespunzătoare în raport cu direcția de mers indicată;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - efectuarea unor manevre interzise (oprire, staționare, întoarcere, mers înapoi);<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - neasigurarea la pătrunderea în intersecții;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - folosirea incorectă a benzilor de intrare/ ieșire pe/ de pe autostradă/ artere similare;<span style="color:rgb(255, 0, 0)"><strong>-5p</strong></span><br>
-    - nepăstrarea distanței suficiente față de cei care rulează înainte sau vin din sens opus.<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
-
-    <h4><strong>DEPĂȘIREA</strong></h4>
-    - ezitarea repetată de a depăși alte vehicule;<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span><br>
-    - nerespectarea regulilor de executare a depășirii ori efectuarea acesteia în locuri și situații interzise.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
-
-    <h4><strong>PRIORITATEA</strong></h4>
-    - neacordarea priorității vehiculelor și pietonilor care au acest drept (la plecarea de pe loc, în intersecții, sens giratoriu, stație de mijloac&nbsp;de transport în comun prevăzută cu alveolă, stație de tramvai fără refugiu pentru pietoni, trecere de pietoni);<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
-    - tendințe repetate de a ceda trecerea vehiculelor și pietonilor care nu au prioritate.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
-
-    <h4><strong>NERESPECTAREA SEMNIFICAȚIEI INDICATOARELOR ȘI MIJLOACELOR DE SEMNALIZARE RUTIERĂ</strong></h4>
-    - nerespectarea semnificiației indicatoarelor/ marcajelor/ culorilor semaforului (cu excepția culorii roșii);<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - nerespectarea semnificației culorii roșii a semaforului/ semnalelor polițistului rutier/ semnalelor altor persoane cu atribuții legale similare.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
-
-    <h4><strong>VITEZA</strong></h4>
-    - depășirea vitezei legale maxime admise;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - conducerea cu viteză redusă în mod nejustificat, neîncadrarea în ritmul impus de ceilalți participanți la trafic.<span style="color:rgb(255, 0, 0)"><strong>-6p</strong></span>
-
-    <h4><strong>CONDUCEREA PE TIMP NEFAVORABIL</strong></h4>
-    - neîndemânarea în conducere în condiții de ploaie, zăpadă, mâzgă, polei;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span><br>
-    - deplasarea cu viteza neadaptată condițiilor atmosferice și de drum;<span style="color:rgb(255, 0, 0)"><strong>-9p</strong></span>
-
-    <h4><strong>NERESPECTAREA NORMELOR LEGALE LA TRECERILE LA NIVEL CU CALEA FERATĂ.<span style="color:rgb(255, 0, 0)">-21p</span></strong></h4>
-
-    <h4><strong>IV. ALTE SITUAȚII CARE CONDUC LA ACORDAREA CALIFICATIVULUI "RESPINS"</strong></h4>
-    - prezentarea la examen sub influența băuturilor alcoolice, substanțelor sau produselor stupefiante, a medicamentelor cu efecte similare acestora sau manifestări de natură să perturbe examinarea celorlalți candidați;<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span><br>
-    - intervenția examinatorului pentru evitarea unui pericol iminent/ producerea unui eveniment rutier.<span style="color:rgb(255, 0, 0)"><strong>-21p</strong></span>
-
-
-</RadzenAccordionItem>
-
-<RadzenAccordionItem Text="Redobandirea permisului suspendat">
-    <br>
-    <strong>Daca ai avut nefericitul moment în care dintr-o simplă manevră de neatenție, nu ai acordat prioritate, fie la o simplă ieșire din parcare, sau la un indicator de cedează trecerea, etc., cu siguranță permisul de conducere ți-a fost suspendat în cazul în care a avut loc un accident ușor, sau pentru o alcoolemie de până la 0.80mg/l, dar fără accident (atât de ușor de ridicat și atât de greu de redobândit).</strong><br>
-    <br>
-    <p>La prima vedere, chiar dacă accidentul a fost unul ușor, soldat cu avarii ușoare, și crezi că prin plata amenzii și înmanarea poliței de asigurare RCA celui accidentat, ai scăpat de griji, te înșeli, de fapt de aici încolo încep marile probleme datorate birocrației din România. Mai grav este că nici nu vei găsi prea ușor ceea ce ar trebui să faci ca să îți redobândești permisul de conducere, nimeni nu te informează în mod clar și corect.</p>
-
-    <p><strong>În continuare avem un ghid în care o să răspundem la întrebările pe care le are orice șofer care are permisul de conducere suspendat și care dorește să își reducă perioada de suspendare.</strong></p>
-
-    <p>&nbsp;</p>
-
-    <h2 style="text-align:center">Obligații în cazul permisului suspendat.</h2>
-
-    <blockquote>
-        <h5>Este obligatorie susținerea examenului de verificare a cunoașterii regulilor de circulație (adică testul de redobândire 13 din 15)? <em>- OUG 195/2002 Articolul 106^1 alin (1) și (2)</em></h5>
-
-        <p>Da, pentru unele cazuri specifice este obligatorie susținerea acestui examen. Acest examen se susține doar în timpul perioadei de suspendare, ori de cate ori dorești, până îl promovezi. Cazurile în care este obligatorie susținerea examenului sunt următoarele:</p>
-
-        <ul>
-            <li>conducerea sub influența băuturilor alcoolice;</li>
-            <li>nerespectarea regulilor privind prioritatea de trecere, depășirea sau trecerea la culoarea roșie a semaforului, dacă prin aceasta s-a produs un accident de circulație din care au rezultat avarierea unui vehicul sau alte pagube materiale;</li>
-            <li>când fapta conducătorului de autovehicul sau tramvai a fost urmărită ca infracțiune contra siguranței circulației pe drumurile publice și procurorul sau instanța de judecată a dispus clasarea în condițiile art. 16 alin. (1) lit. b) teza a II-a din Codul de procedură penală, renunțarea la urmărirea penală, renunțarea la aplicarea pedepsei sau amânarea aplicării pedepsei dacă nu a fost dispusă obligația prevăzută la art. 85 alin. (2) lit. g) din Codul penal.</li>
-        </ul>
-    </blockquote>
-
-    <blockquote>
-        <h5>Ce se întâmplă dacă nu promovez sau nu mă prezint la examenul obligatoriu (adică testul de redobândire 13 din 15)? <em>- OUG 195/2002 Articolul 106^1 alin (2)</em></h5>
-
-        <p>În cazul în care nu promovezi sau nu te prezinți la examen până îți expiră perioada de suspendare, se prelungește automat perioada de suspendare cu încă 30 de zile. Adică o să îți recuperezi permisul cu 30 de zile mai târziu față de data la care iți expira inițial suspendarea.</p>
-
-        <p><strong><em>Exemplul 1</em></strong><em>: dacă ai permisul suspendat pentru 60 de zile, dacă examenul este obligatoriu pentru fapta ta, iar tu te duci să dai examenul și îl promovezi, îți recuperezi permisul în 60 de zile.</em></p>
-
-        <p><strong><em>Exemplul 2</em></strong><em>: dacă ai permisul suspendat pentru 60 de zile, dacă examenul este obligatoriu pentru fapta ta, iar tu nu dai examenul sau îl dai de cate ori vrei dar nu îl promovezi, îți recuperezi permisul în 60 + încă 30 de zile =&nbsp; 90 de zile.</em></p>
-    </blockquote>
-
-    <blockquote>
-        <h5>Unde se susține acest examen de redobândire (13 din 15)? <em>- OUG 195/2002 Articolul 106^2 alin (1)</em></h5>
-
-        <p>Acest test se poate susține în următoarele două locuri:</p>
-
-        <ul>
-            <li>la serviciul poliției rutiere care are în evidență titularul permisului de conducere;</li>
-            <li>la serviciul poliției rutiere pe raza căruia a fost constatată contravenția ori au fost constatate prin același proces-verbal contravențiile.</li>
-        </ul>
-
-        <p>Testul se poate susține ori când dorești, săptămânal și este gratuit. Important este faptul că examenul poate fi susținut doar în perioada suspendării. Acesta se programează, numai după expirarea dovezii de circulație, de regula cu o valabilitate de 15 zile (la cei cu 0 zile dovada - pt. alcoolemie - din prima zi de suspendare), în unul din cele două locuri de mai sus în care se poate susține examenul, având la tine Cartea de Identitate și dovada de conducere, de obicei între orele 8 și 9. Examenul va fi susținut 20 de minute, cu întrebări 13 corecte din 15, întrebări care se regăsesc aici pe Școala Rutieră la categoria Redobândire. Întrebările au variante de raspuns a), b) și c) din care doar una poate fi corectă (nu sunt corecte mai multe variante de răspuns ca la examenul standard).</p>
-
-        <p>Ai mare grijă să nu rupi sub nici o formă dovada de conducere, chiar dacă a expirat termenul de valabilitate, și chiar dacă pe ea nu se specifică termenul de valabilitate, fără ea nu vei putea susține examenul, și nici nu vei putea ridica permisul. Deci va fi nevoie de o nouă dovadă (sau declarație de pierdere/deteriorare la notariat) cu costuri ceva mai mari.</p>
-
-        <p>Testul nu este greu, ideea este să înveți și să nu dai răspunsuri din "experiență sau practică" ci din lege. Așadar, pentru a avea o reușită sigură în redobândirea permisului, va trebui să alegi aici pe site-ul Școala Rutieră categoria Redobândire ("13 din 15"), și să parcurgi toți cei 4 pași de învățare.</p>
-    </blockquote>
-
-    <h2 style="text-align:center">Reducerea Perioadei de suspendare.</h2>
-
-    <blockquote>
-        <h5>Se poate reduce perioada de suspendare? <em>- OUG 195/2002 Articolul 104 alin (1) și Articolul 106</em></h5>
-
-        <p>Da, se poate să ți se reducă perioada de suspendare de la 60/90 de zile la 30 de zile, însă nu oricine poate beneficia de aceasta reducere. Dar trebuie știut că aceasta reducere nu se face din oficiu. Pentru a beneficia de această reducere trebuie să faci o cerere specială în acest sens, este o cerere tip care se găsește de regula la centrele de copiere. Aceasta cerere, dacă este făcută corect și îndeplinești condițiile, cu siguranță se va aproba, nu trebuie să îți faci griji.</p>
-    </blockquote>
-
-    <blockquote>
-        <h5>Care sunt condițiile pentru a beneficia de reducerea perioadei de suspendare? <em>- OUG 195/2002 Articolul 104 alin (2)</em></h5>
-
-        <p>Pentru a beneficia de aceasta reducere trebuie să îndeplinești aceste două condiții:</p>
-
-        <ul>
-            <li>să fi declarat admis la testul de verificare a cunoașterii regulilor de circulație (testul 13 din 15) ;</li>
-            <li>să ai permisul de conducere de mai mult de un an când săvârșești fapta, mai exact, să nu fi începător.</li>
-        </ul>
-    </blockquote>
-
-    <blockquote>
-        <h5>Care sunt faptele pentru care <strong><u>SE POATE</u></strong> beneficia de reducerea perioadei de suspendare? <em>- OUG 195/2002 Articolul 104 alin (3)</em></h5>
-
-        <p>Perioada de suspendare se reduce la 30 de zile (de la 60 sau 90 de zile), doar la cererea titularului (Atenție! Doar dacă faci o cerere în acest sens), pentru următoarele fapte:</p>
-
-        <ul>
-            <li>nerespectarea regulilor privind prioritatea de trecere, depășirea sau trecerea la culoarea roșie a semaforului, dacă prin aceasta s-a produs un accident de circulație din care au rezultat avarierea unui vehicul sau alte pagube materiale;<em> - de la 60 de zile la 30 de zile</em></li>
-            <li>nerespectarea interdicției temporare de circulație instituite pe un anumit segment de drum public;<em> - de la 60 de zile la 30 de zile</em></li>
-            <li>nerespectarea regulilor de circulație la trecerea unei coloane oficiale sau intercalarea într-o astfel de coloana;<em> - de la 60 de zile la 30 de zile</em></li>
-            <li>circulația pe sens opus, cu excepția cazurilor în care se efectuează regulamentar manevra de depășire.<em> - de la 60 de zile la 30 de zile</em></li>
-            <li>conducerea sub influenta băuturilor alcoolice, dacă fapta nu constituie, potrivit legii, infracțiune;<em> - de la 90 de zile la 30 de zile</em></li>
-            <li>când fapta conducătorului de autovehicul sau tramvai a fost urmărită ca infracțiune contra siguranței circulației pe drumurile publice și procurorul sau instanța de judecată a dispus clasarea în condițiile art. 16 alin. (1) lit. b) teza a II-a din Codul de procedură penală, renunțarea la urmărirea penală, renunțarea la aplicarea pedepsei sau amânarea aplicării pedepsei dacă nu a fost dispusă obligația prevăzută la art. 85 alin. (2) lit. g) din Codul penal;<em> - de la 90 de zile la 30 de zile</em></li>
-        </ul>
-
-        <p>Însă dacă ți-a fost suspendat permisul pentru depășirea cu mai mult de 50 km/h a vitezei maxime admise se mai adaugă încă două condiții ca să se poată obțină reducerea perioadei de suspendare, acestea fiind:</p>
-
-        <ul>
-            <li>viteza cu care te-a prins radarul că ai depășit limita maxima admisa sa nu fie mai mare de 70 km/h. De exemplu, dacă limita maxima este de 90, radarul să nu te prindă cu mai mult de 160 de km/h;</li>
-            <li>sau dacă viteza cu care te-a prins radarul că ai depășit limita maxima admisa este mai mare de 70 km/h, acest lucru să se fi întâmplat maxim o dată în ultimele 12 luni.</li>
-        </ul>
-    </blockquote>
-
-    <blockquote>
-        <h5>Care sunt situațiile în care <u><strong>NU SE POATE</strong></u> beneficia de reducerea perioadei de suspendare? <em>- OUG 195/2002 Articolul 104 alin (6)</em></h5>
-
-        <p>Nu toți cei care au permisul suspendat își pot reduce perioada de suspendare. Sunt unele situații în care reducerea nu se poate aplica, acestea sunt:</p>
-
-        <ul>
-            <li>dacă ai cumulat, din nou, cel puțin 15 puncte de penalizare în următoarele 12 luni de la data expirării ultimei suspendări a exercitării dreptului de a conduce;</li>
-            <li>dacă ai fost implicat într-un accident de circulație din care au rezultat numai pagube materiale, iar rezultatul testării aerului expirat sau al probelor biologice a stabilit că ai condus vehiculul în timp ce te aflai sub influența alcoolului;</li>
-            <li>dacă sancțiunea contravențională complementară s-a dispus ca urmare a neopririi la trecerea la nivel cu calea ferată când barierele sau semibarierele sunt coborâte ori în curs de coborâre sau când semnalele cu lumini roșii și/sau sonore sunt în funcțiune.</li>
-        </ul>
-    </blockquote>
-
-    <blockquote>
-        <h5>Dacă fac cerere de reducere a perioadei de suspendare, când susțin examenul de verificare a cunoașterii regulilor de circulație (redobândire 13 din 15)? <em>- OUG 195/2002 &nbsp;Articolul 106</em></h5>
-
-        <p>În cazul în care ai făcut o cerere de reducere a perioadei de suspendare, examenul se va da în primele 30 de zile de suspendare, inclusiv in a în a 30-a zi. Nu se mai dă examenul oricând se dorește pe toata perioada de suspendare de 60 sau 90 de zile așa cum se face în mod normal, când nu faci cerere de reducere.</p>
-    </blockquote>
-
-    <p><strong>După admiterea examenului (ați răspuns la cel putin 13 întrebări correct din 15), dacă sunteți pentru reducerea cu 30 de zile veți avea nevoie de urmatoarele documente:</strong></p>
-
-    <p>
-        - Copie dovadă conducere față verso (pe verso completată de polițist cu admiterea dumneavoastră);<br>
-        - Copie carte de identitate;<br>
-        - Copie proces verbal (unde este specificată și amenda);<br>
-        - Copie dovadă amendă plătită;<br>
-        - Cerere tip, de reducere a suspendării (o găsești la centrele de copiere de pe lângă poliție).<br>
-        <br>
-        Cu aceste copii de documente mergi la ghiseu și depui acele copii pentru analizare și aprobare. În mod normal această analiză durează cam o saptămână dar uneori poate dura până la o lună, depinde de solicitarea sistemului. Din fericire rezultatul aprobării cererii de suspendare se transmite prin calculator și întodeauna este favorabil dacă îndeplinești condițiile.<br>
-        <br>
-        Ultimul pas, la expirarea celor 30 de zile în cazul în care ai avut permisul suspendat pe 60 sau 90 de zile și ai beneficiat de reducerea perioadei, mergi la sediul Poliției, de unde cu dovada de conducere (în original) și cartea de identitate (buletinul), îți ridici în cele din urmă prețiosul permis de care mulți nu ne putem lipsi. În această fază finală este ultimul drum al actului "dovada de conducere", care în mod normal nu are niciunde indicat sa fie pastrată și după expirarea celor 15 zile (multi având instinctul de a o arunca după expirare). Suntem în România, așa că nu se știe cănd ai nevoie de un document doar pentru faptul că instituțiile merg prost și se pierd documente din vina nimanui!<br>
-        <br>
-        Nu uita, la redobandirea permisului, ești „pătat” pentru 2 luni conform legislației în vigoare, adică dacă în decursul primelor 2 luni după redobândire ți se va mai suspenda permisul, se vor mai adauga 30 de zile la suspendare. Iar dacă ai cumulat, din nou, cel puțin 15 puncte de penalizare în următoarele 12 luni de la data expirării ultimei suspendări a exercitării dreptului de a conduce, nu mai poți beneficia de reducerea perioadei de suspendare. Deci, grijă mare!
-    </p>
-</RadzenAccordionItem>
-
-<RadzenAccordionItem Text="Cand expira scoala de soferi?">
-    <strong>Scoala de soferi este valabila 12 luni de la data absolvirii, adica de la data efectuarii ultimei ore de conducere (data este inscrisa in fisa de scolarizare).&nbsp;Este recomandat sa se sustina acest examen de permis imediat dupa terminarea scolii, deoarece cunostintele asimilate sunt proaspete iar in perioada de un an se pot schimba multe din punct de vedere legislativ la regimul rutier.</strong><br>
-    <br>
-    Daca pe parcursul unui an de la absolvirea scolii dvs. nu reusiti sa promovati examenul organizat de Serviciul public comunitar regim permise de conducere si inmatriculare a vehiculelor, atunci dupa un an trebuie sa reluati procesul de pregatire, pregatirea teoretica si toate orele de conducere minim obligatorii, inclusiv intocmirea din nou a dosarului pentru permis (cu toate actele necesare).<br>
-    <br>
-    <strong>Valabilitatea restului de documente din dosarul pentru permis:</strong>
-    <ul>
-        <li>Avizul psihologic si fisa medicala&nbsp;sunt valabile 1 an de la data efectuarii lor.</li>
-        <li>Cazierul judiciar&nbsp;este valabil 6 luni de la data eliberarii.</li>
-        <li>Fisa de scolarizare: este documentul eliberat de scoala de soferi&nbsp;la finalul pregatirii. Fisa de scolarizare este valabila 1 an de la data efectuarii ultimei ore de conducere.</li>
-        <li>Taxa pentru permis, (cea de 68 de lei), nu are valabilitate. Daca intr-un an de zile, cat este valabil dosarul de scolarizare, nu promovati examenul auto, taxa se poate folosi la un nou dosar.</li>
-    </ul>
-</RadzenAccordionItem>
-            </Items>
-        </RadzenAccordion>
-<br />
-    </div>
-
 @code {
 
 

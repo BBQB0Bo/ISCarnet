@@ -22,7 +22,7 @@ namespace LoginAPI
         {
             services.AddControllers();
             services.AddDbContext<CandidateContext>(options =>
-                options.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnet;Trusted_Connection=True"));
+                options.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=ISCARNET;Trusted_Connection=True"));
             services.AddScoped<ICandidateService, CandidateService>();
             services.AddScoped<IExamService, ExamService>();
         }

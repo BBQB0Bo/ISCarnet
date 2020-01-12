@@ -1,78 +1,97 @@
 ﻿@page "/examinators"
 
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
 @using IS_CARNET.Data
-<style>
-    h1{
-        color:white
-    }
-    p{
-        color:white
-    }
-</style>
+    <button onclick="location.href = '/'" class="fixedButton"><i class="fa fa-home" />HOME</button>
+@if (!string.IsNullOrEmpty(State.CurrentUser) || !string.IsNullOrEmpty(AdminState.CurrentUser))
+{
+    <style>
+        h1 {
+            color: white
+        }
+
+        p {
+            color: white
+        }
+    </style>
     <div style="width:500px;margin-left:auto;margin-right:auto;">
         <div style="margin-left:30px">
-        <h1><b>Examinatori</b></h1>
+
         </div>
 
-        @if (!string.IsNullOrEmpty(State.CurrentUser) || !string.IsNullOrEmpty(AdminState.CurrentUser))
+
+        @if (examinators != null)
         {
-            @if (examinators != null)
-            {
-                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@examinators" PageSize="4" TItem="ExaminatorDTO">
-                    <Template Context="examinator">
-                        <RadzenCard Style="width:300px;margin-top:20px">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div style="margin-top:20px;margin-left:20px">
-                                        Nume:
-                                        <br />
-                                        <b>@examinator.LastName</b>
-                                    </div>
-
+            <RadzenDataList WrapItems="true" AllowPaging="true" Data="@examinators" PageSize="4" TItem="ExaminatorDTO">
+                <Template Context="examinator">
+                    <RadzenCard Style="width:300px;margin-top:20px">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div style="margin-top:20px;margin-left:20px">
+                                    Nume:
                                     <br />
-                                    <div style="margin-left:20px;margin-bottom:20px">
-                                        <RadzenImage Path="https://p.kindpng.com/picc/s/468-4689556_significa-police-officer-en-espaol-hd-png-download.png" Style="width:100px;">
-                                        </RadzenImage>
-                                    </div>
-
+                                    <b>@examinator.LastName</b>
                                 </div>
-                                <div class="col-md-6">
-                                    <div style="margin-top:20px;margin-left:20px">
-                                        Prenume:
-                                        <br />
-                                        <b>@examinator.FirstName</b>
-                                    </div>
-                                    <div style="margin-top:20px;margin-left:20px">
-                                        Procentaj:
-                                        <br />
-                                        <b>@examinator.PassingPercentage %</b>
-                                    </div>
-                                    <div style="margin-top:20px;margin-left:20px">
-                                        Oras:
-                                        <br />
-                                        <b>Iasi</b>
-                                    </div>
+
+                                <br />
+                                <div style="margin-left:20px;margin-bottom:20px">
+                                    <RadzenImage Path="https://p.kindpng.com/picc/s/468-4689556_significa-police-officer-en-espaol-hd-png-download.png" Style="width:100px;">
+                                    </RadzenImage>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div style="margin-top:20px;margin-left:20px">
+                                    Prenume:
+                                    <br />
+                                    <b>@examinator.FirstName</b>
+                                </div>
+                                <div style="margin-top:20px;margin-left:20px">
+                                    Procentaj:
+                                    <br />
+                                    <b>@examinator.PassingPercentage %</b>
+                                </div>
+                                <div style="margin-top:20px;margin-left:20px">
+                                    Oras:
+                                    <br />
+                                    <b>Iasi</b>
                                 </div>
                             </div>
-                        </RadzenCard>
-                    </Template>
-                </RadzenDataList>
+                        </div>
+                    </RadzenCard>
+                </Template>
+            </RadzenDataList>
 
-            }
-            else
-            {
-                <p>Nu sunt examinatori inregistrati</p>}
         }
         else
         {
-            <p>Va rugam sa va logati pentru a accesa lista de examinatori</p>
+
+    <div class="form2">
+
+
+        <h1>INTREBARI FRECVENTE</h1>
+        </div>
         }
 
+
     </div>
+}
+else
+{
+    showError("Trebuie sa fii logat ca administrator pentru a accesa aceasta pagina!");
+}
 
 
 
 @code {
+
+    async Task showError(string error)
+    {
+        await JSRuntime.InvokeVoidAsync("createError", error);
+        NavigationManager.NavigateTo("/");
+    }
 
     private IEnumerable<ExaminatorDTO> examinators;
 

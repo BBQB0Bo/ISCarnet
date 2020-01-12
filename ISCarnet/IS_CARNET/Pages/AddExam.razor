@@ -2,69 +2,98 @@
 
 @using IS_CARNET.Data
 
-<EditForm Model="@dto" OnValidSubmit="@SubmitExam">
-    <div class="form">
-        @if (!string.IsNullOrEmpty(AdminState.CurrentUser))
-        {
-            <h1>ADD Exam</h1>
-            <DataAnnotationsValidator />
-            <ValidationSummary />
-            <p>
-                <label for="username">Username:</label>
-                <InputText id="username" @bind-Value="dto.usernameCandidate"></InputText>
-            </p>
-            <p>
-                <label for="date">Date:</label>
-                <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
-            </p>
-            <p>
-                <label for="examinator">Examinator:</label>
-                <InputSelect id="username" asp-items="Model.examinators" @bind-Value="dto.ExaminatorName">
-                    @foreach (ExaminatorDTO ex in examinas)
-                        {
-                        <option value=@(ex.FirstName + " " + ex.LastName)>@(ex.FirstName + " " + ex.LastName)</option>
-                        }
-                    /**/
-                    /**/
-
-
-                </InputSelect>
-            </p>
-            <p>
-                <label for="examinator">Locatie de plecare:</label>
-                <InputSelect id="username" asp-items="Model.locations" @bind-Value="dto.LocationName">
-                    @foreach (LocationDTO l in locations)
-                        {
-                        <option value=@l.LocationName>@l.LocationName</option>
-                        }
-                    /**/
-                    /**/
-
-
-                </InputSelect>
-            </p>
-            <button type="submit">ADD EXAM</button>
-        }
-        else
-        {
-            <p>Trebuie sa fiti logat ca administrator pentru a accesa aceasta pagina!</p>
-        }
-
-    </div>
-</EditForm>
-@if (!string.IsNullOrEmpty(message))
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+@if (!string.IsNullOrEmpty(AdminState.CurrentUser))
 {
-    <p>@message</p>
+    <EditForm Model="@dto" OnValidSubmit="@SubmitExam">
+        <div class="login-page">
+            <img src="img/logo.png" class="logo_middle">
+            <button onclick="location.href = '/'" class="fixedButton">HOME</button>
+            <div class="form">
+               
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <p>
+                        <label for="username">Username:</label>
+                        <InputText id="username" @bind-Value="dto.usernameCandidate"></InputText>
+                    </p>
+                    <p>
+                        <label for="date">Date:</label>
+                        <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
+                    </p>
+                    <p>
+                        <label for="examinator">Examinator:</label>
+                        <InputSelect id="username" asp-items="Model.examinators" @bind-Value="dto.ExaminatorName">
+                            @foreach (ExaminatorDTO ex in examinas)
+                                {
+                                <option value=@(ex.FirstName + " " + ex.LastName)>@(ex.FirstName + " " + ex.LastName)</option>
+                                }
+                            /**/
+                            /**/
+                            /**/
+                            /**/
+                            /**/
+                            /**/
+
+
+                        </InputSelect>
+                    </p>
+                    <p>
+                        <label for="examinator">Locatie de plecare:</label>
+                        <InputSelect id="username" asp-items="Model.locations" @bind-Value="dto.LocationName">
+                            @foreach (LocationDTO l in locations)
+                                {
+                                <option value=@l.LocationName>@l.LocationName</option>
+                                }
+                            /**/
+                            /**/
+                            /**/
+                            /**/
+                            /**/
+                            /**/
+
+
+                        </InputSelect>
+                    </p>
+                    <button type="submit">ADD EXAM</button>
+
+
+                </div>
+                </div>
+    </EditForm>
 }
+else
+{
+    showError("Trebuie sa fii logat ca administrator pentru a accesa aceasta pagina!");
+}
+
 @code {
 
-
+    async Task showError(string error)
+    {
+        await JSRuntime.InvokeVoidAsync("createError", error);
+        NavigationManager.NavigateTo("/");
+    }
 
     private CreateExam dto = new CreateExam();
     private List<ExaminatorDTO> examinas = new List<ExaminatorDTO>();
     private List<LocationDTO> locations = new List<LocationDTO>();
 
     string message = string.Empty;
+
+     async Task ShowAlert(string error)
+    {
+        if (error == "A aparut o eroare la adaugarea examenului")
+        {
+
+            await JSRuntime.InvokeVoidAsync("createError", error);
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("createSuccess", error);
+        }
+    }
 
     // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
     HttpClient Http = new HttpClient();
@@ -94,6 +123,7 @@
         {
             message = "A aparut o eroare la adaugarea examenului";
         }
+        await ShowAlert(message);
 
     }
 

@@ -11,17 +11,20 @@
     <base href="~/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link href="css/site.css" rel="stylesheet" />
-    <link href="~/css/main.css" rel="stylesheet"/>
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     <app>
         @(await Html.RenderComponentAsync<App>(RenderMode.ServerPrerendered))
     </app>
 
     <script src="_framework/blazor.server.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDITrTUdjHfUj0fY0vVf3xPOkGsRKZqWwE&callback=initMap"
-        async defer></script>
-    <script src="~/js/map.js"></script>
-    
+            async defer></script>
+    <script src="js/map.js"></script>
+    <script src="js/notifications.js"></script>
+
 </body>
 </html>

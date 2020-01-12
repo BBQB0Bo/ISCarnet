@@ -1,13 +1,49 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
 
-<div class="sidebar">
-    <NavMenu />
-</div>
-
-<div class="main">
-
-
+@if (string.IsNullOrEmpty(AdminState.CurrentUser) && string.IsNullOrEmpty(State.CurrentUser))
+{
     <div class="content px-4">
         @Body
     </div>
-</div>
+}
+else
+{
+
+    <div class="main">
+        <div class="buttonsDiv">
+            @if (!string.IsNullOrEmpty(State.CurrentUser))
+            {
+                <button onclick="location.href = '/'" class="logoutButton"><i class="fa fa-address-book" style="font-size:15px" /><br />@State.CurrentUser</button>
+            }
+            else
+            {
+                <button onclick="location.href = '/'" class="logoutButton"><i class="fa fa-address-book" style="font-size:15px" /><br />@AdminState.CurrentUser</button>
+            }
+            <button class="logoutButton" @onclick="Logout"><i class="fa fa-power-off" style="font-size:15px" /><br />LOGOUT</button>
+        </div>
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+
+}
+@code{
+
+    void Logout()
+    {
+        State.CurrentUser = string.Empty;
+        AdminState.CurrentUser = string.Empty;
+        ShowAlert("Logged Out Successfully!");
+        NavigationManager.NavigateTo("");
+
+    }
+
+     async Task ShowAlert(string error)
+    {
+            await JSRuntime.InvokeVoidAsync("createSuccess", error);
+    
+    }
+}
+

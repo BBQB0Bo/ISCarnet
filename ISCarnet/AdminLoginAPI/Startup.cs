@@ -30,7 +30,7 @@ namespace AdminLoginAPI
         {
             services.AddControllers();
             services.AddDbContext<AdminContext>(options =>
-                options.UseSqlServer(@"Server=(localdb)\ProjectsV13;Database=ISCarnetAdmin;Trusted_Connection=True"));
+                options.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=ISCARNETadmin;Trusted_Connection=True"));
             services.AddScoped<IAdminService, AdminService>();
         }
 

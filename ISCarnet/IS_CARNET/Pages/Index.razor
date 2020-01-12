@@ -1,15 +1,52 @@
 ﻿@page "/"
+@if (string.IsNullOrEmpty(State.CurrentUser) && string.IsNullOrEmpty(AdminState.CurrentUser))
+{
+    <div class="login-page">
+        <img src="img/logo.png" class="logo">
 
-<div class="login-page">
-    <img src="img/logo.png" class="logo">
+        <div class="form">
+            <button onclick="location.href = '/info'" class="homeButton">INFO</button>
+            &nbsp;
+            <button onclick="location.href = '/login'" class="homeButton">LOGIN</button>
+            &nbsp;
+            <button onclick="location.href = '/register'" class="homeButton">REGISTER</button>
 
-    <div class="form">
-        <button onclick="location.href = '/info'" class="homeButton">INFO</button>
-        &nbsp;
-        <button onclick="location.href = '/login'" class="homeButton">LOGIN</button>
-        &nbsp;
-        <button onclick="location.href = '/register'" class="homeButton">REGISTER</button>
+
+        </div>
+    </div>
+}
+@if (!string.IsNullOrEmpty(AdminState.CurrentUser) && string.IsNullOrEmpty(State.CurrentUser))
+{
+
+    <div class="buttonsInPage">
+        <div class="firstRow">
+
+            <button onclick="location.href = '/addexam'" class="buttonIndexPage"><i class="fa fa-calendar-plus-o" style="font-size:48px"></i><br />ADD EXAM</button>
+            <button onclick="location.href = '/addexaminator'" class="buttonIndexPage"><i class="fa fa-user-plus" style="font-size:48px" /><br />ADD EXAMINATOR</button>
+            <button onclick="location.href = '/addlocation'" class="buttonIndexPage"><i class="	fa fa-map-o" style="font-size:48px" /><br />ADD LOCATION</button>
+        </div>
+
+        <div class="secondRow">
+
+            <button onclick="location.href = '/info'" class="buttonIndexPage"><i class="fa fa-info-circle" style="font-size:48px"></i><br />INFO</button>
+            <button onclick="location.href = '/editexam'" class="buttonIndexPage"><i class="fa fa-pencil-square-o" style="font-size:48px" /><br />EDIT EXAM</button>
+            <button onclick="location.href = '/examinators'" class="buttonIndexPage"><i class="fa fa-users" style="font-size:48px" /><br />EXAMINATORS</button>
+        </div>
 
 
     </div>
+
+}
+
+@if (string.IsNullOrEmpty(AdminState.CurrentUser) && !string.IsNullOrEmpty(State.CurrentUser))
+{
+<div class="buttonsInPage">
+    <div class="firstRow">
+
+        <button onclick="location.href = '/info'" class="buttonIndexPage"><i class="fa fa-info-circle" style="font-size:48px"></i><br />INFO</button>
+        <button onclick="location.href = '/fetchpastexams'" class="buttonIndexPage"><i class="fa fa-graduation-cap" style="font-size:48px" /><br />MY EXAMS</button>
+        <button onclick="location.href = '/examinators'" class="buttonIndexPage"><i class="fa fa-users" style="font-size:48px" /><br />EXAMINATORS</button>
+    </div>
 </div>
+}
+{

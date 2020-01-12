@@ -1,63 +1,20 @@
 ﻿@inject NavigationManager NavigationManager
-<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">IS_CARNET</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</div>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <ul class="nav flex-column">
-        @*https://aalmiray.github.io/ikonli/cheat-sheet-openiconic.html*@
 
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </li>
-        @if (!string.IsNullOrEmpty(State.CurrentUser))
-        {
-            <li class="nav-item px-3">
-                <NavLink class="nav-link" href="/fetchpastexams" Match="NavLinkMatch.All">
-                    <span class="oi oi-aperture" aria-hidden="true"></span> Past Exams
-                </NavLink>
-            </li>
-        }
-        @if (!string.IsNullOrEmpty(State.CurrentUser) || !string.IsNullOrEmpty(AdminState.CurrentUser))
-        {
-            <li class="nav-item px-3">
-                <NavLink class="nav-link" href="/examinators" Match="NavLinkMatch.All">
-                    <span class="oi oi-warning" aria-hidden="true"></span> Examinators
-                </NavLink>
-            </li>
-        }
-        @if (!string.IsNullOrEmpty(AdminState.CurrentUser))
-        {
-            <li class="nav-item px-3">
-                <NavLink class="nav-link" href="/addexam" Match="NavLinkMatch.All">
-                    <span class="oi oi-task" aria-hidden="true"></span> Add Exam
-                </NavLink>
-            </li>
-            <li class="nav-item px-3">
-                <NavLink class="nav-link" href="/addexaminator" Match="NavLinkMatch.All">
-                    <span class="oi oi-warning" aria-hidden="true"></span> Add Examinator
-                </NavLink>
-            </li>
-            <li class="nav-item px-3">
-                <NavLink class="nav-link" href="/editexam" Match="NavLinkMatch.All">
-                    <span class="oi oi-warning" aria-hidden="true"></span> Edit Exam
-                </NavLink>
-            </li>
-        }
-
-    </ul>
-    @if (!string.IsNullOrEmpty(State.CurrentUser) || !string.IsNullOrEmpty(AdminState.CurrentUser))
-    {
-<div align="center">
-    <button class="nav-link" @onclick="Logout">LOGOUT</button>
+@if (string.IsNullOrEmpty(State.CurrentUser) && string.IsNullOrEmpty(State.CurrentUser))
+{
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a class="partdr" href="">Login</a>
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+            <span class="oi oi-home" aria-hidden="true"></span> Home
+        </NavLink>
     </div>
-    }
-</div>
+}
+
 
 @code {
     bool collapseNavMenu = true;

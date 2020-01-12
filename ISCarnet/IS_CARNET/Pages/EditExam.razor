@@ -1,95 +1,129 @@
 ﻿@page "/editexam"
 
 @using IS_CARNET.Data
+
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
 @if (!string.IsNullOrEmpty(AdminState.CurrentUser))
 {
-    <EditForm Model="@dto" OnValidSubmit="@SubmitExam">
-        <DataAnnotationsValidator />
-        <ValidationSummary />
-        <div class="form">
-            <h1>ADD Exam</h1>
+    <div class="buttonsInPage">
+        <div class="firstRow">
+            <EditForm Model="@dto" OnValidSubmit="@SubmitExam">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+                <div class="login-page">
 
-            <p>
-                <label for="username">Username:</label>
-                <InputText id="username" @bind-Value="dto.UsernameCandidate"></InputText>
-            </p>
-            <p>
-                <label for="date">Date:</label>
-                <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
-            </p>
-            <button type="submit">ADD EXAM</button>
+                    <button onclick="location.href = '/'" class="fixedButton">HOME</button>
+                    <div class="form2">
+
+                        <p>
+                            <label for="username">Username:</label>
+                            <InputText id="username" @bind-Value="dto.UsernameCandidate"></InputText>
+                        </p>
+                        <p>
+                            <label for="date">Date:</label>
+                            <InputDate id="birthdate" @bind-Value="dto.ExamDate"></InputDate>
+                        </p>
+                        <button type="submit">EDIT EXAM</button>
 
 
+                    </div>
+                </div>
+            </EditForm>
+
+            <EditForm Model="@mdto">
+                <div class="login-page">
+                    <div class="form">
+
+
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+                        <p>
+                            <label for="MistakeType">Mistake:</label>
+                            <InputText id="MistakeType" @bind-Value="mdto.MistakeType"></InputText>
+                        </p>
+                        <p>
+                            <label for="MistakeScore">Score:</label>
+                            <InputNumber id="MistakeType" @bind-Value="mdto.Score"></InputNumber>
+                        </p>
+                        <button class="btn btn-primary" @onclick="AddMistake">Add mistake</button>
+                        <button class="btn btn-primary" @onclick="RemoveMistake">Remove mistake</button>
+                    </div>
+                </div>
+
+            </EditForm>
         </div>
-    </EditForm>
-    <EditForm Model="@mdto">
-        <div class="form">
-            <DataAnnotationsValidator />
-            <ValidationSummary />
-            <p>
-                <label for="MistakeType">Mistake:</label>
-                <InputText id="MistakeType" @bind-Value="mdto.MistakeType"></InputText>
-            </p>
-            <p>
-                <label for="MistakeScore">Score:</label>
-                <InputNumber id="MistakeType" @bind-Value="mdto.Score"></InputNumber>
-            </p>
-            <button class="btn btn-primary" @onclick="AddMistake">Add mistake</button>
-            <button class="btn btn-primary" @onclick="RemoveMistake">Remove mistake</button>
-        </div>
-
-    </EditForm>
-    <EditForm Model="@mdto">
-        <div class="form">
-
-            <button class="btn btn-primary" @onclick="MarkAbsent ">Mark Absent</button>
-            <button class="btn btn-primary" @onclick="UnmarkAbsent">Unmark Absent</button>
-        </div>
-
-    </EditForm>
-    <div class="form">
-        <p>Absent:@dto.Absent</p>
-        @if (dto.Mistakes.Count > 0)
-        {
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Mistake</th>
-                        <th>Score</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (MistakeDTO m in dto.Mistakes)
-                    {
-
-
-
-                        <tr>
-                            <td>@m.MistakeType</td>
-                            <td>@m.Score</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-
-        }
     </div>
+    <div class="login-page">
+        <div class="form2">
+            <span style="display: inline;">
+
+                <button class="btn btn-primary" @onclick="MarkAbsent ">Mark Absent</button>
+                <button class="btn btn-primary" @onclick="UnmarkAbsent">Unmark Absent</button>
+
+            </span>
+            <br />
+            <br />
+            <p style="color:white">Absent:@dto.Absent</p>
+            @if (dto.Mistakes.Count > 0)
+            {
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Mistake</th>
+                            <th>Score</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (MistakeDTO m in dto.Mistakes)
+                        {
+
+
+
+                            <tr>
+                                <td>@m.MistakeType</td>
+                                <td>@m.Score</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            }
+        </div>
+    </div>
+
+
+
 }
 else
 {
-    <div class="form">
-        <p>Trebuie sa fiti logat ca admin pentru a accesa aceasta pagina!</p>
-    </div>
+    showError("Trebuie sa fii logat ca administrator pentru a accesa aceasta pagina!");
 }
+
+
+
+
+
 @code {
 
-
+    async Task showError(string error)
+    {
+        await JSRuntime.InvokeVoidAsync("createError", error);
+        NavigationManager.NavigateTo("/");
+    }
 
     private UpdateExam dto = new UpdateExam();
     private MistakeDTO mdto = new MistakeDTO();
 
     string message = string.Empty;
+
+    async Task ShowAlert(string error)
+    {
+        await JSRuntime.InvokeVoidAsync("createSuccess", error);
+
+    }
 
     // AICI TREBUIE MODIFICAT LINKUL DE API SI CREAT APIUL CARE RETURNEAZA LISTA CU EXAMINATORI
     HttpClient Http = new HttpClient();
@@ -108,6 +142,7 @@ else
         HttpResponseMessage h = await Http.PutAsync("https://localhost:44316/api/pastExam", content);
         var responseJSON = h.Content.ReadAsStringAsync().Result;
         ExamDTO exam = JsonConvert.DeserializeObject<ExamDTO>(responseJSON);
+        ShowAlert("Examenul a fost modificat cu succes!");
 
     }
     private void AddMistake()
@@ -118,7 +153,8 @@ else
         m.MistakeType = mdto.MistakeType;
         m.Score = mdto.Score;
         dto.Mistakes.Add(m);
-        message = message + "\nA fost adaugata greseala " + m.MistakeType + " cu scorul " + m.Score;
+        message = message + "A fost adaugata greseala " + m.MistakeType + " cu scorul " + m.Score;
+        ShowAlert(message);
     }
     private void RemoveMistake()
     {
@@ -128,7 +164,8 @@ else
         m.MistakeType = mdto.MistakeType;
         m.Score = mdto.Score;
         dto.Mistakes.RemoveAll(mistk => mistk.MistakeType == m.MistakeType && mistk.Score == m.Score);
-        message = message + "\nA fost adaugata greseala " + m.MistakeType + " cu scorul " + m.Score;
+        message = message + "A fost adaugata greseala " + m.MistakeType + " cu scorul " + m.Score;
+        ShowAlert(message);
     }
 
     private void MarkAbsent()

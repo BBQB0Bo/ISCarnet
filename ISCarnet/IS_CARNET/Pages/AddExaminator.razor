@@ -1,61 +1,76 @@
 ﻿@page "/addexaminator"
 
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
 @using IS_CARNET.Data
 @using System.Globalization
-<div class="form">
-    @if (!string.IsNullOrEmpty(AdminState.CurrentUser))
-    {
-        <h1>ADD Examinator</h1>
+    <div class="login-page">
+        <img src="img/logo.png" class="logo_middle">
+        <button onclick="location.href = '/'" class="fixedButton">HOME</button>
+        <div class="form">
+            @if (!string.IsNullOrEmpty(AdminState.CurrentUser))
+            {
 
-        <EditForm Model="@dto" OnValidSubmit="@SubmitExaminator">
-            <DataAnnotationsValidator />
-            <ValidationSummary />
-
-
-            <p>
-                <label for="FirstName">First name:</label>
-                <InputText id="FirstName" @bind-Value="dto.FirstName"></InputText>
-            </p>
-            <p>
-                <label for="LastName">Last name:</label>
-                <InputText id="LastName" @bind-Value="dto.LastName"></InputText>
-            </p>
-
-            <button type="submit">ADD EXAMINATOR</button>
-
-        </EditForm>
-    }
-    else
-    {
-        <p>Trebuie sa fiti logat ca administrator pentru a accesa aceasta pagina!</p>
-    }
-</div>
-<div>
-    @if (name != "")
-    {<p>Examinatorul @name a fost adaugat cu succes!</p>
-}
-</div>
-
-@code {
+                <EditForm Model="@dto" OnValidSubmit="@SubmitExaminator">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
 
 
-    private ExaminatorDTO dto = new ExaminatorDTO();
-    string name = String.Empty;
+                    <p>
+                        <label for="FirstName">First name:</label>
+                        <InputText id="FirstName" @bind-Value="dto.FirstName"></InputText>
+                    </p>
+                    <p>
+                        <label for="LastName">Last name:</label>
+                        <InputText id="LastName" @bind-Value="dto.LastName"></InputText>
+                    </p>
+
+                    <button type="submit">ADD EXAMINATOR</button>
+
+                </EditForm>
+            }
+            else
+            {
+                showError("Trebuie sa fii logat ca administrator pentru a accesa aceasta pagina!");
+
+            }
+        </div>
+        </div>
 
 
-    // FUNCTIA DE SUBMIT
-    private async Task SubmitExaminator()
-    {
-        name = String.Empty;
-        HttpClient Http = new HttpClient();
-        HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
-        HttpResponseMessage h = await Http.PostAsync("https://localhost:44369/api/Examinators", content);
-        var responseJSON = h.Content.ReadAsStringAsync().Result;
-        ExaminatorDTO ex = JsonConvert.DeserializeObject<ExaminatorDTO>(responseJSON);
-        name = ex.FirstName + " " + ex.LastName;
+        @code {
 
 
-    }
+            private ExaminatorDTO dto = new ExaminatorDTO();
+            string name = String.Empty;
 
-}
+            async Task ShowAlert(string error)
+            {
+                await JSRuntime.InvokeVoidAsync("createSuccess", error);
+
+            }
+
+            async Task showError(string error)
+            {
+                await JSRuntime.InvokeVoidAsync("createError", error);
+                NavigationManager.NavigateTo("/");
+            }
+
+
+            // FUNCTIA DE SUBMIT
+            private async Task SubmitExaminator()
+            {
+                name = String.Empty;
+                HttpClient Http = new HttpClient();
+                HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
+                HttpResponseMessage h = await Http.PostAsync("https://localhost:44369/api/Examinators", content);
+                var responseJSON = h.Content.ReadAsStringAsync().Result;
+                ExaminatorDTO ex = JsonConvert.DeserializeObject<ExaminatorDTO>(responseJSON);
+                name = ex.FirstName + " " + ex.LastName;
+                ShowAlert("Examinatorul " + name + " a fost adaugat cu succes!");
+
+            }
+
+        }
 

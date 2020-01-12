@@ -9,4 +9,5 @@ namespace IS_CARNET
     {
         public static string CurrentUser { get; set; }
     }
+
 }

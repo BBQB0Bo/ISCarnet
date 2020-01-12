@@ -1,32 +1,40 @@
 ﻿@page "/login"
-<div class="form">
-    @if (string.IsNullOrEmpty(AdminState.CurrentUser))
-    {
-        <h1>LOGIN</h1>
 
-        <EditForm Model="@dto" OnValidSubmit="@SearchAccount">
-            <DataAnnotationsValidator />
-            <ValidationSummary />
-            <p>
-                <label for="username">Username:</label>
-                <InputText id="username" @bind-Value="dto.UserName"></InputText>
-            </p>
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
 
-            <p>
-                <label for="password">Password:</label>
-                <InputText type="password" id="password" @bind-Value="dto.Password"></InputText>
-            </p>
-            <button type="submit">Login</button>
-        </EditForm>
-    }
-    else
-    {
-        <p>Sunteti deja logat ca administrator!</p>
-    }
-</div>
+    <div class="login-page">
+        <img src="img/logo.png" class="logo_middle">
+        <button onclick="location.href = '/'" class="fixedButton">HOME</button>
+        <div class="form">
+            @if (string.IsNullOrEmpty(AdminState.CurrentUser))
+            {
+
+                <EditForm Model="@dto" OnValidSubmit="@SearchAccount">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <p>
+                        <label for="username">Username:</label>
+                        <InputText id="username" @bind-Value="dto.UserName"></InputText>
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label>
+                        <InputText type="password" id="password" @bind-Value="dto.Password"></InputText>
+                    </p>
+                    <button type="submit">Login</button>
+                </EditForm>
+            }
+            else
+            {
+                <p>Sunteti deja logat ca administrator!</p>
+            }
+        </div>
+    </div>
 @if (loginAttempt)
 {
-    <p>@message</p>
+    NavigationManager.NavigateTo("/");
+
 }
 @code {
 
@@ -34,6 +42,18 @@
     Boolean loginAttempt = false;
     string username = "";
     string message = String.Empty;
+
+    async Task ShowAlert(string error)
+    {
+        if (error == "Login reusit"){
+            await JSRuntime.InvokeVoidAsync("createSuccess", error);
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("createError", error);
+        }
+    }
+
     private async Task SearchAccount()
     {
         HttpClient Http = new HttpClient();
@@ -54,7 +74,12 @@
         {
             message = "Username sau parola incorecte!";
         }
+        await ShowAlert(message);
         loginAttempt = true;
 
     }
+
+
+
 }
+

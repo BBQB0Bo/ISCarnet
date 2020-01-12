@@ -1,0 +1,76 @@
+﻿@page "/addlocation"
+
+@using IS_CARNET.Data
+@using System.Globalization
+
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+    <div class="login-page">
+        <img src="img/logo.png" class="logo_middle">
+        <button onclick="location.href = '/'" class="fixedButton">HOME</button>
+        <div class="form">
+            @if (!string.IsNullOrEmpty(AdminState.CurrentUser))
+            {
+
+                <EditForm Model="@dto" OnValidSubmit="@SubmitLocation">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+
+
+                    <p>
+                        <label for="LocationName">Location name:</label>
+                        <InputText id="LocationName" @bind-Value="dto.LocationName"></InputText>
+                    </p>
+                    <p>
+                        <label for="Latitude">Latitude:</label>
+                        <InputNumber id="Latitude" @bind-Value="dto.Latitude"></InputNumber>
+                    </p>
+                    <p>
+                        <label for="Longitude">Longitude:</label>
+                        <InputNumber id="Longitude" @bind-Value="dto.Longitude"></InputNumber>
+                    </p>
+
+                    <button type="submit">ADD LOCATION</button>
+
+                </EditForm>
+            }
+            else
+            {
+                showError("Trebuie sa fii logat ca administrator pentru a accesa aceasta pagina!");
+            }
+        </div>
+        </div>
+
+        @code {
+
+            async Task showError(string error)
+            {
+                await JSRuntime.InvokeVoidAsync("createError", error);
+                NavigationManager.NavigateTo("/");
+            }
+
+            private LocationDTO dto = new LocationDTO();
+            string name = String.Empty;
+
+            async Task ShowAlert(string error)
+            {
+                await JSRuntime.InvokeVoidAsync("createSuccess", error);
+
+            }
+
+            // FUNCTIA DE SUBMIT
+            private async Task SubmitLocation()
+            {
+                name = String.Empty;
+                HttpClient Http = new HttpClient();
+                HttpContent content = new StringContent(JsonConvert.SerializeObject(dto), Encoding.UTF8, "application/json");
+                HttpResponseMessage h = await Http.PostAsync("https://localhost:44369/api/Location", content);
+                var responseJSON = h.Content.ReadAsStringAsync().Result;
+                LocationDTO ex = JsonConvert.DeserializeObject<LocationDTO>(responseJSON);
+                name = ex.LocationName + " ( " + ex.Latitude + ", " + ex.Longitude + ")";
+                ShowAlert("Locatia " + name + " a fost adaugata cu succes!");
+            }
+
+        }
+
