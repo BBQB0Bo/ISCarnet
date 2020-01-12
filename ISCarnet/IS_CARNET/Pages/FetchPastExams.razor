@@ -1,7 +1,6 @@
 ﻿@page "/fetchpastexams"
 @inject IJSRuntime JSRuntime
 @using IS_CARNET.Data
-    <button onclick="location.href = '/'" class="fixedButton"><i class="fa fa-home" />HOME</button>
 <style>
     h1 {
         color: white
@@ -12,16 +11,20 @@
     }
 </style>
 <div style="width:500px;margin-left:auto;margin-right:auto;">
-
+    <div style="margin-left:60px">
+        <h1><b>Examene</b></h1>
+    </div>
 
 
     @if (State.CurrentUser != null)
-    {
+    {<div style="margin-left:80px">
+            <p>Utilizatorul: <b>@State.CurrentUser</b></p>
+        </div>
         @if (exams != null)
         {
             <RadzenDataList WrapItems="true" AllowPaging="true" Data="@exams" PageSize="4" TItem="ExamDTO">
                 <Template Context="exam">
-                    <RadzenCard Style="width:500px;margin-top:20px">
+                    <RadzenCard Style="width:400px;margin-top:20px">
                         <div class="row">
                             <div class="col-md-6">
                                 <div style="margin-top:20px;margin-left:20px">
@@ -41,10 +44,35 @@
                                     <br />
                                     <b>@exam.Location.LocationName</b>
                                 </div>
+                                <div style="margin-left:20px;margin-bottom:20px">
+                                    @if (exam.Mistakes.Count > 0)
+                                    {<table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Greseli</th>
+                                                    <th>Scor</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var mistake in exam.Mistakes)
+                                                {
+                                                    <tr>
+                                                        <td>@mistake.MistakeType</td>
+                                                        <td>@mistake.Score</td>
 
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    }
+                                    else
+                                    {
+                                        <p1>Numar Greseli: <b>0</b></p1>
+                                    }
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <div style="margin-top:20px;margin-left:20px; color:black;">
+                                <div style="margin-top:20px;margin-left:20px">
                                     Scor:
                                     <br />
                                     <b>@exam.Score</b>
@@ -59,33 +87,6 @@
                                     <br />
                                     <b>Iasi</b>
                                 </div>
-                            </div>
-
-                            <div style="margin-left:20px;margin-bottom:20px">
-                                @if (exam.Mistakes.Count > 0)
-                                {<table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Greseli</th>
-                                                <th>Scor</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            @foreach (var mistake in exam.Mistakes)
-                                            {
-                                                <tr>
-                                                    <td>@mistake.MistakeType</td>
-                                                    <td>@mistake.Score</td>
-
-                                                </tr>
-                                            }
-                                        </tbody>
-                                    </table>
-                                }
-                                else
-                                {
-                                    <p1>Numar Greseli: <b>0</b></p1>
-                                }
                             </div>
                         </div>
                     </RadzenCard>
@@ -102,32 +103,37 @@
         <p>Va rugam sa va logati pentru a accesa istoricul examenelor</p>
     }
 </div>
-<br/>
-<br />
-<div class="form2">
-    <div id="map"></div>
-</div>
+<div id="map"></div>
 
 @code {
     private IEnumerable<ExamDTO> exams;
-
+    
     HttpClient Http = new HttpClient();
+    
     private string apiUrl = "https://localhost:44316/api/pastExam/" + State.CurrentUser;
+    
+
     protected override async Task OnInitializedAsync()
     {
         exams = await Http.GetJsonAsync<IEnumerable<ExamDTO>>(apiUrl);
+        
     }
+
     private IEnumerable<ExaminatorDTO> examinators;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
-        {
+        {   IEnumerable<LocationDTO> locations;
+            HttpClient Http1 = new HttpClient();
+            string apiUrl1 = "https://localhost:44363/api/Location";
+            locations = await Http1.GetJsonAsync<IEnumerable<LocationDTO>>(apiUrl1);
             await JSRuntime.InvokeVoidAsync("initMap", null);
+            foreach (LocationDTO location in locations)
+                await JSRuntime.InvokeVoidAsync("addMarker", location.Latitude, location.Longitude);
             StateHasChanged();
         }
 
     }
 
 }
-
