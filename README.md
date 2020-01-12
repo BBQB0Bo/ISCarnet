@@ -13,7 +13,7 @@
   - GUI: HTML+CSS+JS
   
 - Teacher:
-  - [Olariu Florin](https://profs.info.uaic.ro/~dtrandabat/index.php)
+  - [Olariu Florin](https://www.linkedin.com/in/florin-olariu-38615126/?originalSubdomain=ro)
 
 - Front-End:
   - ![Status](https://i.imgur.com/DkgYyYt.png)
